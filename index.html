@@ -91,6 +91,8 @@
     .project-period { color: var(--muted); font-size: 0.8rem; white-space: nowrap; flex-shrink: 0; }
     .project-org { color: var(--accent); font-size: 0.8rem; margin-top: 0.1rem; }
     .project-desc { color: var(--muted); font-size: 0.84rem; margin-top: 0.5rem; }
+    .project-desc ul { padding-left: 1.1rem; display: flex; flex-direction: column; gap: 0.15rem; }
+    .project-desc li { line-height: 1.6; }
     .highlight { color: var(--green); font-weight: 600; }
     .tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; }
     .tag { background: var(--tag-bg); color: var(--muted); font-size: 0.74rem; padding: 0.15rem 0.55rem; border-radius: 4px; }
@@ -191,8 +193,8 @@
         <div class="project-period">2026.03 –</div>
       </div>
       <div class="project-desc"
-        data-ko="SewingLDM 기반 스케치/텍스트 → 옷 패턴 생성 PoC. MCM 패턴 fidelity 개선 (멀티 에이전트 파이프라인). Flux-2-pro, QwenEdit 기반 악세사리 합성 개선."
-        data-en="PoC for sketch/text-to-garment pattern generation via SewingLDM. Improved MCM pattern fidelity with multi-agent pipeline. Accessory synthesis via Flux-2-pro and QwenEdit.">
+        data-ko="<ul><li>SewingLDM 기반 스케치/텍스트 → 제조 가능한 옷 패턴 생성 PoC</li><li>MCM 비세토스 패턴 fidelity 개선 (멀티 에이전트 파이프라인 도입)</li><li>Flux-2-pro, QwenEdit 기반 악세사리/프린트 디테일 자연스러운 합성 개선</li></ul>"
+        data-en="<ul><li>PoC for sketch/text-to-garment pattern generation via SewingLDM</li><li>Improved MCM Visetos pattern fidelity with multi-agent pipeline</li><li>Enhanced accessory &amp; print detail synthesis via Flux-2-pro and QwenEdit</li></ul>">
       </div>
       <div class="tags">
         <span class="tag">Generative AI</span><span class="tag">Diffusion</span><span class="tag">Multi-Agent</span><span class="tag">Flux</span>
@@ -208,8 +210,8 @@
         <div class="project-period">2025.10 – 2026.03</div>
       </div>
       <div class="project-desc"
-        data-ko="근골격계 특화 VFM 연구 기획·리드. 기존 XR VFM(Rad-DINO, EVA-X) 대비 Classification / Segmentation / Landmark 성능 우위 검증. MICCAI 2026 제출 2건."
-        data-en="Initiated and led the first MSK-specialized VFM research. Outperformed existing XR VFMs (Rad-DINO, EVA-X) on classification, segmentation, and landmark tasks. 2 submissions to MICCAI 2026.">
+        data-ko="<ul><li>세계 최초 근골격계 특화 VFM 연구 기획·리드, 벤치마크 데이터셋 정의 및 표준화</li><li>기존 XR VFM(Rad-DINO, EVA-X) 대비 Classification / Segmentation / Landmark 성능 우위 검증</li><li>MICCAI 2026 제출 2건</li></ul>"
+        data-en="<ul><li>Initiated and led the first MSK-specialized VFM research; defined benchmark datasets and standardization</li><li>Outperformed existing XR VFMs (Rad-DINO, EVA-X) on classification, segmentation, and landmark tasks</li><li>2 submissions to MICCAI 2026</li></ul>">
       </div>
       <div class="tags">
         <span class="tag">VFM</span><span class="tag">DINOv3</span><span class="tag">LoRA Fine-tuning</span><span class="tag">MICCAI 2026</span>
@@ -225,8 +227,8 @@
         <div class="project-period">2025.08 – 2026.03</div>
       </div>
       <div class="project-desc"
-        data-ko="DINOv3 기반 단일 모델 파이프라인으로 재설계. GPU <span class='highlight'>30%↑</span>, CPU <span class='highlight'>71%↑</span>. Anchor 기반 각도 직접 예측으로 ICC <span class='highlight'>0.899 → 0.946</span>. FastAPI / ONNX / Docker 배포."
-        data-en="Redesigned as a single DINOv3 pipeline. GPU <span class='highlight'>30%↑</span>, CPU <span class='highlight'>71%↑</span>. Anchor-based direct angle prediction: ICC <span class='highlight'>0.899 → 0.946</span>. Deployed via FastAPI / ONNX / Docker.">
+        data-ko="<ul><li>DINOv3 기반 단일 모델 파이프라인으로 재설계 — GPU <span class='highlight'>30%↑</span>, CPU <span class='highlight'>71%↑</span></li><li>Anchor 기반 각도 직접 예측으로 ICC <span class='highlight'>0.899 → 0.946</span></li><li>FastAPI / ONNX / Docker CPU On-premise 배포</li><li><span class='highlight'>MICCAI 2026 Early Accept (상위 9%)</span></li></ul>"
+        data-en="<ul><li>Redesigned as a single DINOv3 pipeline — GPU <span class='highlight'>30%↑</span>, CPU <span class='highlight'>71%↑</span></li><li>Anchor-based direct angle prediction: ICC <span class='highlight'>0.899 → 0.946</span></li><li>Deployed via FastAPI / ONNX / Docker (CPU on-premise)</li><li><span class='highlight'>MICCAI 2026 Early Accept (top 9%)</span></li></ul>">
       </div>
       <div class="tags">
         <span class="tag">DINOv3</span><span class="tag">LoRA</span><span class="tag">Landmark Detection</span><span class="tag">FastAPI</span><span class="tag">ONNX</span>
@@ -242,8 +244,8 @@
         <div class="project-period">2022.03 – 2025.05</div>
       </div>
       <div class="project-desc"
-        data-ko="IHC 세포 구성요소 분할 End-to-End 파이프라인 개발 리드. F1@50 <span class='highlight'>0.97</span>. PD-L1 TPS 판독 의사 3인 일치도 <span class='highlight'>80%+</span>. 암 분할 모델 파라미터 38%↓ GFLOPs 77%↓."
-        data-en="Led End-to-End IHC cellular compartment segmentation pipeline. F1@50 <span class='highlight'>0.97</span>. PD-L1 TPS concordance with 3 pathologists: <span class='highlight'>80%+</span>. Tumor segmentation: params 38%↓, GFLOPs 77%↓.">
+        data-ko="<ul><li>IHC 세포 구성요소 분할 End-to-End 파이프라인 개발 리드, F1@50 <span class='highlight'>0.97</span></li><li>PD-L1 TPS 판독 의사 3인 일치도 <span class='highlight'>80%+</span> 달성 (기존 연구 대비 우위)</li><li>암 분할 모델 경량화 — 동등 성능 대비 파라미터 38%↓, GFLOPs 77%↓</li></ul>"
+        data-en="<ul><li>Led End-to-End IHC cellular compartment segmentation pipeline; F1@50 <span class='highlight'>0.97</span></li><li>PD-L1 TPS concordance with 3 pathologists: <span class='highlight'>80%+</span> (outperforming prior work)</li><li>Tumor segmentation model compression: params 38%↓, GFLOPs 77%↓</li></ul>">
       </div>
       <div class="tags">
         <span class="tag">Segmentation</span><span class="tag">IHC</span><span class="tag">MTL</span><span class="tag">Cellpose</span><span class="tag">HITL</span>
