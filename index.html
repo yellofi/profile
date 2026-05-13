@@ -215,8 +215,8 @@
       </div>
       <div class="proj-org" data-ko="코넥티브" data-en="Connective"></div>
       <div class="proj-desc"
-        data-ko="<ul><li>근골격계 특화 VFM 연구 기획·리드, 벤치마크 데이터셋 정의 및 표준화</li><li>기존 XR VFM(Rad-DINO, EVA-X) 대비 Classification / Segmentation / Landmark 성능 우위 검증</li><li>VFM 이후 Agentic Roadmap 제안 (멀티모달 확장 방향성 포함)</li></ul>"
-        data-en="<ul><li>Initiated and led MSK-specialized VFM research; defined benchmark datasets and standardization</li><li>Outperformed existing XR VFMs (Rad-DINO, EVA-X) on classification, segmentation, and landmark tasks</li><li>Proposed Agentic Roadmap beyond VFM, including multimodal expansion directions</li></ul>">
+        data-ko="<ul><li>MSK 특화 VFM 연구 기획·리드, 벤치마크 정의 및 표준화</li><li>기존 XR VFM (Rad-DINO, EVA-X) 대비 Cls / Seg / Landmark 성능 우위 검증</li><li>VFM 이후 Agentic Roadmap 제안 (멀티모달 확장)</li></ul>"
+        data-en="<ul><li>Initiated and led MSK-specialized VFM research; defined benchmark and standardization</li><li>Outperformed XR VFMs (Rad-DINO, EVA-X) across Cls / Seg / Landmark tasks</li><li>Proposed Agentic Roadmap post-VFM, including multimodal expansion</li></ul>">
       </div>
       <div class="tags">
         <span class="tag">VFM</span><span class="tag">DINOv3</span><span class="tag">LoRA Fine-tuning</span><span class="tag">Agentic AI</span>
@@ -230,8 +230,8 @@
       </div>
       <div class="proj-org" data-ko="코넥티브" data-en="Connective"></div>
       <div class="proj-desc"
-        data-ko="<ul><li>DINOv3 기반 단일 모델 파이프라인으로 재설계 — GPU <span class='highlight'>30%↑</span>, CPU <span class='highlight'>71%↑</span></li><li>Anchor 기반 각도 직접 예측으로 ICC <span class='highlight'>0.899 → 0.946</span></li><li>FastAPI / ONNX / Docker CPU On-premise 배포</li><li><span class='miccai'>MICCAI 2026 Early Accept (상위 9%)</span></li></ul>"
-        data-en="<ul><li>Redesigned as a single DINOv3 pipeline — GPU <span class='highlight'>30%↑</span>, CPU <span class='highlight'>71%↑</span></li><li>Anchor-based direct angle prediction: ICC <span class='highlight'>0.899 → 0.946</span></li><li>Deployed via FastAPI / ONNX / Docker (CPU on-premise)</li><li><span class='miccai'>MICCAI 2026 Early Accept (top 9%)</span></li></ul>">
+        data-ko="<ul><li>단일 DINOv3 파이프라인 재설계 — GPU <span class='highlight'>30%↑</span>, CPU <span class='highlight'>71%↑</span></li><li>Anchor 기반 각도 직접 예측 — ICC <span class='highlight'>0.899 → 0.946</span></li><li>FastAPI / ONNX / Docker, CPU on-premise 배포</li><li><span class='miccai'>MICCAI 2026 Early Accept (상위 9%)</span></li></ul>"
+        data-en="<ul><li>Redesigned as single DINOv3 pipeline — GPU <span class='highlight'>30%↑</span>, CPU <span class='highlight'>71%↑</span></li><li>Anchor-based direct angle prediction — ICC <span class='highlight'>0.899 → 0.946</span></li><li>FastAPI / ONNX / Docker, CPU on-premise deployment</li><li><span class='miccai'>MICCAI 2026 Early Accept (top 9%)</span></li></ul>">
       </div>
       <div class="tags">
         <span class="tag">DINOv3</span><span class="tag">LoRA</span><span class="tag">Landmark Detection</span><span class="tag">FastAPI</span><span class="tag">ONNX</span>
@@ -245,8 +245,8 @@
       </div>
       <div class="proj-org" data-ko="딥바이오" data-en="DeepBio"></div>
       <div class="proj-desc"
-        data-ko="<ul><li>Membrane segmentation PoC의 한계에서 문제를 재정의 — 세포핵·세포 두 종류 어노테이션으로 핵·세포질·세포막 label을 파생하는 가공 로직 개발, SAM 기반 annotation tool 구축</li><li>Cellular Compartment Segmentation 모델링부터 biomarker-agnostic IHC 분석 파이프라인까지 독자 개발 (종양 인식 → 구성요소 분할 → 바이오마커 계측), F1@50 <span class='highlight'>0.97</span></li><li>세포 결과를 기반으로 사람이 정량화하기 어려운 분석 feature 개발 — local heterogeneity, cell cluster-wise heterogeneity 등, 특허 4건 출원</li><li>PD-L1 TPS 공동연구: 동일 파이프라인에서 내부 모듈만 교체하여 적용, 판독 의사 3인 일치도 <span class='highlight'>80%+</span> (기존 연구 대비 우위)</li></ul>"
-        data-en="<ul><li>Reframed the membrane segmentation problem — developed label synthesis logic deriving nucleus/cytoplasm/membrane from just two annotation types (nuclei + cells), and built a SAM-based annotation tool</li><li>Independently developed cellular compartment segmentation model and built a biomarker-agnostic IHC analysis pipeline (tumor detection → compartment segmentation → biomarker quantification); F1@50 <span class='highlight'>0.97</span></li><li>Developed downstream quantification features beyond human capability — local heterogeneity, cell cluster-wise heterogeneity, etc.; 4 patent applications filed</li><li>PD-L1 TPS co-study: applied by swapping internal modules within the same pipeline; <span class='highlight'>80%+</span> concordance with 3 pathologists (outperforming prior work)</li></ul>">
+        data-ko="<ul><li>Cellular compartment segmentation 문제 재정의 — 2-class annotation → 3-class label 합성 로직 개발, SAM 기반 annotation tool 구축</li><li>E2E biomarker-agnostic IHC 파이프라인 독자 개발 (종양 → 구성요소 분할 → 바이오마커 계측), F1@50 <span class='highlight'>0.97</span></li><li>Local / cluster-wise heterogeneity 등 novel 정량화 feature 개발, 특허 4건 출원</li><li>PD-L1 TPS 공동연구 — 의사 3인 일치도 <span class='highlight'>80%+</span> (기존 연구 대비 우위)</li></ul>"
+        data-en="<ul><li>Redefined as cellular compartment segmentation — 2-class annotation → 3-class label synthesis logic, SAM-based annotation tool</li><li>Built E2E biomarker-agnostic IHC pipeline (tumor → compartment seg → biomarker quantification); F1@50 <span class='highlight'>0.97</span></li><li>Developed novel downstream features — local / cluster-wise heterogeneity, etc.; 4 patents filed</li><li>PD-L1 TPS co-study — <span class='highlight'>80%+</span> concordance with 3 pathologists (outperforming prior work)</li></ul>">
       </div>
       <div class="tags">
         <span class="tag">Segmentation</span><span class="tag">IHC</span><span class="tag">Cellpose</span><span class="tag">HITL</span><span class="tag">Collaborative Study</span>
@@ -260,8 +260,8 @@
       </div>
       <div class="proj-org" data-ko="딥바이오" data-en="DeepBio"></div>
       <div class="proj-desc"
-        data-ko="<ul><li>IHC 슬라이드 입력 처리 전반 구축: 조직 전경 분할(DL), TMA core 검출, IHC 염색 품질 확인을 위한 control tissue 검출(모양 유사도 기반)</li><li>기존 사내 종양 분할 모델 현대화 요구에 착수 — TopFormer, SeaFormer, SegNeXt 등 당시 efficient segmentation 아키텍처를 탐색하고 아이디어를 얻어 경량 decoder를 자체 설계, 동등 IoU 대비 파라미터 38%↓, GFLOPs 77%↓</li><li>Threshold 기반 세포막 분할의 한계를 확인하고 DL 기반 membrane segmentation PoC 시도 → 한계 직면, 이후 cellular compartment segmentation 문제 재정의로 이어짐</li></ul>"
-        data-en="<ul><li>Built IHC slide input processing pipeline: tissue foreground segmentation (DL), TMA core detection, and control tissue detection for staining quality validation (shape similarity-based)</li><li>Led tumor segmentation model modernization — explored efficient architectures (TopFormer, SeaFormer, SegNeXt) and designed a custom lightweight decoder; equivalent IoU at params 38%↓, GFLOPs 77%↓</li><li>Attempted DL-based membrane segmentation PoC to replace threshold-based approach → identified fundamental limits, which led to redefining the problem as cellular compartment segmentation</li></ul>">
+        data-ko="<ul><li>IHC 슬라이드 입력 처리 구축 — 조직 전경 분할(DL), TMA core 검출, control tissue 검출(모양 유사도)</li><li>종양 분할 모델 현대화 — TopFormer·SeaFormer·SegNeXt 탐색 후 경량 decoder 자체 설계, params 38%↓, GFLOPs 77%↓</li><li>Membrane segmentation PoC 시도 → 한계 확인, cellular compartment segmentation 재정의로 이어짐</li></ul>"
+        data-en="<ul><li>Built IHC slide processing pipeline — tissue foreground (DL), TMA core detection, control tissue detection (shape similarity)</li><li>Modernized tumor segmentation — explored TopFormer / SeaFormer / SegNeXt, designed custom lightweight decoder; params 38%↓, GFLOPs 77%↓</li><li>Attempted membrane segmentation PoC → identified limits, led to cellular compartment segmentation redefinition</li></ul>">
       </div>
       <div class="tags">
         <span class="tag">WSI Pipeline</span><span class="tag">Segmentation</span><span class="tag">Model Compression</span>
@@ -275,8 +275,8 @@
       </div>
       <div class="proj-org" data-ko="포항공과대학교 iAI Lab." data-en="POSTECH iAI Lab."></div>
       <div class="proj-desc"
-        data-ko="<ul><li>1인당 8시간 분량의 캡슐내시경 영상을 AI로 분석하기 위한 병변 탐지 연구</li><li>병변 유형(침습형, 출혈형)별 sub-network를 두고, 각 likelihood에 따라 Grad-CAM을 가중합산하여 최종 판단과 시각적 설명을 동시에 제공하는 방법 제안</li><li>1저자 논문 출판 — 저널 표지 게재, <span class='highlight'>Wiley Top Cited Article</span> 선정</li></ul>"
-        data-en="<ul><li>AI-based lesion detection for capsule endoscopy videos (~8 hours per patient)</li><li>Proposed a sub-network per lesion type (ulcerative, hemorrhagic) with likelihood-weighted Grad-CAM fusion for simultaneous decision-making and visual explainability</li><li>1st-author publication — journal cover, <span class='highlight'>Wiley Top Cited Article</span></li></ul>">
+        data-ko="<ul><li>1인당 ~8h 캡슐내시경 영상 AI 병변 분류 연구</li><li>병변 유형별(침습·출혈) sub-network + likelihood-weighted Grad-CAM으로 의사결정 및 시각적 설명 동시 제공</li><li>1저자 출판 — 저널 표지, <span class='highlight'>Wiley Top Cited Article</span></li></ul>"
+        data-en="<ul><li>AI lesion classification for capsule endoscopy (~8h video per patient)</li><li>Sub-network per lesion type (ulcerative / hemorrhagic) + likelihood-weighted Grad-CAM for decision & explainability</li><li>1st-author — journal cover, <span class='highlight'>Wiley Top Cited Article</span></li></ul>">
       </div>
       <div class="tags">
         <span class="tag">Image Classification</span><span class="tag">Grad-CAM</span><span class="tag">Weak Localization</span><span class="tag">Medical AI</span>
@@ -290,8 +290,8 @@
       </div>
       <div class="proj-org" data-ko="포항공과대학교 iAI Lab." data-en="POSTECH iAI Lab."></div>
       <div class="proj-desc"
-        data-ko="<ul><li>냉간 단조 공정 진동 신호에 Hilbert-Huang Transform 기반 입력 전처리 적용, frequency 기반 grouping CNN을 설계하여 noise-robust한 결함 분류 모델 개발</li><li>논문 1편 및 Inter-Noise 학회 proceeding 발표 (2저자)</li></ul>"
-        data-en="<ul><li>Applied Hilbert-Huang Transform for signal preprocessing; designed a frequency-based grouping CNN for noise-robust defect classification from cold forging vibration signals</li><li>1 journal paper and 1 Inter-Noise conference proceeding (2nd author)</li></ul>">
+        data-ko="<ul><li>HHT 전처리 + frequency-based grouping CNN 설계 — noise-robust 결함 분류</li><li>논문 1편, Inter-Noise proceeding (2저자)</li></ul>"
+        data-en="<ul><li>HHT preprocessing + frequency-based grouping CNN — noise-robust defect classification</li><li>1 journal paper, Inter-Noise proceeding (2nd author)</li></ul>">
       </div>
       <div class="tags">
         <span class="tag">CNN</span><span class="tag">Hilbert-Huang Transform</span><span class="tag">Anomaly Detection</span><span class="tag">Vibration Signal</span><span class="tag">Manufacturing AI</span>
