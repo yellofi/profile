@@ -130,14 +130,14 @@
 <div class="container">
 
   <div class="lang-toggle">
-    <button class="lang-btn active" onclick="setLang('ko')">KO</button>
-    <button class="lang-btn" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" onclick="setLang('ko')">KO</button>
+    <button class="lang-btn active" onclick="setLang('en')">EN</button>
   </div>
 
   <!-- Header -->
   <div class="header">
-    <h1>황윤섭 · Yunseob Hwang</h1>
-    <div class="role" data-ko="AI 엔지니어 · R&D 리드 · 프로덕트 매니저" data-en="AI Engineer · R&D Lead · Product Manager"></div>
+    <h1>Yunseob Hwang <span style="color:var(--muted);font-weight:400;font-size:1.1rem">황윤섭</span></h1>
+    <div class="role" data-ko="AI Research Engineer | Visual AI & Multimodal | Tech-to-Value Essentialist" data-en="AI Research Engineer | Visual AI & Multimodal | Tech-to-Value Essentialist"></div>
     <div class="links">
       <a class="link-badge" href="mailto:yunseob1102@gmail.com">yunseob1102@gmail.com</a>
       <a class="link-badge" href="https://www.linkedin.com/in/yunseob-hwang/" target="_blank">LinkedIn</a>
@@ -185,17 +185,17 @@
     <div class="project-card">
       <div class="project-header">
         <div>
-          <div class="project-title" data-ko="X-ray 척추-골반 각도 측정 AI" data-en="Spine-Pelvis Angle Measurement AI (X-ray)"></div>
-          <div class="project-org" data-ko="코넥티브" data-en="Connective"></div>
+          <div class="project-title" data-ko="패션 생성 AI (VRING:ON)" data-en="Fashion Generative AI (VRING:ON)"></div>
+          <div class="project-org" data-ko="리빌더에이아이" data-en="RebuilderAI"></div>
         </div>
-        <div class="project-period">25.08 – 26.03</div>
+        <div class="project-period">26.03 ~</div>
       </div>
       <div class="project-desc"
-        data-ko="DINOv3 기반 단일 모델 파이프라인으로 재설계. GPU <span class='highlight'>30%↑</span>, CPU <span class='highlight'>71%↑</span>. Anchor 기반 각도 직접 예측으로 ICC <span class='highlight'>0.899 → 0.946</span>. FastAPI / ONNX / Docker 배포."
-        data-en="Redesigned as a single DINOv3 pipeline. GPU <span class='highlight'>30%↑</span>, CPU <span class='highlight'>71%↑</span>. Anchor-based direct angle prediction: ICC <span class='highlight'>0.899 → 0.946</span>. Deployed via FastAPI / ONNX / Docker.">
+        data-ko="SewingLDM 기반 스케치/텍스트 → 옷 패턴 생성 PoC. MCM 패턴 fidelity 개선 (멀티 에이전트 파이프라인). Flux-2-pro, QwenEdit 기반 악세사리 합성 개선."
+        data-en="PoC for sketch/text-to-garment pattern generation via SewingLDM. Improved MCM pattern fidelity with multi-agent pipeline. Accessory synthesis via Flux-2-pro and QwenEdit.">
       </div>
       <div class="tags">
-        <span class="tag">DINOv3</span><span class="tag">LoRA</span><span class="tag">Landmark Detection</span><span class="tag">FastAPI</span><span class="tag">ONNX</span>
+        <span class="tag">Generative AI</span><span class="tag">Diffusion</span><span class="tag">Multi-Agent</span><span class="tag">Flux</span>
       </div>
     </div>
 
@@ -219,6 +219,23 @@
     <div class="project-card">
       <div class="project-header">
         <div>
+          <div class="project-title" data-ko="X-ray 척추-골반 각도 측정 AI" data-en="Spine-Pelvis Angle Measurement AI (X-ray)"></div>
+          <div class="project-org" data-ko="코넥티브" data-en="Connective"></div>
+        </div>
+        <div class="project-period">25.08 – 26.03</div>
+      </div>
+      <div class="project-desc"
+        data-ko="DINOv3 기반 단일 모델 파이프라인으로 재설계. GPU <span class='highlight'>30%↑</span>, CPU <span class='highlight'>71%↑</span>. Anchor 기반 각도 직접 예측으로 ICC <span class='highlight'>0.899 → 0.946</span>. FastAPI / ONNX / Docker 배포."
+        data-en="Redesigned as a single DINOv3 pipeline. GPU <span class='highlight'>30%↑</span>, CPU <span class='highlight'>71%↑</span>. Anchor-based direct angle prediction: ICC <span class='highlight'>0.899 → 0.946</span>. Deployed via FastAPI / ONNX / Docker.">
+      </div>
+      <div class="tags">
+        <span class="tag">DINOv3</span><span class="tag">LoRA</span><span class="tag">Landmark Detection</span><span class="tag">FastAPI</span><span class="tag">ONNX</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <div>
           <div class="project-title" data-ko="병리 조직 암세포 바이오마커 분석 AI" data-en="Pathology Cancer Biomarker Analysis AI"></div>
           <div class="project-org" data-ko="딥바이오" data-en="DeepBio"></div>
         </div>
@@ -230,23 +247,6 @@
       </div>
       <div class="tags">
         <span class="tag">Segmentation</span><span class="tag">IHC</span><span class="tag">MTL</span><span class="tag">Cellpose</span><span class="tag">HITL</span>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-header">
-        <div>
-          <div class="project-title" data-ko="패션 생성 AI (VRING:ON)" data-en="Fashion Generative AI (VRING:ON)"></div>
-          <div class="project-org" data-ko="리빌더에이아이" data-en="RebuilderAI"></div>
-        </div>
-        <div class="project-period">26.03 ~</div>
-      </div>
-      <div class="project-desc"
-        data-ko="SewingLDM 기반 스케치/텍스트 → 옷 패턴 생성 PoC. MCM 패턴 fidelity 개선 (멀티 에이전트 파이프라인). Flux-2-pro, QwenEdit 기반 악세사리 합성 개선."
-        data-en="PoC for sketch/text-to-garment pattern generation via SewingLDM. Improved MCM pattern fidelity with multi-agent pipeline. Accessory synthesis via Flux-2-pro and QwenEdit.">
-      </div>
-      <div class="tags">
-        <span class="tag">Generative AI</span><span class="tag">Diffusion</span><span class="tag">Multi-Agent</span><span class="tag">Flux</span>
       </div>
     </div>
   </section>
@@ -325,8 +325,8 @@
     document.querySelector(`.lang-btn[onclick="setLang('${lang}')"]`).classList.add('active');
     document.documentElement.lang = lang;
   }
-  // 초기 KO 적용
-  setLang('ko');
+  // 초기 EN 적용
+  setLang('en');
 </script>
 </body>
 </html>
