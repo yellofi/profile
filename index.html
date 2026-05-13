@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yunseob Hwang</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --accent: #58a6ff;
+      --accent2: #3fb950;
+      --tag-bg: #1f2937;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.7;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+
+    .avatar {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      flex-shrink: 0;
+    }
+
+    .header-info h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .header-info .role {
+      color: var(--accent);
+      font-size: 0.95rem;
+      margin-top: 0.2rem;
+    }
+
+    .header-info .bio {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
+    .links {
+      display: flex;
+      gap: 0.6rem;
+      margin-top: 0.8rem;
+      flex-wrap: wrap;
+    }
+
+    .link-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.25rem 0.7rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      text-decoration: none;
+      border: 1px solid var(--border);
+      color: var(--text);
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .link-badge:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* Section */
+    section { margin-bottom: 2.5rem; }
+
+    h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 1rem;
+    }
+
+    /* Timeline */
+    .timeline { display: flex; flex-direction: column; gap: 0; }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 1rem;
+      padding: 0.9rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .timeline-item:last-child { border-bottom: none; }
+
+    .timeline-period {
+      color: var(--muted);
+      font-size: 0.82rem;
+      padding-top: 0.15rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .timeline-content { }
+
+    .timeline-org {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .timeline-role {
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-top: 0.1rem;
+    }
+
+    /* Projects */
+    .project-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .project-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.1rem 1.3rem;
+      transition: border-color 0.2s;
+    }
+
+    .project-card:hover { border-color: var(--accent); }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .project-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .project-period {
+      color: var(--muted);
+      font-size: 0.8rem;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .project-org {
+      color: var(--accent);
+      font-size: 0.82rem;
+      margin-top: 0.15rem;
+    }
+
+    .project-desc {
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-top: 0.6rem;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.7rem;
+    }
+
+    .tag {
+      background: var(--tag-bg);
+      color: var(--muted);
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+    }
+
+    /* Stats */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+    }
+
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      text-align: center;
+    }
+
+    .stat-value {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .stat-label {
+      color: var(--muted);
+      font-size: 0.82rem;
+      margin-top: 0.2rem;
+    }
+
+    /* Skills */
+    .skill-groups { display: flex; flex-direction: column; gap: 0.8rem; }
+
+    .skill-group {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 0.5rem;
+      align-items: start;
+    }
+
+    .skill-group-name {
+      color: var(--muted);
+      font-size: 0.82rem;
+      padding-top: 0.15rem;
+    }
+
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+    /* Quote */
+    .quote {
+      border-left: 3px solid var(--accent);
+      padding: 0.8rem 1.2rem;
+      color: var(--muted);
+      font-style: italic;
+      font-size: 0.9rem;
+      background: var(--surface);
+      border-radius: 0 6px 6px 0;
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      color: var(--muted);
+      font-size: 0.82rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    @media (max-width: 600px) {
+      .header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+      .timeline-item { grid-template-columns: 1fr; gap: 0.2rem; }
+      .skill-group { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="avatar">🧠</div>
+      <div class="header-info">
+        <h1>황윤섭 · Yunseob Hwang</h1>
+        <div class="role">AI Engineer · R&D Lead · Product Manager</div>
+        <div class="bio">전파공학에서 AI로 전환 후, 의료 영상 AI 연구·개발·조직 운영까지. 기술이 제품 가치로 전환되는 과정을 주도합니다.</div>
+        <div class="links">
+          <a class="link-badge" href="https://yellofi.github.io/tech-archive/" target="_blank">📚 Tech Archive</a>
+          <a class="link-badge" href="https://github.com/yellofi" target="_blank">🐙 GitHub</a>
+          <a class="link-badge" href="mailto:yunseob1102@gmail.com">✉️ Email</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Career -->
+    <section>
+      <h2>Career</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-period">2026.03 ~</div>
+          <div class="timeline-content">
+            <div class="timeline-org">리빌더에이아이</div>
+            <div class="timeline-role">프로덕트팀 AI 파트 매니저</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-period">2025.07 – 26.03</div>
+          <div class="timeline-content">
+            <div class="timeline-org">코넥티브</div>
+            <div class="timeline-role">SW 사업부 AI R&D팀 팀장 / AI 엔지니어</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-period">2022.02 – 25.05</div>
+          <div class="timeline-content">
+            <div class="timeline-org">딥바이오</div>
+            <div class="timeline-role">연구팀 ML 엔지니어</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-period">2019.02 – 21.02</div>
+          <div class="timeline-content">
+            <div class="timeline-org">포항공과대학교</div>
+            <div class="timeline-role">iAI Lab. 석사 연구원 (현 KAIST)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Projects -->
+    <section>
+      <h2>Key Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <div>
+              <div class="project-title">X-ray 척추-골반 각도 측정 AI</div>
+              <div class="project-org">코넥티브</div>
+            </div>
+            <div class="project-period">25.08 – 26.03</div>
+          </div>
+          <div class="project-desc">DINOv3 기반 단일 파이프라인 경량화 — GPU 추론 30%↑, CPU 71%↑. Anchor 기반 각도 직접 예측으로 ICC 0.899 → <strong style="color:#3fb950">0.946</strong>. FastAPI / ONNX / Docker 배포.</div>
+          <div class="project-tags">
+            <span class="tag">DINOv3</span><span class="tag">LoRA</span><span class="tag">Landmark Detection</span><span class="tag">FastAPI</span><span class="tag">ONNX</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div>
+              <div class="project-title">MSK X-ray Vision Foundation Model</div>
+              <div class="project-org">코넥티브</div>
+            </div>
+            <div class="project-period">25.10 – 26.03</div>
+          </div>
+          <div class="project-desc">세계 최초 근골격계 특화 VFM 연구 기획 및 리드. 기존 XR VFM(Rad-DINO, EVA-X) 대비 MSK Downstream Task 성능 우위 검증. MICCAI 2026 제출 2건.</div>
+          <div class="project-tags">
+            <span class="tag">VFM</span><span class="tag">DINOv3</span><span class="tag">LoRA Fine-tuning</span><span class="tag">MICCAI 2026</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div>
+              <div class="project-title">병리 조직 암세포 바이오마커 분석 AI</div>
+              <div class="project-org">딥바이오</div>
+            </div>
+            <div class="project-period">22.03 – 25.05</div>
+          </div>
+          <div class="project-desc">IHC 세포 구성요소 분할 End-to-End 파이프라인 개발 리드. F1@50 <strong style="color:#3fb950">0.97</strong> 달성. PD-L1 TPS 판독 의사 3인 일치도 80% 이상. 암 분할 모델 파라미터 38%↓ GFLOPs 77%↓.</div>
+          <div class="project-tags">
+            <span class="tag">Segmentation</span><span class="tag">IHC</span><span class="tag">MTL</span><span class="tag">Cellpose</span><span class="tag">HITL</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div>
+              <div class="project-title">패션 생성 AI (VRING:ON)</div>
+              <div class="project-org">리빌더에이아이</div>
+            </div>
+            <div class="project-period">26.03 –</div>
+          </div>
+          <div class="project-desc">SewingLDM 기반 옷 패턴 생성 PoC. MCM 비세토스 패턴 fidelity 개선 (멀티 에이전트 파이프라인). Flux-2-pro, QwenEdit 기반 악세사리/프린트 합성 개선.</div>
+          <div class="project-tags">
+            <span class="tag">Generative AI</span><span class="tag">Diffusion</span><span class="tag">Multi-Agent</span><span class="tag">Flux</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section>
+      <h2>Research & Patents</h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-value">2</div>
+          <div class="stat-label">SCIE 국제 논문<br/>(제1저자 1건, 저널 표지)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">9</div>
+          <div class="stat-label">국제 학회 발표<br/>(USCAP, AACR 등)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">7</div>
+          <div class="stat-label">국내 특허<br/>(등록 2, 출원 5)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">5+</div>
+          <div class="stat-label">공동 연구 프로젝트<br/>(의료·제조 분야)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section>
+      <h2>Skills</h2>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <div class="skill-group-name">AI / ML</div>
+          <div class="skill-tags">
+            <span class="tag">Medical Image AI</span>
+            <span class="tag">Segmentation</span>
+            <span class="tag">Landmark Detection</span>
+            <span class="tag">VFM (DINOv3)</span>
+            <span class="tag">LoRA Fine-tuning</span>
+            <span class="tag">Knowledge Distillation</span>
+            <span class="tag">Generative AI</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-name">Data</div>
+          <div class="skill-tags">
+            <span class="tag">HITL Pipeline</span>
+            <span class="tag">Embedding Sampling</span>
+            <span class="tag">Annotation Tool Dev</span>
+            <span class="tag">VLM/LLM Refinement</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-name">Engineering</div>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">ONNX</span>
+            <span class="tag">Docker</span>
+            <span class="tag">AWS</span>
+            <span class="tag">k8s</span>
+            <span class="tag">CI/CD</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-name">Agent</div>
+          <div class="skill-tags">
+            <span class="tag">Claude Code</span>
+            <span class="tag">Codex</span>
+            <span class="tag">Multi-Agent Pipeline</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote -->
+    <section>
+      <div class="quote">
+        "산업 현장의 문제를 데이터와 AI로 풀어내는 것, 제 커리어는 '순수 AI 연구'가 아닌 '실전 AI 응용'에서 시작되었습니다."
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+      <span>Yunseob Hwang · yunseob1102@gmail.com</span>
+      <span>Updated 2026.05</span>
+    </div>
+
+  </div>
+</body>
+</html>
