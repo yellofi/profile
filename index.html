@@ -256,11 +256,42 @@
       </div>
       <div class="proj-org" data-ko="딥바이오" data-en="DeepBio"></div>
       <div class="proj-desc"
-        data-ko="<ul><li>IHC 슬라이드 입력 처리 전반 구축: 조직 전경 분할(DL), TMA core 검출, IHC 염색 품질 확인을 위한 control tissue 검출(모양 유사도 기반)</li><li>Threshold 기반 세포막 분할의 한계를 확인하고 DL 기반 membrane segmentation PoC 시도 → 한계 직면, 이후 cellular compartment segmentation 문제 재정의로 이어짐</li><li>암 분할 모델 경량화 — 동등 성능(IoU) 대비 파라미터 38%↓, GFLOPs 77%↓</li></ul>"
-        data-en="<ul><li>Built IHC slide input processing pipeline: tissue foreground segmentation (DL), TMA core detection, and control tissue detection for staining quality validation (shape similarity-based)</li><li>Attempted DL-based membrane segmentation PoC to replace threshold-based approach → identified fundamental limits, which led to redefining the problem as cellular compartment segmentation</li><li>Tumor segmentation model compression: equivalent IoU, params 38%↓, GFLOPs 77%↓</li></ul>">
+        data-ko="<ul><li>IHC 슬라이드 입력 처리 전반 구축: 조직 전경 분할(DL), TMA core 검출, IHC 염색 품질 확인을 위한 control tissue 검출(모양 유사도 기반)</li><li>기존 사내 종양 분할 모델 현대화 요구에 착수 — TopFormer, SeaFormer, SegNeXt 등 당시 efficient segmentation 아키텍처를 탐색하고 아이디어를 얻어 경량 decoder를 자체 설계, 동등 IoU 대비 파라미터 38%↓, GFLOPs 77%↓</li><li>Threshold 기반 세포막 분할의 한계를 확인하고 DL 기반 membrane segmentation PoC 시도 → 한계 직면, 이후 cellular compartment segmentation 문제 재정의로 이어짐</li></ul>"
+        data-en="<ul><li>Built IHC slide input processing pipeline: tissue foreground segmentation (DL), TMA core detection, and control tissue detection for staining quality validation (shape similarity-based)</li><li>Led tumor segmentation model modernization — explored efficient architectures (TopFormer, SeaFormer, SegNeXt) and designed a custom lightweight decoder; equivalent IoU at params 38%↓, GFLOPs 77%↓</li><li>Attempted DL-based membrane segmentation PoC to replace threshold-based approach → identified fundamental limits, which led to redefining the problem as cellular compartment segmentation</li></ul>">
       </div>
       <div class="tags">
         <span class="tag">WSI Pipeline</span><span class="tag">Segmentation</span><span class="tag">Model Compression</span>
+      </div>
+    </div>
+  </section>
+
+    <div class="project">
+      <div class="proj-header">
+        <div class="proj-title" data-ko="캡슐내시경 병변 분류 및 시각적 설명 AI" data-en="Capsule Endoscopy Lesion Classification with Visual Explainability"></div>
+        <div class="proj-period">2019.02 – 2021.02</div>
+      </div>
+      <div class="proj-org" data-ko="포항공과대학교 iAI Lab." data-en="POSTECH iAI Lab."></div>
+      <div class="proj-desc"
+        data-ko="<ul><li>1인당 8시간 분량의 캡슐내시경 영상을 AI로 분석하기 위한 병변 탐지 연구</li><li>병변 유형(침습형, 출혈형)별 sub-network를 두고, 각 likelihood에 따라 Grad-CAM을 가중합산하여 최종 판단과 시각적 설명을 동시에 제공하는 방법 제안</li><li>1저자 논문 출판 — 저널 표지 게재, <span class='highlight'>Wiley Top Cited Article</span> 선정</li></ul>"
+        data-en="<ul><li>AI-based lesion detection for capsule endoscopy videos (~8 hours per patient)</li><li>Proposed a sub-network per lesion type (ulcerative, hemorrhagic) with likelihood-weighted Grad-CAM fusion for simultaneous decision-making and visual explainability</li><li>1st-author publication — journal cover, <span class='highlight'>Wiley Top Cited Article</span></li></ul>">
+      </div>
+      <div class="tags">
+        <span class="tag">Image Classification</span><span class="tag">Grad-CAM</span><span class="tag">Weak Localization</span><span class="tag">Medical AI</span>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="proj-header">
+        <div class="proj-title" data-ko="냉간 단조 공정 이상 탐지 AI (UW Madison 협력)" data-en="Cold Forging Process Defect Detection AI (UW Madison Collaboration)"></div>
+        <div class="proj-period">2019.02 – 2021.02</div>
+      </div>
+      <div class="proj-org" data-ko="포항공과대학교 iAI Lab." data-en="POSTECH iAI Lab."></div>
+      <div class="proj-desc"
+        data-ko="<ul><li>냉간 단조 공정 진동 신호에 Hilbert-Huang Transform 기반 입력 전처리 적용, frequency 기반 grouping CNN을 설계하여 noise-robust한 결함 분류 모델 개발</li><li>논문 1편 및 Inter-Noise 학회 proceeding 발표 (2저자)</li></ul>"
+        data-en="<ul><li>Applied Hilbert-Huang Transform for signal preprocessing; designed a frequency-based grouping CNN for noise-robust defect classification from cold forging vibration signals</li><li>1 journal paper and 1 Inter-Noise conference proceeding (2nd author)</li></ul>">
+      </div>
+      <div class="tags">
+        <span class="tag">CNN</span><span class="tag">Hilbert-Huang Transform</span><span class="tag">Anomaly Detection</span><span class="tag">Vibration Signal</span><span class="tag">Manufacturing AI</span>
       </div>
     </div>
   </section>
