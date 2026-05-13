@@ -241,8 +241,8 @@
       </div>
       <div class="proj-org" data-ko="딥바이오" data-en="DeepBio"></div>
       <div class="proj-desc"
-        data-ko="<ul><li>기존 핵 분할(Nuclei) 기반 통합의 한계를 파악하고 세포 구성요소 분할(Cellular Compartment Segmentation)이라는 문제를 새로 정의, 모델링부터 파이프라인까지 독자 개발</li><li>범용 IHC 바이오마커 분석 파이프라인 구축 (종양 인식 → 세포 구성요소 인식 → 바이오마커 계측), F1@50 <span class='highlight'>0.97</span></li><li>PD-L1 TPS 공동연구: 파이프라인 내 모듈 교체만으로 검증, 판독 의사 3인 일치도 <span class='highlight'>80%+</span> (기존 연구 대비 우위)</li></ul>"
-        data-en="<ul><li>Identified bottleneck in nuclei-based integration; independently redefined the problem as cellular compartment segmentation and built the model and pipeline from scratch</li><li>Developed a general-purpose IHC biomarker analysis pipeline (tumor detection → compartment segmentation → biomarker quantification); F1@50 <span class='highlight'>0.97</span></li><li>PD-L1 TPS co-study: validated by swapping pipeline modules; <span class='highlight'>80%+</span> concordance with 3 pathologists (outperforming prior work)</li></ul>">
+        data-ko="<ul><li>Membrane segmentation PoC의 한계에서 문제를 재정의 — 세포핵·세포 두 종류 어노테이션으로 핵·세포질·세포막 label을 파생하는 가공 로직 개발, SAM 기반 annotation tool 구축</li><li>Cellular Compartment Segmentation 모델링부터 biomarker-agnostic IHC 분석 파이프라인까지 독자 개발 (종양 인식 → 구성요소 분할 → 바이오마커 계측), F1@50 <span class='highlight'>0.97</span></li><li>세포 결과를 기반으로 사람이 정량화하기 어려운 분석 feature 개발 — local heterogeneity, cell cluster-wise heterogeneity 등, 특허 4건 출원</li><li>PD-L1 TPS 공동연구: 동일 파이프라인에서 내부 모듈만 교체하여 적용, 판독 의사 3인 일치도 <span class='highlight'>80%+</span> (기존 연구 대비 우위)</li></ul>"
+        data-en="<ul><li>Reframed the membrane segmentation problem — developed label synthesis logic deriving nucleus/cytoplasm/membrane from just two annotation types (nuclei + cells), and built a SAM-based annotation tool</li><li>Independently developed cellular compartment segmentation model and built a biomarker-agnostic IHC analysis pipeline (tumor detection → compartment segmentation → biomarker quantification); F1@50 <span class='highlight'>0.97</span></li><li>Developed downstream quantification features beyond human capability — local heterogeneity, cell cluster-wise heterogeneity, etc.; 4 patent applications filed</li><li>PD-L1 TPS co-study: applied by swapping internal modules within the same pipeline; <span class='highlight'>80%+</span> concordance with 3 pathologists (outperforming prior work)</li></ul>">
       </div>
       <div class="tags">
         <span class="tag">Segmentation</span><span class="tag">IHC</span><span class="tag">Cellpose</span><span class="tag">HITL</span><span class="tag">Collaborative Study</span>
@@ -256,8 +256,8 @@
       </div>
       <div class="proj-org" data-ko="딥바이오" data-en="DeepBio"></div>
       <div class="proj-desc"
-        data-ko="<ul><li>IHC 조직 슬라이드 분석을 위한 E2E 파이프라인 초기 버전 구축 (조직 전경 검출, 패치 샘플링 등 슬라이드 입력 처리 전반)</li><li>암 분할 모델 경량화 — 동등 성능(IoU) 대비 파라미터 38%↓, GFLOPs 77%↓</li></ul>"
-        data-en="<ul><li>Built the initial E2E pipeline for IHC slide analysis, covering tissue foreground detection, patch sampling, and full slide-level input processing</li><li>Tumor segmentation model compression: equivalent IoU, params 38%↓, GFLOPs 77%↓</li></ul>">
+        data-ko="<ul><li>IHC 슬라이드 입력 처리 전반 구축: 조직 전경 분할(DL), TMA core 검출, IHC 염색 품질 확인을 위한 control tissue 검출(모양 유사도 기반)</li><li>Threshold 기반 세포막 분할의 한계를 확인하고 DL 기반 membrane segmentation PoC 시도 → 한계 직면, 이후 cellular compartment segmentation 문제 재정의로 이어짐</li><li>암 분할 모델 경량화 — 동등 성능(IoU) 대비 파라미터 38%↓, GFLOPs 77%↓</li></ul>"
+        data-en="<ul><li>Built IHC slide input processing pipeline: tissue foreground segmentation (DL), TMA core detection, and control tissue detection for staining quality validation (shape similarity-based)</li><li>Attempted DL-based membrane segmentation PoC to replace threshold-based approach → identified fundamental limits, which led to redefining the problem as cellular compartment segmentation</li><li>Tumor segmentation model compression: equivalent IoU, params 38%↓, GFLOPs 77%↓</li></ul>">
       </div>
       <div class="tags">
         <span class="tag">WSI Pipeline</span><span class="tag">Segmentation</span><span class="tag">Model Compression</span>
