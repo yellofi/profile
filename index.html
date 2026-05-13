@@ -4,195 +4,198 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yunseob Hwang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #0d1117;
-      --surface: #161b22;
-      --border: #30363d;
-      --text: #e6edf3;
-      --muted: #8b949e;
-      --accent: #58a6ff;
-      --green: #3fb950;
-      --tag-bg: #1f2937;
+      --text: #1a1a1a;
+      --muted: #666;
+      --subtle: #999;
+      --border: #e5e5e5;
+      --bg: #fff;
+      --accent: #0550ae;
+      --green: #1a7f37;
+      --tag-bg: #f3f4f6;
     }
+
     * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       background: var(--bg);
       color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 15px;
       line-height: 1.7;
-      padding: 2rem 1rem;
+      padding: 3rem 1.5rem;
     }
-    .container { max-width: 760px; margin: 0 auto; }
 
-    /* Lang toggle */
+    .page { max-width: 720px; margin: 0 auto; }
+
+    /* Lang */
     .lang-toggle {
       display: flex;
       justify-content: flex-end;
-      margin-bottom: 1.5rem;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
     }
     .lang-btn {
-      background: none;
-      border: 1px solid var(--border);
-      color: var(--muted);
-      padding: 0.3rem 0.8rem;
-      font-size: 0.82rem;
-      cursor: pointer;
-      transition: all 0.15s;
+      background: none; border: none; cursor: pointer;
+      font-size: 0.82rem; color: var(--subtle); font-family: inherit;
+      padding: 0; text-decoration: none;
     }
-    .lang-btn:first-child { border-radius: 6px 0 0 6px; }
-    .lang-btn:last-child { border-radius: 0 6px 6px 0; border-left: none; }
-    .lang-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .lang-btn.active { color: var(--text); font-weight: 600; }
+    .lang-btn:hover { color: var(--text); }
 
     /* Header */
-    .header {
-      padding-bottom: 2rem;
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 2.5rem;
+    .header { margin-bottom: 2.5rem; }
+    .header h1 { font-size: 1.6rem; font-weight: 600; letter-spacing: -0.4px; }
+    .header .name-ko { color: var(--muted); font-weight: 400; font-size: 1.1rem; margin-left: 0.4rem; }
+    .header .role { color: var(--muted); font-size: 0.92rem; margin-top: 0.25rem; }
+    .header .links { margin-top: 0.75rem; display: flex; gap: 1.25rem; flex-wrap: wrap; }
+    .header .links a {
+      color: var(--accent); font-size: 0.85rem; text-decoration: none;
     }
-    .header h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.3px; }
-    .header .role { color: var(--accent); font-size: 0.9rem; margin-top: 0.25rem; }
-    .links { display: flex; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap; }
-    .link-badge {
-      display: inline-flex; align-items: center; gap: 0.3rem;
-      padding: 0.25rem 0.7rem; border-radius: 20px; font-size: 0.8rem;
-      text-decoration: none; border: 1px solid var(--border); color: var(--muted);
-      transition: border-color 0.15s, color 0.15s;
-    }
-    .link-badge:hover { border-color: var(--accent); color: var(--accent); }
+    .header .links a:hover { text-decoration: underline; }
 
-    /* Section */
-    section { margin-bottom: 2.5rem; }
+    /* Divider */
+    hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+
+    /* Section heading */
     h2 {
-      font-size: 0.78rem; font-weight: 600; color: var(--muted);
-      text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem;
+      font-size: 0.72rem; font-weight: 600; color: var(--subtle);
+      text-transform: uppercase; letter-spacing: 0.1em;
+      margin-bottom: 1rem;
     }
 
-    /* Timeline */
-    .timeline-item {
-      display: grid; grid-template-columns: 150px 1fr; gap: 1rem;
-      padding: 0.75rem 0; border-bottom: 1px solid var(--border);
+    section { margin-bottom: 2.5rem; }
+
+    /* Experiences table */
+    .exp-table { width: 100%; border-collapse: collapse; }
+    .exp-table tr { border-bottom: 1px solid var(--border); }
+    .exp-table tr:last-child { border-bottom: none; }
+    .exp-table td { padding: 0.65rem 0; vertical-align: top; }
+    .exp-table .td-period {
+      width: 160px; color: var(--muted); font-size: 0.82rem;
+      padding-right: 1.5rem; white-space: nowrap; padding-top: 0.75rem;
     }
-    .timeline-item:last-child { border-bottom: none; }
-    .tl-period { color: var(--muted); font-size: 0.82rem; padding-top: 0.1rem; }
-    .tl-org { font-weight: 600; font-size: 0.92rem; }
-    .tl-role { color: var(--muted); font-size: 0.84rem; }
+    .exp-table .org { font-weight: 600; font-size: 0.92rem; }
+    .exp-table .role-title { color: var(--muted); font-size: 0.84rem; }
 
     /* Projects */
-    .project-card {
-      background: var(--surface); border: 1px solid var(--border);
-      border-radius: 8px; padding: 1rem 1.2rem; margin-bottom: 0.75rem;
-      transition: border-color 0.15s;
+    .project { margin-bottom: 1.75rem; padding-bottom: 1.75rem; border-bottom: 1px solid var(--border); }
+    .project:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+    .proj-header { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 0.1rem; }
+    .proj-title { font-weight: 600; font-size: 0.95rem; }
+    .proj-period { color: var(--subtle); font-size: 0.8rem; white-space: nowrap; flex-shrink: 0; }
+    .proj-org { color: var(--muted); font-size: 0.82rem; margin-bottom: 0.5rem; }
+
+    .proj-desc ul { padding-left: 1.2rem; color: var(--muted); font-size: 0.87rem; }
+    .proj-desc li { margin-bottom: 0.1rem; }
+    .highlight { color: var(--green); font-weight: 500; }
+    .miccai { color: var(--accent); font-weight: 500; }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.6rem; }
+    .tag {
+      background: var(--tag-bg); color: var(--muted);
+      font-size: 0.73rem; padding: 0.15rem 0.5rem; border-radius: 3px;
     }
-    .project-card:last-child { margin-bottom: 0; }
-    .project-card:hover { border-color: var(--accent); }
-    .project-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; }
-    .project-title { font-weight: 600; font-size: 0.92rem; }
-    .project-period { color: var(--muted); font-size: 0.8rem; white-space: nowrap; flex-shrink: 0; }
-    .project-org { color: var(--accent); font-size: 0.8rem; margin-top: 0.1rem; }
-    .project-desc { color: var(--muted); font-size: 0.84rem; margin-top: 0.5rem; }
-    .project-desc ul { padding-left: 1.1rem; display: flex; flex-direction: column; gap: 0.15rem; }
-    .project-desc li { line-height: 1.6; }
-    .highlight { color: var(--green); font-weight: 600; }
-    .tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; }
-    .tag { background: var(--tag-bg); color: var(--muted); font-size: 0.74rem; padding: 0.15rem 0.55rem; border-radius: 4px; }
 
     /* Stats */
-    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.75rem; }
-    .stat-card {
-      background: var(--surface); border: 1px solid var(--border);
-      border-radius: 8px; padding: 0.9rem 1rem; text-align: center;
-    }
-    .stat-value { font-size: 1.5rem; font-weight: 700; color: var(--accent); }
-    .stat-label { color: var(--muted); font-size: 0.8rem; margin-top: 0.15rem; }
+    .stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+    .stat { background: var(--bg); padding: 0.9rem 1rem; }
+    .stat-val { font-size: 1.4rem; font-weight: 600; color: var(--text); }
+    .stat-label { color: var(--muted); font-size: 0.78rem; margin-top: 0.1rem; line-height: 1.4; }
 
     /* Skills */
-    .skill-row {
-      display: grid; grid-template-columns: 110px 1fr; gap: 0.5rem;
-      align-items: start; padding: 0.5rem 0; border-bottom: 1px solid var(--border);
+    .skill-table { width: 100%; border-collapse: collapse; }
+    .skill-table tr { border-bottom: 1px solid var(--border); }
+    .skill-table tr:last-child { border-bottom: none; }
+    .skill-table td { padding: 0.55rem 0; vertical-align: top; font-size: 0.85rem; }
+    .skill-table .td-cat {
+      width: 110px; color: var(--muted); font-size: 0.82rem;
+      padding-right: 1rem; padding-top: 0.6rem;
     }
-    .skill-row:last-child { border-bottom: none; }
-    .skill-cat { color: var(--muted); font-size: 0.82rem; padding-top: 0.15rem; }
-    .skill-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; }
 
     /* Footer */
-    .footer {
-      border-top: 1px solid var(--border); padding-top: 1.2rem;
-      color: var(--muted); font-size: 0.8rem;
-      display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;
-    }
+    .footer { color: var(--subtle); font-size: 0.78rem; margin-top: 2.5rem; }
 
-    @media (max-width: 560px) {
-      .timeline-item, .skill-row { grid-template-columns: 1fr; gap: 0.15rem; }
-      .project-header { flex-direction: column; gap: 0.2rem; }
+    @media (max-width: 520px) {
+      .exp-table .td-period { width: auto; display: block; }
+      .proj-header { flex-direction: column; gap: 0; }
     }
   </style>
 </head>
 <body>
-<div class="container">
+<div class="page">
 
   <div class="lang-toggle">
     <button class="lang-btn" onclick="setLang('ko')">KO</button>
+    <span style="color:var(--border)">|</span>
     <button class="lang-btn active" onclick="setLang('en')">EN</button>
   </div>
 
-  <!-- Header -->
   <div class="header">
-    <h1>Yunseob Hwang <span style="color:var(--muted);font-weight:400;font-size:1.1rem">황윤섭</span></h1>
+    <h1>Yunseob Hwang <span class="name-ko">황윤섭</span></h1>
     <div class="role" data-ko="AI Research Engineer | Visual AI & Multimodal | Tech-to-Value Essentialist" data-en="AI Research Engineer | Visual AI & Multimodal | Tech-to-Value Essentialist"></div>
     <div class="links">
-      <a class="link-badge" href="mailto:yunseob1102@gmail.com">yunseob1102@gmail.com</a>
-      <a class="link-badge" href="https://www.linkedin.com/in/yunseob-hwang/" target="_blank">LinkedIn</a>
-      <a class="link-badge" href="https://scholar.google.co.kr/citations?user=YsupRlQAAAAJ&hl=en" target="_blank">Google Scholar</a>
+      <a href="mailto:yunseob1102@gmail.com">yunseob1102@gmail.com</a>
+      <a href="https://www.linkedin.com/in/yunseob-hwang/" target="_blank">LinkedIn</a>
+      <a href="https://scholar.google.co.kr/citations?user=YsupRlQAAAAJ&hl=en" target="_blank">Google Scholar</a>
     </div>
   </div>
+
+  <hr>
 
   <!-- Experiences -->
   <section>
     <h2 data-ko="경험" data-en="Experiences"></h2>
-    <div class="timeline-item">
-      <div class="tl-period">2026.03 –</div>
-      <div>
-        <div class="tl-org" data-ko="리빌더에이아이" data-en="RebuilderAI"></div>
-        <div class="tl-role" data-ko="프로덕트팀 AI 파트 매니저" data-en="AI Part Manager, Product Team"></div>
-      </div>
-    </div>
-    <div class="timeline-item">
-      <div class="tl-period">2025.07 – 2026.03</div>
-      <div>
-        <div class="tl-org" data-ko="코넥티브" data-en="Connective"></div>
-        <div class="tl-role" data-ko="SW 사업부 AI R&D팀 팀장 / AI 엔지니어" data-en="AI R&D Team Lead / AI Engineer, SW Division"></div>
-      </div>
-    </div>
-    <div class="timeline-item">
-      <div class="tl-period">2022.02 – 2025.05</div>
-      <div>
-        <div class="tl-org" data-ko="딥바이오" data-en="DeepBio"></div>
-        <div class="tl-role" data-ko="연구팀 ML 엔지니어" data-en="ML Engineer, Research Team"></div>
-      </div>
-    </div>
-    <div class="timeline-item">
-      <div class="tl-period">2019.02 – 2021.02</div>
-      <div>
-        <div class="tl-org" data-ko="포항공과대학교 iAI Lab." data-en="POSTECH iAI Lab."></div>
-        <div class="tl-role" data-ko="석사 연구원" data-en="M.S. Researcher"></div>
-      </div>
-    </div>
+    <table class="exp-table">
+      <tr>
+        <td class="td-period">2026.03 –</td>
+        <td>
+          <div class="org" data-ko="리빌더에이아이" data-en="RebuilderAI"></div>
+          <div class="role-title" data-ko="프로덕트팀 AI 파트 매니저" data-en="AI Part Manager, Product Team"></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="td-period">2025.07 – 2026.03</td>
+        <td>
+          <div class="org" data-ko="코넥티브" data-en="Connective"></div>
+          <div class="role-title" data-ko="SW 사업부 AI R&D팀 팀장 / AI 엔지니어" data-en="AI R&D Team Lead / AI Engineer, SW Division"></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="td-period">2022.02 – 2025.05</td>
+        <td>
+          <div class="org" data-ko="딥바이오" data-en="DeepBio"></div>
+          <div class="role-title" data-ko="연구팀 ML 엔지니어" data-en="ML Engineer, Research Team"></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="td-period">2019.02 – 2021.02</td>
+        <td>
+          <div class="org" data-ko="포항공과대학교 iAI Lab." data-en="POSTECH iAI Lab."></div>
+          <div class="role-title" data-ko="석사 연구원" data-en="M.S. Researcher"></div>
+        </td>
+      </tr>
+    </table>
   </section>
+
+  <hr>
 
   <!-- Projects -->
   <section>
     <h2 data-ko="프로젝트" data-en="Projects"></h2>
 
-    <div class="project-card">
-      <div class="project-header">
-        <div>
-          <div class="project-title" data-ko="패션 생성 AI (VRING:ON)" data-en="Fashion Generative AI (VRING:ON)"></div>
-          <div class="project-org" data-ko="리빌더에이아이" data-en="RebuilderAI"></div>
-        </div>
-        <div class="project-period">2026.03 –</div>
+    <div class="project">
+      <div class="proj-header">
+        <div class="proj-title" data-ko="패션 생성 AI (VRING:ON)" data-en="Fashion Generative AI (VRING:ON)"></div>
+        <div class="proj-period">2026.03 –</div>
       </div>
-      <div class="project-desc"
+      <div class="proj-org" data-ko="리빌더에이아이" data-en="RebuilderAI"></div>
+      <div class="proj-desc"
         data-ko="<ul><li>SewingLDM 기반 스케치/텍스트 → 제조 가능한 옷 패턴 생성 PoC</li><li>MCM 비세토스 패턴 fidelity 개선 (멀티 에이전트 파이프라인 도입)</li><li>Flux-2-pro, QwenEdit 기반 악세사리/프린트 디테일 자연스러운 합성 개선</li></ul>"
         data-en="<ul><li>PoC for sketch/text-to-garment pattern generation via SewingLDM</li><li>Improved MCM Visetos pattern fidelity with multi-agent pipeline</li><li>Enhanced accessory &amp; print detail synthesis via Flux-2-pro and QwenEdit</li></ul>">
       </div>
@@ -201,15 +204,13 @@
       </div>
     </div>
 
-    <div class="project-card">
-      <div class="project-header">
-        <div>
-          <div class="project-title" data-ko="MSK X-ray 비전 파운데이션 모델" data-en="MSK X-ray Vision Foundation Model"></div>
-          <div class="project-org" data-ko="코넥티브" data-en="Connective"></div>
-        </div>
-        <div class="project-period">2025.10 – 2026.03</div>
+    <div class="project">
+      <div class="proj-header">
+        <div class="proj-title" data-ko="MSK X-ray 비전 파운데이션 모델" data-en="MSK X-ray Vision Foundation Model"></div>
+        <div class="proj-period">2025.10 – 2026.03</div>
       </div>
-      <div class="project-desc"
+      <div class="proj-org" data-ko="코넥티브" data-en="Connective"></div>
+      <div class="proj-desc"
         data-ko="<ul><li>세계 최초 근골격계 특화 VFM 연구 기획·리드, 벤치마크 데이터셋 정의 및 표준화</li><li>기존 XR VFM(Rad-DINO, EVA-X) 대비 Classification / Segmentation / Landmark 성능 우위 검증</li><li>MICCAI 2026 제출 2건</li></ul>"
         data-en="<ul><li>Initiated and led the first MSK-specialized VFM research; defined benchmark datasets and standardization</li><li>Outperformed existing XR VFMs (Rad-DINO, EVA-X) on classification, segmentation, and landmark tasks</li><li>2 submissions to MICCAI 2026</li></ul>">
       </div>
@@ -218,32 +219,28 @@
       </div>
     </div>
 
-    <div class="project-card">
-      <div class="project-header">
-        <div>
-          <div class="project-title" data-ko="Spinopelvic 각도 측정 AI (X-ray)" data-en="Spinopelvic Angle Measurement AI (X-ray)"></div>
-          <div class="project-org" data-ko="코넥티브" data-en="Connective"></div>
-        </div>
-        <div class="project-period">2025.08 – 2026.03</div>
+    <div class="project">
+      <div class="proj-header">
+        <div class="proj-title" data-ko="Spinopelvic 각도 측정 AI (X-ray)" data-en="Spinopelvic Angle Measurement AI (X-ray)"></div>
+        <div class="proj-period">2025.08 – 2026.03</div>
       </div>
-      <div class="project-desc"
-        data-ko="<ul><li>DINOv3 기반 단일 모델 파이프라인으로 재설계 — GPU <span class='highlight'>30%↑</span>, CPU <span class='highlight'>71%↑</span></li><li>Anchor 기반 각도 직접 예측으로 ICC <span class='highlight'>0.899 → 0.946</span></li><li>FastAPI / ONNX / Docker CPU On-premise 배포</li><li><span class='highlight'>MICCAI 2026 Early Accept (상위 9%)</span></li></ul>"
-        data-en="<ul><li>Redesigned as a single DINOv3 pipeline — GPU <span class='highlight'>30%↑</span>, CPU <span class='highlight'>71%↑</span></li><li>Anchor-based direct angle prediction: ICC <span class='highlight'>0.899 → 0.946</span></li><li>Deployed via FastAPI / ONNX / Docker (CPU on-premise)</li><li><span class='highlight'>MICCAI 2026 Early Accept (top 9%)</span></li></ul>">
+      <div class="proj-org" data-ko="코넥티브" data-en="Connective"></div>
+      <div class="proj-desc"
+        data-ko="<ul><li>DINOv3 기반 단일 모델 파이프라인으로 재설계 — GPU <span class='highlight'>30%↑</span>, CPU <span class='highlight'>71%↑</span></li><li>Anchor 기반 각도 직접 예측으로 ICC <span class='highlight'>0.899 → 0.946</span></li><li>FastAPI / ONNX / Docker CPU On-premise 배포</li><li><span class='miccai'>MICCAI 2026 Early Accept (상위 9%)</span></li></ul>"
+        data-en="<ul><li>Redesigned as a single DINOv3 pipeline — GPU <span class='highlight'>30%↑</span>, CPU <span class='highlight'>71%↑</span></li><li>Anchor-based direct angle prediction: ICC <span class='highlight'>0.899 → 0.946</span></li><li>Deployed via FastAPI / ONNX / Docker (CPU on-premise)</li><li><span class='miccai'>MICCAI 2026 Early Accept (top 9%)</span></li></ul>">
       </div>
       <div class="tags">
         <span class="tag">DINOv3</span><span class="tag">LoRA</span><span class="tag">Landmark Detection</span><span class="tag">FastAPI</span><span class="tag">ONNX</span>
       </div>
     </div>
 
-    <div class="project-card">
-      <div class="project-header">
-        <div>
-          <div class="project-title" data-ko="병리 조직 암세포 바이오마커 분석 AI" data-en="Pathology Cancer Biomarker Analysis AI (IHC)"></div>
-          <div class="project-org" data-ko="딥바이오" data-en="DeepBio"></div>
-        </div>
-        <div class="project-period">2022.03 – 2025.05</div>
+    <div class="project">
+      <div class="proj-header">
+        <div class="proj-title" data-ko="병리 조직 암세포 바이오마커 분석 AI (IHC)" data-en="Pathology Cancer Biomarker Analysis AI (IHC)"></div>
+        <div class="proj-period">2022.03 – 2025.05</div>
       </div>
-      <div class="project-desc"
+      <div class="proj-org" data-ko="딥바이오" data-en="DeepBio"></div>
+      <div class="proj-desc"
         data-ko="<ul><li>IHC 세포 구성요소 분할 End-to-End 파이프라인 개발 리드, F1@50 <span class='highlight'>0.97</span></li><li>PD-L1 TPS 판독 의사 3인 일치도 <span class='highlight'>80%+</span> 달성 (기존 연구 대비 우위)</li><li>암 분할 모델 경량화 — 동등 성능 대비 파라미터 38%↓, GFLOPs 77%↓</li></ul>"
         data-en="<ul><li>Led End-to-End IHC cellular compartment segmentation pipeline; F1@50 <span class='highlight'>0.97</span></li><li>PD-L1 TPS concordance with 3 pathologists: <span class='highlight'>80%+</span> (outperforming prior work)</li><li>Tumor segmentation model compression: params 38%↓, GFLOPs 77%↓</li></ul>">
       </div>
@@ -253,77 +250,85 @@
     </div>
   </section>
 
+  <hr>
+
   <!-- Research -->
   <section>
     <h2 data-ko="연구 성과" data-en="Research & Patents"></h2>
-    <div class="stats-grid">
-      <div class="stat-card">
-        <div class="stat-value">2</div>
+    <div class="stats-row">
+      <div class="stat">
+        <div class="stat-val">2</div>
         <div class="stat-label" data-ko="SCIE 논문 (1저자 1건, 저널 표지)" data-en="SCIE Papers (1st author, journal cover)"></div>
       </div>
-      <div class="stat-card">
-        <div class="stat-value">9</div>
+      <div class="stat">
+        <div class="stat-val">9</div>
         <div class="stat-label" data-ko="국제 학회 발표" data-en="Intl. Conference Presentations"></div>
       </div>
-      <div class="stat-card">
-        <div class="stat-value">7</div>
+      <div class="stat">
+        <div class="stat-val">7</div>
         <div class="stat-label" data-ko="국내 특허 (등록 2 · 출원 5)" data-en="Patents (2 registered · 5 filed)"></div>
       </div>
-      <div class="stat-card">
-        <div class="stat-value">2</div>
-        <div class="stat-label" data-ko="제품 출시 (병리 AI, X-ray AI)" data-en="Products Shipped"></div>
+      <div class="stat">
+        <div class="stat-val">2</div>
+        <div class="stat-label" data-ko="제품 출시" data-en="Products Shipped"></div>
       </div>
     </div>
   </section>
+
+  <hr>
 
   <!-- Skills -->
   <section>
     <h2 data-ko="기술 스택" data-en="Skills"></h2>
-    <div>
-      <div class="skill-row">
-        <div class="skill-cat" data-ko="AI / ML" data-en="AI / ML"></div>
-        <div class="skill-tags">
-          <span class="tag">Medical Image AI</span><span class="tag">Segmentation</span><span class="tag">Landmark Detection</span>
-          <span class="tag">VFM · DINOv3</span><span class="tag">LoRA Fine-tuning</span><span class="tag">Knowledge Distillation</span>
-          <span class="tag">Generative AI</span>
-        </div>
-      </div>
-      <div class="skill-row">
-        <div class="skill-cat" data-ko="데이터" data-en="Data"></div>
-        <div class="skill-tags">
-          <span class="tag">HITL Pipeline</span><span class="tag">Embedding Sampling</span>
-          <span class="tag">Annotation Tool Dev</span><span class="tag">VLM/LLM Refinement</span>
-        </div>
-      </div>
-      <div class="skill-row">
-        <div class="skill-cat" data-ko="엔지니어링" data-en="Engineering"></div>
-        <div class="skill-tags">
-          <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">FastAPI</span>
-          <span class="tag">ONNX</span><span class="tag">Docker</span><span class="tag">AWS</span><span class="tag">k8s</span><span class="tag">CI/CD</span>
-        </div>
-      </div>
-      <div class="skill-row">
-        <div class="skill-cat" data-ko="에이전트" data-en="Agent"></div>
-        <div class="skill-tags">
-          <span class="tag">Claude Code</span><span class="tag">Codex</span><span class="tag">Multi-Agent Pipeline</span>
-        </div>
-      </div>
-    </div>
+    <table class="skill-table">
+      <tr>
+        <td class="td-cat" data-ko="AI / ML" data-en="AI / ML"></td>
+        <td>
+          <div class="skill-tags">
+            <span class="tag">Medical Image AI</span><span class="tag">Segmentation</span><span class="tag">Landmark Detection</span>
+            <span class="tag">VFM · DINOv3</span><span class="tag">LoRA Fine-tuning</span><span class="tag">Knowledge Distillation</span>
+            <span class="tag">Generative AI</span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="td-cat" data-ko="데이터" data-en="Data"></td>
+        <td>
+          <div class="skill-tags">
+            <span class="tag">HITL Pipeline</span><span class="tag">Embedding Sampling</span>
+            <span class="tag">Annotation Tool Dev</span><span class="tag">VLM/LLM Refinement</span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="td-cat" data-ko="엔지니어링" data-en="Engineering"></td>
+        <td>
+          <div class="skill-tags">
+            <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">FastAPI</span>
+            <span class="tag">ONNX</span><span class="tag">Docker</span><span class="tag">AWS</span><span class="tag">k8s</span><span class="tag">CI/CD</span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="td-cat" data-ko="에이전트" data-en="Agent"></td>
+        <td>
+          <div class="skill-tags">
+            <span class="tag">Claude Code</span><span class="tag">Codex</span><span class="tag">Multi-Agent Pipeline</span>
+          </div>
+        </td>
+      </tr>
+    </table>
   </section>
 
-  <div class="footer">
-    <span>Yunseob Hwang</span>
-    <span>2026.05</span>
-  </div>
+  <div class="footer">Yunseob Hwang · 2026.05</div>
 
 </div>
-
 <script>
   function setLang(lang) {
     document.querySelectorAll('[data-ko]').forEach(el => {
       el.innerHTML = el.dataset[lang] || el.innerHTML;
     });
-    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
     document.querySelector(`.lang-btn[onclick="setLang('${lang}')"]`).classList.add('active');
     document.documentElement.lang = lang;
   }
