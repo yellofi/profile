@@ -125,6 +125,30 @@
       .exp-table .td-period { width: auto; display: block; }
       .proj-header { flex-direction: column; gap: 0; }
     }
+  
+    .page { max-width: 920px; }
+    .intro {color:var(--muted);font-size:.94rem;margin-top:1.4rem;max-width:760px;line-height:1.8}
+    .site-nav {display:flex;flex-wrap:wrap;gap:1.2rem;margin-top:1.3rem;font-size:.83rem}
+    .site-nav a,.seminar-table a {color:var(--accent);text-decoration:none}
+    .site-nav a:hover,.seminar-table a:hover {text-decoration:underline}
+    section {scroll-margin-top:24px}
+    .section-title {font-size:1.2rem;letter-spacing:0;text-transform:none;color:var(--text);margin-bottom:.4rem}
+    .section-note {font-size:.87rem;color:var(--muted);margin-bottom:1.3rem}
+    .table-wrap {overflow-x:auto}
+    .seminar-table {width:100%;border-collapse:collapse;font-size:.87rem;text-align:left}
+    .seminar-table th {color:var(--subtle);font-size:.74rem;font-weight:500;padding:.7rem .7rem;border-bottom:1px solid var(--border)}
+    .seminar-table td {padding:1rem .7rem;border-bottom:1px solid var(--border);vertical-align:top}
+    .seminar-table td:first-child {white-space:nowrap;color:var(--muted);width:82px}
+    .seminar-title {font-weight:500;line-height:1.5}
+    .seminar-topic {font-size:.73rem;color:var(--muted);margin-top:.3rem}
+    .seminar-status {font-size:.73rem;color:var(--subtle);white-space:nowrap}
+    .insight-tools {display:flex;gap:1rem;align-items:center;margin:1.1rem 0}
+    #seminar-search {font:inherit;font-size:.84rem;border:1px solid var(--border);border-radius:4px;padding:.65rem .8rem;background:var(--bg);color:var(--text);width:100%;max-width:360px}
+    #seminar-count {font-size:.78rem;color:var(--muted)}
+    .achievement-list {color:var(--muted);font-size:.88rem;padding-left:1.2rem}
+    .achievement-list li {margin:.55rem 0}
+    :focus-visible {outline:2px solid var(--accent);outline-offset:4px}
+    @media(max-width:600px){.seminar-table th,.seminar-table td{padding:.8rem .35rem}.seminar-table{font-size:.81rem}.section-title{font-size:1.1rem}}
   </style>
 </head>
 <body>
@@ -146,26 +170,34 @@
     </div>
   </div>
 
+<p class="intro" data-ko="산업·의료 현장의 문제를 인식과 정량화 문제로 구조화하고, 선행 연구와 데이터 구축부터 모델 개발·검증·제품화까지 연결해 온 AI Research Engineer입니다. 확장 가능한 모델 구조와 데이터·평가 체계를 함께 설계하며 핵심 연구개발을 주도해 왔습니다." data-en="I am an AI Research Engineer working on recognition and quantification problems in medical and industrial settings. I connect exploratory research, data design, model development, validation, and productization, with a focus on scalable model architectures and rigorous evaluation."></p>
+<nav class="site-nav" aria-label="Page sections"><a href="#insights">Insights</a><a href="#experience">Experience</a><a href="#selected-work">Selected Work</a><a href="#achievements">Achievements</a><a href="https://yellofi.github.io/tech-archive/">Tech Archive ↗</a></nav>
   <hr>
 
-  <!-- Experiences -->
-  <section>
+  
+  <section id="insights"><h2 class="section-title">Insights</h2>
+<p class="section-note" data-ko="문제 해결, AI 기술의 이해와 고찰을 담은 주요 세미나 발표자료입니다." data-en="Selected seminars on problem solving, AI methodology, and technical reasoning."></p>
+<div class="insight-tools"><label for="seminar-search" class="seminar-status">Search</label><input id="seminar-search" type="search" placeholder="Search seminars…" aria-label="Search seminars"><span id="seminar-count" aria-live="polite">10 / 10</span></div>
+<div class="table-wrap"><table class="seminar-table"><thead><tr><th scope="col">Date</th><th scope="col">Seminar / Topic</th><th scope="col">Slides</th></tr></thead><tbody><tr data-seminar><td><time datetime="2026-10">2026.10</time></td><td><div class="seminar-title">A Foundation Model for Tabular Data — TabPFN</div><div class="seminar-topic">Tabular Foundation Models</div><div class="seminar-topic" data-ko="발표 예정 · 2026.10.15" data-en="Scheduled · 2026.10.15"></div></td><td><span class="seminar-status" data-ko="자료 준비 중" data-en="Slides pending"></span></td></tr>
+<tr data-seminar><td><time datetime="2025-12">2025.12</time></td><td><div class="seminar-title">Vision Foundation Model for MSK</div><div class="seminar-topic">Medical AI · Foundation Models</div></td><td><span class="seminar-status" data-ko="자료 준비 중" data-en="Slides pending"></span></td></tr>
+<tr data-seminar><td><time datetime="2025-11">2025.11</time></td><td><div class="seminar-title">Leveraging MSK AI Using DINOv3</div><div class="seminar-topic">Vision SSL · DINOv3</div></td><td><span class="seminar-status" data-ko="자료 준비 중" data-en="Slides pending"></span></td></tr>
+<tr data-seminar><td><time datetime="2025-03">2025.03</time></td><td><div class="seminar-title">Data Sampling Strategy for Deep Learning in Histopathology — Latent Grid Sampling</div><div class="seminar-topic">Data-centric AI · Computational Pathology</div></td><td><span class="seminar-status" data-ko="자료 준비 중" data-en="Slides pending"></span></td></tr>
+<tr data-seminar><td><time datetime="2024-05">2024.05</time></td><td><div class="seminar-title">Foundation Model for Histopathology</div><div class="seminar-topic">Foundation Models · Computational Pathology</div></td><td><span class="seminar-status" data-ko="자료 준비 중" data-en="Slides pending"></span></td></tr>
+<tr data-seminar><td><time datetime="2023-08">2023.08</time></td><td><div class="seminar-title">Universal Few-shot Learning of Dense Prediction Tasks with Visual Token Matching</div><div class="seminar-topic">Few-shot Learning · Dense Prediction</div></td><td><span class="seminar-status" data-ko="자료 준비 중" data-en="Slides pending"></span></td></tr>
+<tr data-seminar><td><time datetime="2023-06">2023.06</time></td><td><div class="seminar-title">Efficient Segmentation Models — SeaFormer</div><div class="seminar-topic">Efficient Architectures · Segmentation</div></td><td><span class="seminar-status" data-ko="자료 준비 중" data-en="Slides pending"></span></td></tr>
+<tr data-seminar><td><time datetime="2023-06">2023.06</time></td><td><div class="seminar-title">Introduction of Computational Pathology</div><div class="seminar-topic">Computational Pathology</div></td><td><span class="seminar-status" data-ko="자료 준비 중" data-en="Slides pending"></span></td></tr>
+<tr data-seminar><td><time datetime="2022-11">2022.11</time></td><td><div class="seminar-title">AI to Computational Pathology</div><div class="seminar-topic">Computational Pathology · Medical AI</div></td><td><span class="seminar-status" data-ko="자료 준비 중" data-en="Slides pending"></span></td></tr>
+<tr data-seminar><td><time datetime="2020-11">2020.11</time></td><td><div class="seminar-title">Continual Lifelong Learning</div><div class="seminar-topic">Continual Learning</div></td><td><span class="seminar-status" data-ko="자료 준비 중" data-en="Slides pending"></span></td></tr></tbody></table></div>
+<p id="seminar-empty" class="section-note" hidden data-ko="검색 결과가 없습니다." data-en="No matching seminars."></p>
+</section><hr><section id="experience">
     <h2 data-ko="경험" data-en="Experiences"></h2>
     <table class="exp-table">
-      <!-- RebuilderAI (주석 처리 - 수습 퇴사)
-      <tr>
-        <td class="td-period">2026.03 –</td>
-        <td>
-          <div class="org" data-ko="리빌더에이아이" data-en="RebuilderAI"></div>
-          <div class="role-title" data-ko="AI 엔지니어, 프로덕트팀 (AI R&D팀 합류 후 보직 이동)" data-en="AI Engineer, Product Team (from AI R&D Team)"></div>
-        </td>
-      </tr>
-      -->
+      
       <tr>
         <td class="td-period">2025.07 – 2026.03</td>
         <td>
           <div class="org" data-ko="코넥티브" data-en="Connective"></div>
-          <div class="role-title" data-ko="SW 사업부 AI R&D팀 팀장 / AI 엔지니어" data-en="AI R&D Team Lead / AI Engineer, SW Division"></div>
+          <div class="role-title" data-ko="AI 연구소 · AI 엔지니어" data-en="AI Engineer, AI Research Lab"></div>
         </td>
       </tr>
       <tr>
@@ -187,147 +219,21 @@
 
   <hr>
 
-  <!-- Projects -->
-  <section>
-    <h2 data-ko="프로젝트" data-en="Projects"></h2>
-
-    <!-- RebuilderAI project (주석 처리 - 수습 퇴사)
-    <div class="project">
-      <div class="proj-header">
-        <div class="proj-title" data-ko="패션 생성 AI (VRING:ON)" data-en="Fashion Generative AI (VRING:ON)"></div>
-        <div class="proj-period">2026.03 –</div>
-      </div>
-      <div class="proj-org" data-ko="리빌더에이아이" data-en="RebuilderAI"></div>
-      <div class="proj-desc"
-        data-ko="<ul><li>SewingLDM 기반 스케치/텍스트 → 제조 가능한 옷 패턴 생성 PoC</li><li>MCM 비세토스 패턴 fidelity 개선 (멀티 에이전트 파이프라인 도입)</li><li>Flux-2-pro, QwenEdit 기반 악세사리/프린트 디테일 자연스러운 합성 개선</li></ul>"
-        data-en="<ul><li>PoC for sketch/text-to-garment pattern generation via SewingLDM</li><li>Improved MCM Visetos pattern fidelity with multi-agent pipeline</li><li>Enhanced accessory &amp; print detail synthesis via Flux-2-pro and QwenEdit</li></ul>">
-      </div>
-      <div class="tags">
-        <span class="tag">Generative AI</span><span class="tag">Diffusion</span><span class="tag">Multi-Agent</span><span class="tag">Flux</span>
-      </div>
-    </div>
-    -->
-
-    <div class="project">
-      <div class="proj-header">
-        <div class="proj-title" data-ko="MSK X-ray 비전 파운데이션 모델" data-en="MSK X-ray Vision Foundation Model"></div>
-        <div class="proj-period">2025.10 – 2026.03</div>
-      </div>
-      <div class="proj-org" data-ko="코넥티브" data-en="Connective"></div>
-      <div class="proj-desc"
-        data-ko="<ul><li>MSK 특화 VFM 연구 기획·리드, 벤치마크 정의 및 표준화</li><li>기존 XR VFM (Rad-DINO, EVA-X) 대비 Cls / Seg / Landmark 성능 우위 검증</li><li>VFM 이후 Agentic Roadmap 제안 (멀티모달 확장)</li></ul>"
-        data-en="<ul><li>Initiated and led MSK-specialized VFM research; defined benchmark and standardization</li><li>Outperformed XR VFMs (Rad-DINO, EVA-X) across Cls / Seg / Landmark tasks</li><li>Proposed Agentic Roadmap post-VFM, including multimodal expansion</li></ul>">
-      </div>
-      <div class="tags">
-        <span class="tag">VFM</span><span class="tag">DINOv3</span><span class="tag">LoRA Fine-tuning</span><span class="tag">Agentic AI</span>
-      </div>
-    </div>
-
-    <div class="project">
-      <div class="proj-header">
-        <div class="proj-title" data-ko="Spinopelvic 각도 측정 AI (X-ray)" data-en="Spinopelvic Angle Measurement AI (X-ray)"></div>
-        <div class="proj-period">2025.08 – 2026.03</div>
-      </div>
-      <div class="proj-org" data-ko="코넥티브" data-en="Connective"></div>
-      <div class="proj-desc"
-        data-ko="<ul><li>단일 DINOv3 파이프라인 재설계 — GPU <span class='highlight'>30%↑</span>, CPU <span class='highlight'>71%↑</span></li><li>Anchor 기반 각도 직접 예측 — ICC <span class='highlight'>0.899 → 0.946</span></li><li>FastAPI / ONNX / Docker, CPU on-premise 배포</li><li><span class='miccai'>MICCAI 2026 Early Accept (상위 9%)</span></li></ul>"
-        data-en="<ul><li>Redesigned as single DINOv3 pipeline — GPU <span class='highlight'>30%↑</span>, CPU <span class='highlight'>71%↑</span></li><li>Anchor-based direct angle prediction — ICC <span class='highlight'>0.899 → 0.946</span></li><li>FastAPI / ONNX / Docker, CPU on-premise deployment</li><li><span class='miccai'>MICCAI 2026 Early Accept (top 9%)</span></li></ul>">
-      </div>
-      <div class="tags">
-        <span class="tag">DINOv3</span><span class="tag">LoRA</span><span class="tag">Landmark Detection</span><span class="tag">FastAPI</span><span class="tag">ONNX</span>
-      </div>
-    </div>
-
-    <div class="project">
-      <div class="proj-header">
-        <div class="proj-title" data-ko="Biomarker-agnostic IHC 분석 파이프라인" data-en="Biomarker-agnostic IHC Analysis Pipeline"></div>
-        <div class="proj-period">2023.08 – 2025.05</div>
-      </div>
-      <div class="proj-org" data-ko="딥바이오" data-en="DeepBio"></div>
-      <div class="proj-desc"
-        data-ko="<ul><li>Cellular compartment segmentation 문제 재정의 — 2-class annotation → 3-class label 합성 로직 개발, SAM 기반 annotation tool 구축</li><li>E2E biomarker-agnostic IHC 파이프라인 독자 개발 (종양 → 구성요소 분할 → 바이오마커 계측), F1@50 <span class='highlight'>0.97</span></li><li>Local / cluster-wise heterogeneity 등 novel 정량화 feature 개발, 특허 4건 출원</li><li>PD-L1 TPS 공동연구 — 의사 3인 일치도 <span class='highlight'>80%+</span> (기존 연구 대비 우위)</li></ul>"
-        data-en="<ul><li>Redefined as cellular compartment segmentation — 2-class annotation → 3-class label synthesis logic, SAM-based annotation tool</li><li>Built E2E biomarker-agnostic IHC pipeline (tumor → compartment seg → biomarker quantification); F1@50 <span class='highlight'>0.97</span></li><li>Developed novel downstream features — local / cluster-wise heterogeneity, etc.; 4 patents filed</li><li>PD-L1 TPS co-study — <span class='highlight'>80%+</span> concordance with 3 pathologists (outperforming prior work)</li></ul>">
-      </div>
-      <div class="tags">
-        <span class="tag">Segmentation</span><span class="tag">IHC</span><span class="tag">Cellpose</span><span class="tag">HITL</span><span class="tag">Collaborative Study</span>
-      </div>
-    </div>
-
-    <div class="project">
-      <div class="proj-header">
-        <div class="proj-title" data-ko="IHC 슬라이드 분석 파이프라인 프로토타이핑" data-en="IHC Slide Analysis Pipeline Prototyping"></div>
-        <div class="proj-period">2022.03 – 2023.08</div>
-      </div>
-      <div class="proj-org" data-ko="딥바이오" data-en="DeepBio"></div>
-      <div class="proj-desc"
-        data-ko="<ul><li>IHC 슬라이드 입력 처리 구축 — 조직 전경 분할(DL), TMA core 검출, control tissue 검출(모양 유사도)</li><li>종양 분할 모델 현대화 — TopFormer·SeaFormer·SegNeXt 탐색 후 경량 decoder 자체 설계, params 38%↓, GFLOPs 77%↓</li><li>Membrane segmentation PoC 시도 → 한계 확인, cellular compartment segmentation 재정의로 이어짐</li></ul>"
-        data-en="<ul><li>Built IHC slide processing pipeline — tissue foreground (DL), TMA core detection, control tissue detection (shape similarity)</li><li>Modernized tumor segmentation — explored TopFormer / SeaFormer / SegNeXt, designed custom lightweight decoder; params 38%↓, GFLOPs 77%↓</li><li>Attempted membrane segmentation PoC → identified limits, led to cellular compartment segmentation redefinition</li></ul>">
-      </div>
-      <div class="tags">
-        <span class="tag">WSI Pipeline</span><span class="tag">Segmentation</span><span class="tag">Model Compression</span>
-      </div>
-    </div>
-
-    <div class="project">
-      <div class="proj-header">
-        <div class="proj-title" data-ko="캡슐내시경 병변 분류 및 시각적 설명 AI" data-en="Capsule Endoscopy Lesion Classification with Visual Explainability"></div>
-        <div class="proj-period">2019.02 – 2021.02</div>
-      </div>
-      <div class="proj-org" data-ko="포항공과대학교 iAI Lab." data-en="POSTECH iAI Lab."></div>
-      <div class="proj-desc"
-        data-ko="<ul><li>1인당 ~8h 캡슐내시경 영상 AI 병변 분류 연구</li><li>병변 유형별(침습·출혈) sub-network + likelihood-weighted Grad-CAM으로 의사결정 및 시각적 설명 동시 제공</li><li>1저자 출판 — 저널 표지, <span class='highlight'>Wiley Top Cited Article</span></li></ul>"
-        data-en="<ul><li>AI lesion classification for capsule endoscopy (~8h video per patient)</li><li>Sub-network per lesion type (ulcerative / hemorrhagic) + likelihood-weighted Grad-CAM for decision & explainability</li><li>1st-author — journal cover, <span class='highlight'>Wiley Top Cited Article</span></li></ul>">
-      </div>
-      <div class="tags">
-        <span class="tag">Image Classification</span><span class="tag">Grad-CAM</span><span class="tag">Weak Localization</span><span class="tag">Medical AI</span>
-      </div>
-    </div>
-
-    <div class="project">
-      <div class="proj-header">
-        <div class="proj-title" data-ko="냉간 단조 공정 이상 탐지 AI (UW Madison 협력)" data-en="Cold Forging Process Defect Detection AI (UW Madison Collaboration)"></div>
-        <div class="proj-period">2019.02 – 2021.02</div>
-      </div>
-      <div class="proj-org" data-ko="포항공과대학교 iAI Lab." data-en="POSTECH iAI Lab."></div>
-      <div class="proj-desc"
-        data-ko="<ul><li>HHT 전처리 + frequency-based grouping CNN 설계 — noise-robust 결함 분류</li><li>논문 1편, Inter-Noise proceeding (2저자)</li></ul>"
-        data-en="<ul><li>HHT preprocessing + frequency-based grouping CNN — noise-robust defect classification</li><li>1 journal paper, Inter-Noise proceeding (2nd author)</li></ul>">
-      </div>
-      <div class="tags">
-        <span class="tag">CNN</span><span class="tag">Hilbert-Huang Transform</span><span class="tag">Anomaly Detection</span><span class="tag">Vibration Signal</span><span class="tag">Manufacturing AI</span>
-      </div>
-    </div>
-  </section>
+  
+  <section id="selected-work"><h2 class="section-title">Selected Work</h2><p class="section-note" data-ko="문제 정의부터 연구·검증까지, 주요 프로젝트에서의 역할과 기여." data-en="Roles and contributions across problem framing, research, and validation."></p><div class="project"><div class="proj-title">코넥티브 — 근골격계 X-ray AI</div><div class="proj-desc"><ul><li><strong>CONNEVO SPIN</strong> — X-ray 척추·골반 각도 측정 AI 기술 고도화 및 배포 최적화 (2026년 4월 출시)</li><li>근골격계 X-ray Vision Foundation Model 연구 기획 및 benchmark dataset 표준화 리드</li><li>AI팀 R&D 전략 및 조직 운영, 유관 팀과 협업해 업무 우선순위·일정·리소스 조율</li><li>척추·골반 각도 측정 및 통합 landmark detection 연구로 MICCAI 2026 논문 2편 제출 리드 (주저자 1편 Early Accept)</li></ul></div></div>
+<div class="project"><div class="proj-title">딥바이오 — Computational Pathology AI</div><div class="proj-desc"><ul><li>병리 조직·종양·세포 인식 AI 모델 및 분석 prototype 개발</li><li>병리 조직 암세포 바이오마커 분석 범용 AI pipeline 고도화 연구 제안 및 리드</li><li>Annotation tool과 Human-in-the-Loop 기반 데이터 고도화 체계 구축</li><li>특허 5건 출원 및 국제 병리·암 학회 연구 초록 7건 기여</li></ul></div></div>
+<div class="project"><div class="proj-title">포항공과대학교 iAI Lab. — Industrial AI Research</div><div class="proj-desc"><ul><li>AI 기반 캡슐내시경 스마트 판독 시스템 응용 연구 및 상용화 PoC</li><li>AI·IIoT 기반 스마트 제조 연구와 산업 현장 결함 탐지 모델 개발</li><li>특허 1건 등록 및 논문 4편 기여, SCIE 주저자 논문 Wiley Top Cited Article 선정</li></ul></div></div></section>
 
   <hr>
 
-  <!-- Research -->
+  
 
-  <section>
-    <h2 data-ko="연구 성과" data-en="Research & Patents"></h2>
-    <div class="stats-row">
-      <div class="stat">
-        <div class="stat-val">2</div>
-        <div class="stat-label" data-ko="SCIE 논문 (1저자 1건, 저널 표지)" data-en="SCIE Papers (1st author, journal cover)"></div>
-      </div>
-      <div class="stat">
-        <div class="stat-val">9</div>
-        <div class="stat-label" data-ko="국제 학회 발표" data-en="Intl. Conference Presentations"></div>
-      </div>
-      <div class="stat">
-        <div class="stat-val">6</div>
-        <div class="stat-label" data-ko="국내 특허 (등록 2 · 출원 4)" data-en="Patents (2 registered · 4 filed)"></div>
-      </div>
-      <div class="stat">
-        <div class="stat-val">2</div>
-        <div class="stat-label" data-ko="제품 출시" data-en="Products Shipped"></div>
-      </div>
-    </div>
-  </section>
+  <section id="achievements"><h2 class="section-title">Achievements</h2><p class="section-note" data-ko="논문·학회, 특허 및 연구 인정." data-en="Publications, conference contributions, patents, and research recognition."></p><ul class="achievement-list">
+<li>MICCAI 2026 — 논문 2건 제출, 주저자 논문 Early Accept</li><li>SCIE급 논문 2건 · 제1저자 논문 1건 및 저널 표지</li><li>국제 학회 발표 9건 — USCAP, AACR, Inter-Noise, SME NAMRC 등</li><li>국내 특허 — 등록 2건 · 출원 5건</li><li>Wiley Top Cited Article — SCIE 주저자 논문 선정</li></ul></section>
 
   <hr>
 
-  <!-- Skills -->
+  
   <section>
     <h2 data-ko="기술 스택" data-en="Skills"></h2>
     <table class="skill-table">
@@ -370,7 +276,7 @@
     </table>
   </section>
 
-  <div class="footer">Yunseob Hwang · 2026.05</div>
+  <div class="footer">Yunseob Hwang · 2026.10</div>
 
 </div>
 <script>
@@ -382,7 +288,17 @@
     document.querySelector(`.lang-btn[onclick="setLang('${lang}')"]`).classList.add('active');
     document.documentElement.lang = lang;
   }
-  setLang('en');
+  setLang('ko');
+  document.getElementById('seminar-search').addEventListener('input', function() {
+    const query=this.value.trim().toLocaleLowerCase();
+    let count=0;
+    document.querySelectorAll('[data-seminar]').forEach(row=>{
+      row.hidden=!row.textContent.toLocaleLowerCase().includes(query);
+      if(!row.hidden) count++;
+    });
+    document.getElementById('seminar-count').textContent=count+' / 10';
+    document.getElementById('seminar-empty').hidden=count!==0;
+  });
 </script>
 </body>
 </html>
