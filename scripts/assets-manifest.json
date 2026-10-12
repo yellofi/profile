@@ -1338,5 +1338,13 @@
   {
     "path": "assets/slides/visual-token-matching/page-23.jpg",
     "sha256": "38ee894fe2971b06d6ae530f4e933731b21dba5668485ad74108aa36b6b797a0"
+  },
+  {
+    "path": "assets/profile/yunseob-hwang.png",
+    "sha256": "7e41a49d2148ab0947c5d0d31c1a22202cff3da76043440930654124200f51fe"
+  },
+  {
+    "path": "assets/featured/profile-featured.jpg",
+    "sha256": "b0eabe009650ca088207b5ba5f724d74bf5f26e12ad63d6585588b8d2728ba87"
   }
 ]
