@@ -1,0 +1,50 @@
+name: Publish standalone profile
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-profile.yml'
+      - 'scripts/**'
+      - 'index.html'
+      - 'seminars/**'
+      - 'assets/**'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: standalone-profile-pages
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch and verify all page images
+        run: python3 scripts/materialize-assets.py
+      - name: Save standalone assets and relative paths
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets index.html seminars .nojekyll
+          if ! git diff --cached --quiet; then
+            git commit -m "Store all profile assets and remove temporary hosting dependency"
+            git push origin HEAD:main
+          fi
+      - name: Prepare static site
+        run: |
+          mkdir _site
+          cp index.html _site/
+          cp -r assets seminars _site/
+          touch _site/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

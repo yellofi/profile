@@ -1,0 +1,1342 @@
+[
+  {
+    "path": "assets/approach/ihc.webp",
+    "sha256": "9cbf4532e9db6391810d87b989fe413fc7343a8018e9eaf761d7dc513e24bb2a"
+  },
+  {
+    "path": "assets/approach/xray.webp",
+    "sha256": "d901ec3a72f95abf308ce7902372cf1b7e56291ca5364314f2aaf670cef8190c"
+  },
+  {
+    "path": "assets/recognition/journal-cover.png",
+    "sha256": "49a8ab887fd9fe1939f5b7c982f11208820217a3fb779601de08b60d3a53d035"
+  },
+  {
+    "path": "assets/recognition/top-cited.png",
+    "sha256": "d2d30540114de3ff912fc3eb11323fd6daa62b89c28c3ce44f2a19ab16441ea5"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-01.jpg",
+    "sha256": "306bf8d6c4988c2aecedaf00ade7036405d67be6b2f11bf8b53f103ea8e853f8"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-02.jpg",
+    "sha256": "a7ec7ab95d8f2d7d1c665e04a91f2c75f2823c9c00442e68a81d84aab4ef2932"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-03.jpg",
+    "sha256": "fa9d770eb15f6d78f0ff620d8ecf96032f1e1e0ab28d1053f46cbcbc3fbd5c67"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-04.jpg",
+    "sha256": "41c304976901c19b322dec3220ca659df34b1154dfc3970579874b6b6a638178"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-05.jpg",
+    "sha256": "1b35bc211d5f6983e2cc0a3136be693b560a1fd4c2c17c5cb575cfd850fb4aba"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-06.jpg",
+    "sha256": "7679ac7fd3655c397ec01d8b9e7c38abf9c5b69e31e0eec1f32089adf8bd4722"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-07.jpg",
+    "sha256": "a8cc43ab66f8286f0d505129d256244bf2ca42ba589d3adabb1ffd1c57ca88f8"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-08.jpg",
+    "sha256": "c2cc8b166342d2c23810f079b8367a2085f34d3ec0077d638f3c6eb5e976661e"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-09.jpg",
+    "sha256": "472c3a6d9bbc057e01fa4d399c6b70fbb8114e63e23198a196c7d69ebea2e208"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-10.jpg",
+    "sha256": "a6675d8b431a6b8eb99f2bc12996f1f9f33e7813b1c7f4daa71b05baf1289db0"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-11.jpg",
+    "sha256": "12c0391653ea1e27003c880ca235db91eb887a8199043e4fe8e46c427e45cf33"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-12.jpg",
+    "sha256": "e8f02c32b1595dd2884ecdd26c874d50ebf588efde53d581a2221c7c58e7dd28"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-13.jpg",
+    "sha256": "c41ae9f0e671041d8c10be07159763a397a696742e262bdb594dc4ae9c6cdac2"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-14.jpg",
+    "sha256": "640eff48049a64f669e7709baf6fdb4d78d412943e2e4b5d0ce03cda886c24c4"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-15.jpg",
+    "sha256": "0d98c7702551fa83fb85c4fd399b43fa95d47d5ef8903da9115a9ba26e89dc4f"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-16.jpg",
+    "sha256": "f510478f2b92e20179e6b951b1b1c6152703d2c30f63c9af26aa65dd85e5ea13"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-17.jpg",
+    "sha256": "1bbd03fe596d256287c18c0cecd6a3b87ad980faf6dfdc57a2049be4a349c765"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-18.jpg",
+    "sha256": "9d72bc91376bd780b122203d7851577ecaed7fad3104404b5a30828007f1b2c3"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-19.jpg",
+    "sha256": "70e08918f6048b272716b65f7f84bb2bbc9edf87782ebce9e982660fc402cd3b"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-20.jpg",
+    "sha256": "38056ca49dafa89f7d4123e024c05bce79ba23900e9111502c506fcac0cccd9c"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-21.jpg",
+    "sha256": "63fe3a32746a1e3fa3ffdd3be93265bd6eacffd9742c77b4e82681bc86dd3aa1"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-22.jpg",
+    "sha256": "82838cf7539d51aee06e346f6ab1dd665e2e973805ffb802df7f9e4e0fd32c08"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-23.jpg",
+    "sha256": "17c363740655c58269770997cc08c65327dbdb37cf66ac294ed03ccdb7bb1ca2"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-24.jpg",
+    "sha256": "6b7f328d80699ea7c4c93acacdc32aa84e5df01d229af0bc5c705a360f2f06a2"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-25.jpg",
+    "sha256": "a11cd709fea7c7d2ebfedd80d15ebf33cb43915798f15d87b611eb0a63a58bb4"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-26.jpg",
+    "sha256": "b79db06f5ecb6916050d8da4ab3251e3c6b2363ac2ad47bdc5b5ba1cd2e71373"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-27.jpg",
+    "sha256": "31180f30cc5bf94133c175db3c510f8549e0f98de85b2fa44933cf21306de52b"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-28.jpg",
+    "sha256": "ebbf52faa9e9083875a24074bfe89ddf4ac651786fa9d73a7509ddbba82c9a4e"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-29.jpg",
+    "sha256": "20233a3068d0ed457045464d9d2d61ec92f1a06d2abc5ee7b9ec659bfb90b56c"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-30.jpg",
+    "sha256": "d979bdcdb374f166880f9447676ded95be63f0ca1371f03fd6504cbe0610a1e4"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-31.jpg",
+    "sha256": "003e81fa8aa9c8036c5f234ecc5436e32891cabf85cdada9a211664f2119ffd3"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-32.jpg",
+    "sha256": "c2a26e02dae2f03712965b1a0e951773b5217daf6d16066cf767104643fe778b"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-33.jpg",
+    "sha256": "a89fe8db6bd6d9f30f23d80eab066ce9dbcfe41fb3c9f7b02021307bc374b870"
+  },
+  {
+    "path": "assets/slides/ai-computational-pathology/page-34.jpg",
+    "sha256": "27fe6aefa7f97d8d763f8b3abcb6b090b5ec5c56f9bd320b87388488fec2ed89"
+  },
+  {
+    "path": "assets/slides/cerberus/page-01.jpg",
+    "sha256": "18b7a7e1d1a1ac5a3ceef232ded8a45978e6b272de5e82d2f2f60ef248bc4b78"
+  },
+  {
+    "path": "assets/slides/cerberus/page-02.jpg",
+    "sha256": "027055165971a0a754cec312de2675d4c2e534758989ea5dff063506e0b4dfe1"
+  },
+  {
+    "path": "assets/slides/cerberus/page-03.jpg",
+    "sha256": "4cc83a3eb62853965d3cde0a7e45cf44592a7a8a04bd61a3f75e203896604b6c"
+  },
+  {
+    "path": "assets/slides/cerberus/page-04.jpg",
+    "sha256": "bcd27fc99b3c11433ebe69ea5ad7903974b0a2b34fcf1fa0c45e4a76b6d51619"
+  },
+  {
+    "path": "assets/slides/cerberus/page-05.jpg",
+    "sha256": "702518b841d52e10736ca8140c7e8615f1ec938a32cadd0806f2aef223108be2"
+  },
+  {
+    "path": "assets/slides/cerberus/page-06.jpg",
+    "sha256": "64d25da759d4bc9a518010b178e2b6549ebbe5ac9acd3205a91046d8c1f9fbfb"
+  },
+  {
+    "path": "assets/slides/cerberus/page-07.jpg",
+    "sha256": "14bc1b939d77d04f09dcb505f2951074013162da6f6a4e0f38b9f6d7f25a51a8"
+  },
+  {
+    "path": "assets/slides/cerberus/page-08.jpg",
+    "sha256": "1c19a33a736308e66cb75ebd1e0b80afde02474c485e14674a25fa55ff730a71"
+  },
+  {
+    "path": "assets/slides/cerberus/page-09.jpg",
+    "sha256": "d9cf5244008e4a1fd2c2b1f75b1e92df1e84ad6705a6868ce4d236948a89aa30"
+  },
+  {
+    "path": "assets/slides/cerberus/page-10.jpg",
+    "sha256": "b8c8b21f0107fbd56c4c184ff98ef882e59291fba7e1df108bc9ad0c89e3c58f"
+  },
+  {
+    "path": "assets/slides/cerberus/page-11.jpg",
+    "sha256": "f00cab267486ba9081ffdc94c26d81d816882d845368f276c4c038af70006b3d"
+  },
+  {
+    "path": "assets/slides/cerberus/page-12.jpg",
+    "sha256": "0450a18f620474d067e7ae269effe8bc24e314bf7031ba59e7c86a33c2c77ebf"
+  },
+  {
+    "path": "assets/slides/cerberus/page-13.jpg",
+    "sha256": "456518096b9b8b65083d7ab1b41136b570eaa28cdce9a39c31dd2c9d330aba53"
+  },
+  {
+    "path": "assets/slides/cerberus/page-14.jpg",
+    "sha256": "a782055891e5ca6c384fa4983e0a042a224d9ec52d4fc544eb75e055b0f3e217"
+  },
+  {
+    "path": "assets/slides/cerberus/page-15.jpg",
+    "sha256": "d4c2585630881b6fd57ce3ba919c4ca6db2fd67a13a9db263fb26d715acef7eb"
+  },
+  {
+    "path": "assets/slides/cerberus/page-16.jpg",
+    "sha256": "29c832e27d2757e7cdb7aac28c2f4e95ef5dc8d4dd5d625171a8a713c8167af0"
+  },
+  {
+    "path": "assets/slides/cerberus/page-17.jpg",
+    "sha256": "a79d80d834bb21aaefb80dc6f536cb8e953bdb0936be9bff1775a6aed34335d8"
+  },
+  {
+    "path": "assets/slides/cerberus/page-18.jpg",
+    "sha256": "aa2e28c3a3f67969184b14f2c3b837b84a2cd58553d5575b9876769144c2f99e"
+  },
+  {
+    "path": "assets/slides/cerberus/page-19.jpg",
+    "sha256": "30d3bfda37499195e91cc987650e882968c2041b3316feaae552576419a53ae5"
+  },
+  {
+    "path": "assets/slides/cerberus/page-20.jpg",
+    "sha256": "1b9e51da1eeaf3c8ef41ecc5eeca5914f35568f9c057f4e329b8b78571126ad0"
+  },
+  {
+    "path": "assets/slides/cerberus/page-21.jpg",
+    "sha256": "4257a582cd4d2f7b415232e7c24202228dfc67ed64efa6ec45089b48339099ba"
+  },
+  {
+    "path": "assets/slides/cerberus/page-22.jpg",
+    "sha256": "d791f0eeee19a78637b998ae411c2312cc42eb87c5138eda33561435983b891e"
+  },
+  {
+    "path": "assets/slides/cerberus/page-23.jpg",
+    "sha256": "a6504dd80501f4e89e3560395650364a1bf5757a22beb7b4bc7b72da1276fa2a"
+  },
+  {
+    "path": "assets/slides/cerberus/page-24.jpg",
+    "sha256": "ada9b7cb3465ac905c00658707240567e43e9a8f37a081e6a45ff872f2352620"
+  },
+  {
+    "path": "assets/slides/cerberus/page-25.jpg",
+    "sha256": "5e09933b1def231de856487f64a2dc95d0f92be16bd67b4bd10592b607cf6b2a"
+  },
+  {
+    "path": "assets/slides/cerberus/page-26.jpg",
+    "sha256": "b2b6b991826ac27522c70089eba5da38a8b21ab4db0ac60ef1b7e9f9f08a5498"
+  },
+  {
+    "path": "assets/slides/cerberus/page-27.jpg",
+    "sha256": "8958c640616e1984a4018fe89ef74b1a5410626dc53d844cd81bd86706430c5e"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-01.jpg",
+    "sha256": "fae819d9ab9e8b9106d2965d6142e4ad8d754c1cc7cdbe2894b99718f499b2b9"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-02.jpg",
+    "sha256": "2bcfeb815bb51555ac080ba9cbab53ec358ec2c222f5327acb3e79a01898493f"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-03.jpg",
+    "sha256": "c42d56526c96f6ba9188fad390c0da57e6f1d1de327c4412a1a0f1b641d5158c"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-04.jpg",
+    "sha256": "3597c262417f4f7b5d979dfc89299f67b5895460c6f97dbbe495c74555dad7aa"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-05.jpg",
+    "sha256": "d0178ba8eb856b2677e17a2af508328a5ec1e65f8f93e80689eadb43334cb7d8"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-06.jpg",
+    "sha256": "4c847f4e9dc5792cd3437e6eb8feff29e004a72fc72949262b50f4be4137330a"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-07.jpg",
+    "sha256": "f6ca4b7766939954862420fd38643ae6ac75605e2c72862f564a9e81fb0823c9"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-08.jpg",
+    "sha256": "6817b2cad2b7e667f75850748ade8dd4f2708ec6c87c9423fa18eb21a799d0ab"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-09.jpg",
+    "sha256": "f438df734983705c92d98b8911b4aa3a7242bc5a79d382503de11d97835b0968"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-10.jpg",
+    "sha256": "c3f41f432997c59c02c57451aafae8a1fa2cc9f6f4ef97cf8532e44233501c67"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-11.jpg",
+    "sha256": "806f218d58c9043e6dec0f4bf7f9eb1fcf2266635f409d0f1be8ac36264338ae"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-12.jpg",
+    "sha256": "82c484becf6fbcebbfd7dc566dd0e8cc0a6cf8a723a79e87b58fd6495ed70752"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-13.jpg",
+    "sha256": "cb4397a3560fdccbfe7132f660ab24197b4ba9dd752f4e9285926283549097c8"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-14.jpg",
+    "sha256": "8fe34aa35d0ec9fcd9b23a65b147eecad01ac89c45ba9381244f5ec9dc748b1c"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-15.jpg",
+    "sha256": "a1c9b4687a141758523845b598ab71b5d83187e5fd779240675923735ba88149"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-16.jpg",
+    "sha256": "f82a76a2297d47f65701a1eb162c0ada4b7040046143bd2dce205125b338bb7b"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-17.jpg",
+    "sha256": "ed85d749614df535389c31d003b62df0a3679a351256ac1858a8b52fd4979e1a"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-18.jpg",
+    "sha256": "ef3f72631d680c5670a9a42bb7572f4aee74566bb8bb2e60f3199f61d9343e2d"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-19.jpg",
+    "sha256": "9a3fe55712a962d82904e477e3250011ee8cf74814aa0d692bfc8b54e5b8ab29"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-20.jpg",
+    "sha256": "a0943b1c758c8b0e47a824a7d172a3630f921ea615c750bcdcca409d45de351a"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-21.jpg",
+    "sha256": "e456386878e5b19ef32a2946a0b89eb1a563ea38cc46d9d655a95e5288ec8d97"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-22.jpg",
+    "sha256": "9fef65d02515b1f0509c5a8943958376dc5ab27127e898aabf3e877821276377"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-23.jpg",
+    "sha256": "031fe467e74a5b81dfa40ba148340351ad7c458ea5af60f8654daac56d62a1f5"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-24.jpg",
+    "sha256": "030c3de8cd3b096bd467b2985985ae25093f57ff9eebe5bf07dac9d19f6c041c"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-25.jpg",
+    "sha256": "0ba9c475ab73ff34ad6a2d89e3c86ee52ead56f47aac789ce7abfb2b5a77ff91"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-26.jpg",
+    "sha256": "d0b020fde25277060aa3c2d8f0ce78426939d4b8d7f6fb6b6a44785a1cad15ae"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-27.jpg",
+    "sha256": "78d39a1e27a473d3b17d70bd831202e7ceb44daaf1f3eabb514a05449bb7abb9"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-28.jpg",
+    "sha256": "8f7e6f9b2f9d7d4dbb7d4c8d0c7fef6c9bdd59c5d29d256aadd3d1fb9388ea24"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-29.jpg",
+    "sha256": "009c35dabb0dbaaf738db7a4d83ea13badb7df2b720517e1e6f80dcfd7993d26"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-30.jpg",
+    "sha256": "f27d42d6e97b1ce4decabd3711fd48c7b6d1f5fca7377ca33c88a8343d479c53"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-31.jpg",
+    "sha256": "ff37a75ff570fa2b3768eed37521ca63179c2bce534a57f565e174b294058c15"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-32.jpg",
+    "sha256": "22cb208b3a5e1c542b7dfef2f4aaa86f96351246c8c743428c9f59828feebde8"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-33.jpg",
+    "sha256": "43af74baf79df36c9a1da891179f96b729e869f75b7e8049270399de6e9034fa"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-34.jpg",
+    "sha256": "d65b95f951ea5038abcbc42f6fd51e12ae3f593c16f46db085b5e2d0d9d77588"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-35.jpg",
+    "sha256": "d5755e84f6cf4e27022b5dabce004d5adc303da3530a6ff5d6fb82a4bf961566"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-36.jpg",
+    "sha256": "c56c2fce093e529fc63964a7bea7644d3af05471efb696f2b3285b7bf2583f97"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-37.jpg",
+    "sha256": "5eb0e99f3b484d9851b413db358ab50c7597f536bee3f7cc91ce89788b09a0bd"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-38.jpg",
+    "sha256": "d994c75c1dd9490ec8077efc14d54272af19181dc20efd9e2cf894964c5ebb65"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-39.jpg",
+    "sha256": "91e8e37159d94b20061513839c8d10bc9d34875afd729e768997fe492fc63819"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-40.jpg",
+    "sha256": "40f16d7895e877c7d6dd889aa718b15d228126c1f94d3fcec27b54a6cc941783"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-41.jpg",
+    "sha256": "0e9aebe09814df392bfd661f4c7228857022fa731ddb826cad8583e006dc1f61"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-42.jpg",
+    "sha256": "2aa84f49cf5527b06dcdfdee9bdf726d4373c48e696b4f21d9d9f8a4346913a9"
+  },
+  {
+    "path": "assets/slides/continual-learning/page-43.jpg",
+    "sha256": "20161359aaff863b7ba93d366de2594d435590e4177677a87dc6f801eb83a19a"
+  },
+  {
+    "path": "assets/slides/dinov3-msk/page-01.jpg",
+    "sha256": "d606e485811525ff609befa09ba4fe6e488443c7fe67823aedcb50978f720dbc"
+  },
+  {
+    "path": "assets/slides/dinov3-msk/page-02.jpg",
+    "sha256": "71fa505a2f46b3cba3dc27193db97a104b97a363111bc338627541b62709be96"
+  },
+  {
+    "path": "assets/slides/dinov3-msk/page-03.jpg",
+    "sha256": "f1ead2c748c06c27b6ae1f31f2e3dc16b0b07ed40aa35f365c61f0f550d04ce3"
+  },
+  {
+    "path": "assets/slides/dinov3-msk/page-04.jpg",
+    "sha256": "dd8a5aca835b4ffbf9bb3d4344841b1a86e634a774cbd9c4808bca772a65049f"
+  },
+  {
+    "path": "assets/slides/dinov3-msk/page-05.jpg",
+    "sha256": "c03c0a5ac57e4873032d628ca9bdb8ce9888496b4c15beaecae0daf408b63a9f"
+  },
+  {
+    "path": "assets/slides/dinov3-msk/page-06.jpg",
+    "sha256": "2e9714d712c4cb715a89b6941f6fccb009ea98b94723344b0aedd81047981b56"
+  },
+  {
+    "path": "assets/slides/dinov3-msk/page-07.jpg",
+    "sha256": "f81664a2ea054d3170ee6e0232916a5168d0f73216232fc05ecfbe79c771ebe7"
+  },
+  {
+    "path": "assets/slides/dinov3-msk/page-08.jpg",
+    "sha256": "c3db045a4fa949173ef6aaa4b739667120e3d1994b254e77e6abbd4a96699a7e"
+  },
+  {
+    "path": "assets/slides/dinov3-msk/page-09.jpg",
+    "sha256": "55859ee6e67e58842874da92d9b66800f35abdded86275a2684e52792dc0ec7d"
+  },
+  {
+    "path": "assets/slides/dinov3-msk/page-10.jpg",
+    "sha256": "2d3818310b3b0356774e542e627b929ff2867917b4cd63c7162f8cf4763a9760"
+  },
+  {
+    "path": "assets/slides/dinov3-msk/page-11.jpg",
+    "sha256": "bc4e6acfbec189e847632b3a0f1ed54cc12d23d16ecf142f055504f8d2236ca5"
+  },
+  {
+    "path": "assets/slides/dinov3-msk/page-12.jpg",
+    "sha256": "a1c15f8de644e4308f76344bfddb44a9a61b228b8555343168d5de2d81394c61"
+  },
+  {
+    "path": "assets/slides/dinov3-msk/page-13.jpg",
+    "sha256": "430abc0145a034cb5d2e0e23554d0f3aaac6db0332ad49e703ef86da8a1f7a6a"
+  },
+  {
+    "path": "assets/slides/dinov3-msk/page-14.jpg",
+    "sha256": "6037351a4ffdbe716431d9ff308f0c27426349f5fa817b82f963f7323b02d12f"
+  },
+  {
+    "path": "assets/slides/dinov3-msk/page-15.jpg",
+    "sha256": "0cec8d4d15bf94f341b07ae514f7d3f492196400ef51649e5cc3462e05aa0b1f"
+  },
+  {
+    "path": "assets/slides/dinov3-msk/page-16.jpg",
+    "sha256": "5a7da06f5ff0c6e985084aa392830b64b7721cfe617f8f2f5f6c30b570336f3f"
+  },
+  {
+    "path": "assets/slides/dinov3-msk/page-17.jpg",
+    "sha256": "87ba30c7201f2d04811646791084cb3d60d7383b9d7711b46b64d9b3a822feb9"
+  },
+  {
+    "path": "assets/slides/dinov3-msk/page-18.jpg",
+    "sha256": "fc11c99d420255cd5e966ffb108f6c5ead2bd7290f2fd6a91630f84882e9accf"
+  },
+  {
+    "path": "assets/slides/dinov3-msk/page-19.jpg",
+    "sha256": "f8da3f2723fd9e0db6fb9b9d54ec7bf0f879bb1af129c3a3941700ecd898e574"
+  },
+  {
+    "path": "assets/slides/dinov3-msk/page-20.jpg",
+    "sha256": "ad8b80ced7f37c006172ef955be5e0cf38394ef4a06df110cd34cdaf6139a0f4"
+  },
+  {
+    "path": "assets/slides/dinov3-msk/page-21.jpg",
+    "sha256": "6ef9ae07ee686edf472f2d9c79012f93a2f83b5970437cac111c78b49cb211f6"
+  },
+  {
+    "path": "assets/slides/dinov3-msk/page-22.jpg",
+    "sha256": "e7eabd37d093fc9f77fda5d143a6643cc9f0bae6c125c38ac3d61284d1a022ed"
+  },
+  {
+    "path": "assets/slides/dinov3-msk/page-23.jpg",
+    "sha256": "b8e23b508a9809632b3ef306d3e8e5b066f67a4918313d8888d535de7e5d1154"
+  },
+  {
+    "path": "assets/slides/dinov3-msk/page-24.jpg",
+    "sha256": "3aa2574fe469214e7c3166ce8b41755438853f64939ea3def0e18eea7b398ad5"
+  },
+  {
+    "path": "assets/slides/histopathology-fm/page-01.jpg",
+    "sha256": "60796e9a98601d92623c9d3e3fca753f321ffb2521b32c2dca26a4d4c37cf7b8"
+  },
+  {
+    "path": "assets/slides/histopathology-fm/page-02.jpg",
+    "sha256": "8096de7a0e6983292ce3ea6ad587cf60982bc2091c715ffc54cd7a76406c5c61"
+  },
+  {
+    "path": "assets/slides/histopathology-fm/page-03.jpg",
+    "sha256": "e7c73cca6d3447b03d433dc45acb414508cd4331d504b194942da109caf42c68"
+  },
+  {
+    "path": "assets/slides/histopathology-fm/page-04.jpg",
+    "sha256": "4b0d10508bb39b3e0d2c245d2b16e6b925e4a857971e770f4c5b3db2bbb7e845"
+  },
+  {
+    "path": "assets/slides/histopathology-fm/page-05.jpg",
+    "sha256": "509db8cc7f4bdfaa4f01e1b4bd4563762ee13559de4009664bc70dc55e64e573"
+  },
+  {
+    "path": "assets/slides/histopathology-fm/page-06.jpg",
+    "sha256": "6f349bb30a9236bbecae6621fb65b6d5fc894b148b4b53b098b7d775c6028ac1"
+  },
+  {
+    "path": "assets/slides/histopathology-fm/page-07.jpg",
+    "sha256": "063eb7d5a58f0a98ace56c9990e85990b2b5db3cde506254cdfd2401a06c54f2"
+  },
+  {
+    "path": "assets/slides/histopathology-fm/page-08.jpg",
+    "sha256": "45d4a573827fd26836c85b6621b0b5c3c771a9a60b74624f3733b3bd79f86682"
+  },
+  {
+    "path": "assets/slides/histopathology-fm/page-09.jpg",
+    "sha256": "cdfcd8dd04968247e512346e28326bf4377fa4dc962298a2e0eacc452a55d26b"
+  },
+  {
+    "path": "assets/slides/histopathology-fm/page-10.jpg",
+    "sha256": "e6476e481d2f7704aca5bbc033009fa4c75c9ff294215b7658d9bd4507b1fb03"
+  },
+  {
+    "path": "assets/slides/histopathology-fm/page-11.jpg",
+    "sha256": "bece6e45fc71bdd5186b2f923d78c2c01842ec659054e9311c1f3d0a23228704"
+  },
+  {
+    "path": "assets/slides/histopathology-fm/page-12.jpg",
+    "sha256": "878e90101edf0c2084ac3d2ec6372834a45eb5e359b4cc7d8c47d9b20fb0b983"
+  },
+  {
+    "path": "assets/slides/histopathology-fm/page-13.jpg",
+    "sha256": "cd7da3097138071763f2d83281ed809cf75a1a5f624224595b49e03e836c9b7d"
+  },
+  {
+    "path": "assets/slides/histopathology-fm/page-14.jpg",
+    "sha256": "7b64d2b7063417c1e42e82e570e456a54f78a826e1c9fc7ef21a01117b7cd43c"
+  },
+  {
+    "path": "assets/slides/histopathology-fm/page-15.jpg",
+    "sha256": "8ac5b8426de5b6708b5e432284b4eec19d35b01a8173f8089d136d437705b4e1"
+  },
+  {
+    "path": "assets/slides/histopathology-fm/page-16.jpg",
+    "sha256": "62ae1770703900f2708f1ae07da9970202862678d973aa8b79a46b994af86d61"
+  },
+  {
+    "path": "assets/slides/histopathology-fm/page-17.jpg",
+    "sha256": "1218bd9ee61b1d4964c36572d511bda0c34cfb278923fbc8c8541812bed2ba65"
+  },
+  {
+    "path": "assets/slides/histopathology-fm/page-18.jpg",
+    "sha256": "c915838aa14009513dda6f6534ac1560a149b6eabb1950085b06b7a741581b9a"
+  },
+  {
+    "path": "assets/slides/histopathology-fm/page-19.jpg",
+    "sha256": "f2e4d5016dea82a15872d898c6a452a3d300c062ad6ce62d2df8bfc2e0630272"
+  },
+  {
+    "path": "assets/slides/histopathology-fm/page-20.jpg",
+    "sha256": "4b6e63de13d71e203c5f209925d221cada1ff47fe10107db77fee8edca5ef19b"
+  },
+  {
+    "path": "assets/slides/histopathology-fm/page-21.jpg",
+    "sha256": "32f5e51b9ad61855cad2c66dd0a7527f3ce5703ce9329b5ddcb9141275774b8a"
+  },
+  {
+    "path": "assets/slides/histopathology-fm/page-22.jpg",
+    "sha256": "ba4ccf97a8c7f69d6836602bed7815975ae08846163d50b0c36dc533597cbbaa"
+  },
+  {
+    "path": "assets/slides/intro-computational-pathology/page-01.jpg",
+    "sha256": "75ff6e7c66e94d3531835b707d076fb8f07442ad0101f2a728478d897f3f427f"
+  },
+  {
+    "path": "assets/slides/intro-computational-pathology/page-02.jpg",
+    "sha256": "fc442747a9e09e1f95d8b1c0eb465c5ef832bba9f687764d077527d16f7f23bf"
+  },
+  {
+    "path": "assets/slides/intro-computational-pathology/page-03.jpg",
+    "sha256": "515c16836bca3de098b228f1b6757bc0c17cf0591c291ed9bb2b5a9208ac0d30"
+  },
+  {
+    "path": "assets/slides/intro-computational-pathology/page-04.jpg",
+    "sha256": "f20eecadfce36b0c82d42bdd9fdbcb4aa7fa2fcd252b8979c0f838f01426dc8b"
+  },
+  {
+    "path": "assets/slides/intro-computational-pathology/page-05.jpg",
+    "sha256": "e9fd6ebc31a63cc1efd31aa136d8737c6a410a7fa93cf3c00a87e08a02e6bbd5"
+  },
+  {
+    "path": "assets/slides/intro-computational-pathology/page-06.jpg",
+    "sha256": "06282b3094e9a6490da6d5d45b44b3a3786e050de1c520203dd452155a227075"
+  },
+  {
+    "path": "assets/slides/intro-computational-pathology/page-07.jpg",
+    "sha256": "563131633870228318e5f0147708176b6111f933cf3d99cb7b69f8319fd2bc72"
+  },
+  {
+    "path": "assets/slides/intro-computational-pathology/page-08.jpg",
+    "sha256": "6c9e4ad4adee7b2d41bdf5743f15c69fb56dae0f0034d47e6faa4a516a34121b"
+  },
+  {
+    "path": "assets/slides/intro-computational-pathology/page-09.jpg",
+    "sha256": "f016b688f1ce4a883e92739d04eaac213c1b7ab9b6515f532caa2f8743169211"
+  },
+  {
+    "path": "assets/slides/intro-computational-pathology/page-10.jpg",
+    "sha256": "6ae58d21aea86a0bd648a1b3b32f7fc2f2b08a38e592a42eef3b69a5c62bf280"
+  },
+  {
+    "path": "assets/slides/intro-computational-pathology/page-11.jpg",
+    "sha256": "6a9c909caf1252254f3147dff9296708752f9601c3b011fe700e0e043781d50b"
+  },
+  {
+    "path": "assets/slides/intro-computational-pathology/page-12.jpg",
+    "sha256": "3d3ad1b4fa7916ea641a2b62f9033f16fe2ca3a62b5d911fc37de1cb98071e88"
+  },
+  {
+    "path": "assets/slides/intro-computational-pathology/page-13.jpg",
+    "sha256": "c37f9a44dc7d0043f33aee5a657a53586f899023161a27ed74af71442050351d"
+  },
+  {
+    "path": "assets/slides/intro-computational-pathology/page-14.jpg",
+    "sha256": "b2b6b3b51557d80b080347c238c1d0f7f0b5733944a7464790e9c6c33eea4563"
+  },
+  {
+    "path": "assets/slides/intro-computational-pathology/page-15.jpg",
+    "sha256": "9b1c4a3a075d953b9bbb1a687f9ea7030c5c9170ed17b6a319d1b0b5a66438e8"
+  },
+  {
+    "path": "assets/slides/intro-computational-pathology/page-16.jpg",
+    "sha256": "5748041cb188f9d4b673a2d5082f77668129d8378341fd215400e29f47e8df8a"
+  },
+  {
+    "path": "assets/slides/intro-computational-pathology/page-17.jpg",
+    "sha256": "0a4a537c6b82787e7854f5a55d0ffc1d3c8dabe4eb838cdb16968a50a6fb87cb"
+  },
+  {
+    "path": "assets/slides/intro-computational-pathology/page-18.jpg",
+    "sha256": "2ae9bbe58f15f5987b676166cb8d56c1b716bb94b269dd2d8ef100fee455c699"
+  },
+  {
+    "path": "assets/slides/intro-computational-pathology/page-19.jpg",
+    "sha256": "f45e4c1d4d4f7e15b7f5d2e08afdbf53351c50cd7ffd6e9b6086188d21bc2ed6"
+  },
+  {
+    "path": "assets/slides/intro-computational-pathology/page-20.jpg",
+    "sha256": "f62698978211e207949b0bfd3cb73601383fa684bceb31c814ef1e3f0f1e7210"
+  },
+  {
+    "path": "assets/slides/intro-computational-pathology/page-21.jpg",
+    "sha256": "8e5757733d81d89369a6078b3062edc7cc3508d44625c76b31512f3be626ac86"
+  },
+  {
+    "path": "assets/slides/intro-computational-pathology/page-22.jpg",
+    "sha256": "b81667c337a155cc69de9af284c35f0097ad677dfb762a00faa9f69ff4e6f3d9"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-01.jpg",
+    "sha256": "81c592372f24041d60e967ea2c0d7261473f39269eb7418f7bbe69d6ed76347e"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-02.jpg",
+    "sha256": "2f9015a076587e946e5aa5debe19383aaf168218b5f1c9612d74d8c932690c4d"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-03.jpg",
+    "sha256": "492673db41a3c49b5dc4c2139595fae4e62a4ee14afe6271a8a97bd2a67abdf8"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-04.jpg",
+    "sha256": "d3ffdb3a85b4183165f937a18fd66388358beb4de2db1c9835003326585550c8"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-05.jpg",
+    "sha256": "3894ba08c61a3193f4cfd44a28e816056a5323252b90bf1ca544e38c633864ee"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-06.jpg",
+    "sha256": "054be4422eb92387dd66ca1006af9d599ef99700fab85a69e12866516c56f20c"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-07.jpg",
+    "sha256": "e2dec9339ba4b6731365e49d54913310c5a04c16d9d351785348cde03aba25f1"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-08.jpg",
+    "sha256": "a6ddb7f9b05ea5c8050a2ea8a694409278f715823cf674199ca707daae7ec71b"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-09.jpg",
+    "sha256": "fb1aac9adc8ef74f27118464275a122273e814e3b8ac35fc4885bcddd80be2b6"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-10.jpg",
+    "sha256": "294b49282727f498690f60a0194fa806a5ca1c956a3f2bd17e6343e222596bd6"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-11.jpg",
+    "sha256": "f32993723022a75fd42a55d62c1d26e1398fbd1796d74bfb7570bab988dad5c8"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-12.jpg",
+    "sha256": "f47b3650d22d0fc8ef8ca90d4e27fd923f6d6f8199b6e084ece47d23260ecbc5"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-13.jpg",
+    "sha256": "ed03bc044d35ae5c11a258eae4f1a371455f06111c8c7230bd604738e1a785b3"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-14.jpg",
+    "sha256": "bf44b5464fb71d5c1282aabf61fadf2260d36692eae27e74881f8e44c760156e"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-15.jpg",
+    "sha256": "ba8fd3e352897283449209a1b876d2139acfb29ed3c8526b444e14a0f09b26e4"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-16.jpg",
+    "sha256": "5669eb6a6d6be15b09ba3becbaaf4afcbe7d3dfaf2dd184285c6fa2be402909b"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-17.jpg",
+    "sha256": "fb7c4f88fe7ae8835a3839717a54286a926a3b15e47217c7cfdd081d24d3e75a"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-18.jpg",
+    "sha256": "d080eab56f2c007de24a88f7e48587162a91ebdf29bbeaf91346b13d62750fa7"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-19.jpg",
+    "sha256": "e93866d8c83f1adef705266badcdb851a625b2b6f048e5552876d077ae33e44e"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-20.jpg",
+    "sha256": "d7195613bbffc47269c5c9190563349574dfbc19ad7676ef3fe700a72a749198"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-21.jpg",
+    "sha256": "6ce8594fdcdc7ad67812f5927beb3b0330dd02b68ea3b44de3b0496c58c8fed1"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-22.jpg",
+    "sha256": "d791b605ecef5b661758f64955bd72b04e4b847030498ca72dccbd4f5c02973e"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-23.jpg",
+    "sha256": "d5aaa1d849fe87d56dc5f3d880868123c6d0adf9f1f10941bf5e23ab647ad909"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-24.jpg",
+    "sha256": "d491663fe570dbaf9c80341c611dfdf62ea56b68b48123fdd996893f853d41b1"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-25.jpg",
+    "sha256": "75929fd779a1a6562d68ad76ac7533b8ec21a4d3b627f217747f620923522bf5"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-26.jpg",
+    "sha256": "333750c077877e12eefbeca8ff6f28113ddc9e6ff28bfb36f26696e00e4549d2"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-27.jpg",
+    "sha256": "3d0e739e94eb541444424de4e0cb77731bcd2a25573f291fa49100b06a8321eb"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-28.jpg",
+    "sha256": "aed6336bed77bd1c63c7f4e7605b49d99db293c655c716f62058db0bf64acf22"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-29.jpg",
+    "sha256": "2bb828f40b00dad5066feee58ba56233826086a63afed22089d4d70fdfbac0d3"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-30.jpg",
+    "sha256": "50efa59ac9590800e1b923a1f49e4978d73b1f47606230d0a03384ba15e363d8"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-31.jpg",
+    "sha256": "c5d200600de59c68f874137e603805b7c386ad6ba832959b7aa03220ae104344"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-32.jpg",
+    "sha256": "ae32a1225ea4e90ccb8669af99d8595bd30c67b722bf67f43eabad71f1cf7845"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-33.jpg",
+    "sha256": "8fcdfe303b06bed57deec58394c2767aec47ded728ff1101c43d348c1d7ff41e"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-34.jpg",
+    "sha256": "019a2e488a45df476ba9097f0cb54abe5b4fd50757569c6236258fc82c2e194a"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-35.jpg",
+    "sha256": "9132fece8c2edd15808be7e3d55b89510ed61d1b77d4a1692ff118317d88a80f"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-36.jpg",
+    "sha256": "d70f99a12ef096edbdd7dc2c7d4e6fe09e4c2c0464079c52f6de9da2b2c009f9"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-37.jpg",
+    "sha256": "d4b7868196f7181af5fedd6cc74afe9b9ba280010f5810ed8dca28814394008b"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-38.jpg",
+    "sha256": "8fabb5e315047407f3e95e9781c1f9a5a109a9cd43f69f9ef1e2f0f9e3a2563d"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-39.jpg",
+    "sha256": "fe3f55da74d712ac8e38c6b7bded28b5d97c6239da849e8839bca6de51ca61c1"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-40.jpg",
+    "sha256": "095c10e4ab8e1386452f3b2f1780605ce41c4161c251d00ff221a47a56f94140"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-41.jpg",
+    "sha256": "a3b57868317c96332e5eeb5aad52f06cb091593da1aa8b87f393c2ef286d6bf5"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-42.jpg",
+    "sha256": "59d76f026a5f5026aae2a81f756c2c1c02ff1e090f15a615476deabe0b59ddd1"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-43.jpg",
+    "sha256": "4d1f8823721ceea40d73a38a56ed0e1632a20dd4d0646e33c13ff2d47c2c340a"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-44.jpg",
+    "sha256": "0dd23e44f1e5f72d2a96f786e0d8063afa5b8587d6d8137b28d7ba27659d468e"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-45.jpg",
+    "sha256": "908ff20031c416bee3074939dbb687336b3ebea114b3561ec4c3e5a402b35bc9"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-46.jpg",
+    "sha256": "13c5232927fd26551bdbfcddf879015f897b928e69afb1cde9d2d62b97e4cfd0"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-47.jpg",
+    "sha256": "3f0d4d5741ea92a48b6c253fffc1b24596b225512bdec876ac3b4b9e35e253d9"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-48.jpg",
+    "sha256": "977f0109b7cc29a2d22d9fc956cec8b1d0d71d3c4be4da12b7a9d7a4c2bff054"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-49.jpg",
+    "sha256": "35b1d7ab8265e341666ff1b3a37dbf57ae5dfc6f8f696f07578d107b5a5e9280"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-50.jpg",
+    "sha256": "79fa991b03ad2f719d75c211c158aa66440d057bda86a4defc85504a5df7745c"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-51.jpg",
+    "sha256": "5dff61c59dfd924dc0f77093fccfd533ceb59d2b52b2d24cac4f8e281845e519"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-52.jpg",
+    "sha256": "6482dca71b70d24c21c2950b5622c3c3bdcf4870c9028d8e1bb9e1eb1b92e323"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-53.jpg",
+    "sha256": "09b03434283d20e0f7d29a2eb73eaf0f31bcd9010338b6125ec2ecfbd47b4d7d"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-54.jpg",
+    "sha256": "39ac1ced7d33260f6c27ec34915cd40d9fe2c5084df4fed981528598752e5685"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-55.jpg",
+    "sha256": "cee9b1805869460c30a9ebb9e145a4637b7cb2a33c740d63876faeae750eeef8"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-56.jpg",
+    "sha256": "45b90b18f95f7dce788fa2527d5a7ae8f04c5715767b1043b1e0bb9dc7c25974"
+  },
+  {
+    "path": "assets/slides/latent-grid/page-57.jpg",
+    "sha256": "6d0512c239e3b4e74d870b63ed5c20e112ac19e4f95a14d1567467d1e8f8f50b"
+  },
+  {
+    "path": "assets/slides/msk-vfm/page-01.jpg",
+    "sha256": "49b3ea628a877f2c47ea5520815f1344ad72f392d05b7bcc44ba7dc5aca70b8e"
+  },
+  {
+    "path": "assets/slides/msk-vfm/page-02.jpg",
+    "sha256": "02fdb6f595d000493970486bf9aafbecce6b4cb551fe05c07002d2b7fb920a60"
+  },
+  {
+    "path": "assets/slides/msk-vfm/page-03.jpg",
+    "sha256": "547732f8375856680866fb5340189e967394af6faae075b80928a10f98f14926"
+  },
+  {
+    "path": "assets/slides/msk-vfm/page-04.jpg",
+    "sha256": "a5280a2d83b62c9b8e2c5a7afb5bdd1b88d22c8f1d617bbefecf6bf93d754b1b"
+  },
+  {
+    "path": "assets/slides/msk-vfm/page-05.jpg",
+    "sha256": "07f726709225315a37db8091b0165677343b8dbef90d91a6966a9bee18b488f8"
+  },
+  {
+    "path": "assets/slides/msk-vfm/page-06.jpg",
+    "sha256": "5cf1308451aea6612b349833d407871a38209b3edba4ff032329026d0d40e9d7"
+  },
+  {
+    "path": "assets/slides/msk-vfm/page-07.jpg",
+    "sha256": "818931cb578f76595d60eea5755adf3c4f8d230764fbd65ddf226fad20562e1b"
+  },
+  {
+    "path": "assets/slides/msk-vfm/page-08.jpg",
+    "sha256": "5d39cab993a6e9237d5b00ca8c583a07e8c3fd848682e2b15bd4071291875062"
+  },
+  {
+    "path": "assets/slides/msk-vfm/page-09.jpg",
+    "sha256": "8df530c098612968b56f32cfa909c2a04967af1f3dfd797cb601a9b7bd63ae3f"
+  },
+  {
+    "path": "assets/slides/msk-vfm/page-10.jpg",
+    "sha256": "0e6c53315419e27eb338a937c75e875e5ff2fb06b2e674de6c4437defbf39b91"
+  },
+  {
+    "path": "assets/slides/msk-vfm/page-11.jpg",
+    "sha256": "9b87896653649ede3650336f9ff40f93e3d8b6a71db4c8a4c8547be3e92a06b3"
+  },
+  {
+    "path": "assets/slides/msk-vfm/page-12.jpg",
+    "sha256": "eb906d0ba337d82ea6d309c65d1206845d81474633244339bb47976335f81577"
+  },
+  {
+    "path": "assets/slides/msk-vfm/page-13.jpg",
+    "sha256": "b26ef3208d1debcce2c353deec6d20275cda29294c1a606997ad672d7578bc79"
+  },
+  {
+    "path": "assets/slides/msk-vfm/page-14.jpg",
+    "sha256": "ff383aad348b1faccef3557adbc9f996d18ab5ad531d5dd1b2b1e32ed4255224"
+  },
+  {
+    "path": "assets/slides/msk-vfm/page-15.jpg",
+    "sha256": "700caf53a2f21c9999cdc8912bf03b93fee02bc9a15c4631329ee3c1c31901ee"
+  },
+  {
+    "path": "assets/slides/msk-vfm/page-16.jpg",
+    "sha256": "057c33ce66235cb4d3d17f99de155708346426cb487a756d195628be21be6492"
+  },
+  {
+    "path": "assets/slides/msk-vfm/page-17.jpg",
+    "sha256": "502b26e7c7d4fd763e5fc0afa8d3c373ed232321b5def0f2d61c975d76d7a84a"
+  },
+  {
+    "path": "assets/slides/msk-vfm/page-18.jpg",
+    "sha256": "1f2fbd69433e7f571ddb7dc387ca35aff794e4e15488891b9e3e43508e4204ec"
+  },
+  {
+    "path": "assets/slides/msk-vfm/page-19.jpg",
+    "sha256": "aef9d28f67bba1ab21487c2d557aa465567a4ddb67d3096b2ebb7662dd2b108e"
+  },
+  {
+    "path": "assets/slides/msk-vfm/page-20.jpg",
+    "sha256": "782fece434b4673a681d13fa4c3c960ff8f65210c8d10c3af68368c88067ba76"
+  },
+  {
+    "path": "assets/slides/msk-vfm/page-21.jpg",
+    "sha256": "a015fbae3a96069f0b8e0a628a49dd80f841d5ce0c98fb839d2d328609160a65"
+  },
+  {
+    "path": "assets/slides/msk-vfm/page-22.jpg",
+    "sha256": "eb36c7e60980d5f9ce559bbae48b4805522603932b92dc9bcf9226673768e120"
+  },
+  {
+    "path": "assets/slides/msk-vfm/page-23.jpg",
+    "sha256": "c8cc921b479301be0cde806ced875df6e29991a5f74f9aa9096ef57945fdd97d"
+  },
+  {
+    "path": "assets/slides/msk-vfm/page-24.jpg",
+    "sha256": "93432d181e8c51ef1333acdcc6b5da9daca19f2366d8fe89724caf271cbdcbce"
+  },
+  {
+    "path": "assets/slides/msk-vfm/page-25.jpg",
+    "sha256": "e8cdc5467a39385b78b889d47602beca79d4155e8818283e540feb9caa43d680"
+  },
+  {
+    "path": "assets/slides/seaformer/page-01.jpg",
+    "sha256": "47d9ca55eaa2d1660a0053cc14636f6751b5a2ace8a0693be1369093addea660"
+  },
+  {
+    "path": "assets/slides/seaformer/page-02.jpg",
+    "sha256": "d69173cb590ca8ff3416dc5b0a2cd7e7e1a5a55b0fd17cbf12d23ad40219dba7"
+  },
+  {
+    "path": "assets/slides/seaformer/page-03.jpg",
+    "sha256": "71892f22071247d0e458919519d9beb5e831e9a6bdf27eb7e4e9c7130d0a5846"
+  },
+  {
+    "path": "assets/slides/seaformer/page-04.jpg",
+    "sha256": "2753cd70af86b3a91fc92cac033e4828c039699ec72448990f1dfc73aec736bc"
+  },
+  {
+    "path": "assets/slides/seaformer/page-05.jpg",
+    "sha256": "0c8874fb2d202eaf453de7e898fb9f0a610b365ddec7ca804ceafd501167399a"
+  },
+  {
+    "path": "assets/slides/seaformer/page-06.jpg",
+    "sha256": "68ef1e345ff0f36c23de92e2a23498186ff7ef30763a9ae394ab6947264c8d37"
+  },
+  {
+    "path": "assets/slides/seaformer/page-07.jpg",
+    "sha256": "47c077d539d2e1deb39f974946018fadfacca6035ea21a90e3b9f68d12bfda89"
+  },
+  {
+    "path": "assets/slides/seaformer/page-08.jpg",
+    "sha256": "96fdc46ed364f4aad801e71cc3f99c92f6aac6071abe5cb695619b395799dba2"
+  },
+  {
+    "path": "assets/slides/seaformer/page-09.jpg",
+    "sha256": "f0523506776d14d346cadf8774cab09c1421c0c4692b3e58e1beddd547e508d0"
+  },
+  {
+    "path": "assets/slides/seaformer/page-10.jpg",
+    "sha256": "43b116cac0f1ffafb00ee97b9a80e4da3f132fb803760b96e87b8f44bfde57cb"
+  },
+  {
+    "path": "assets/slides/seaformer/page-11.jpg",
+    "sha256": "a04940423d75ae4c9640ba7696799a05be4c38be20178c32a609e8b46000d48d"
+  },
+  {
+    "path": "assets/slides/seaformer/page-12.jpg",
+    "sha256": "f7ed5d5047f0f76d63da72757095f5088c5c307dc042797480f141ba115ec5fa"
+  },
+  {
+    "path": "assets/slides/seaformer/page-13.jpg",
+    "sha256": "c1ce8ffcdf60b52ca9f76e57758f6152edcdfd1d9f4e68907872efb46b024578"
+  },
+  {
+    "path": "assets/slides/seaformer/page-14.jpg",
+    "sha256": "cc7b985998e8e0f0c74f11bd9788fb15aa37f523523340d73cbfd5a8ae5fec10"
+  },
+  {
+    "path": "assets/slides/seaformer/page-15.jpg",
+    "sha256": "b3af38cbd638e18dd4bf2be2572009d22de0543d4fdb7842760d2858d409642e"
+  },
+  {
+    "path": "assets/slides/seaformer/page-16.jpg",
+    "sha256": "656299730e8ef65065cb33f8f9926f93365c83a87c1a5295abf0367d96b4b32d"
+  },
+  {
+    "path": "assets/slides/seaformer/page-17.jpg",
+    "sha256": "de85fc0a29b7745861de989b65239171498d21ea9f3bb00004818166e8584237"
+  },
+  {
+    "path": "assets/slides/seaformer/page-18.jpg",
+    "sha256": "0defe3c42055558699281e301b07b8901f2090ed1e80cc807c80b3e076f18b5e"
+  },
+  {
+    "path": "assets/slides/seaformer/page-19.jpg",
+    "sha256": "98b446982763743f54d2237fee3c14d89feddec6c87dec4817329e98a8ad9b2a"
+  },
+  {
+    "path": "assets/slides/seaformer/page-20.jpg",
+    "sha256": "1b7ebc8a773165cb6618d42214ee2067175505dbe6989d8d2659001c1af22d4b"
+  },
+  {
+    "path": "assets/slides/seaformer/page-21.jpg",
+    "sha256": "29ec816053455d4d56402afee4ad4aa8d46d873f7b11b0ce9474838eee42c584"
+  },
+  {
+    "path": "assets/slides/seaformer/page-22.jpg",
+    "sha256": "d4eb2c4c46d8fa9ce06aec801e02a1e748f43c72c6ed63699b926fd0438f5311"
+  },
+  {
+    "path": "assets/slides/seaformer/page-23.jpg",
+    "sha256": "f63dcbd0605b12810ca1df9c9d91d206e0ea620241fb6ed0996c74eba6a4ee25"
+  },
+  {
+    "path": "assets/slides/seaformer/page-24.jpg",
+    "sha256": "ad3b3c4b9fe0194e29e9c0fa6d6e239ca1a8f8da2d977d64e922d743206869ec"
+  },
+  {
+    "path": "assets/slides/seaformer/page-25.jpg",
+    "sha256": "3b4d2cc08ebd0c1b0641918958f562610cc345f902aa326a2133cf0c8bba8ce6"
+  },
+  {
+    "path": "assets/slides/seaformer/page-26.jpg",
+    "sha256": "22eba5dd29fa3d9411c33f807f10dd8c3de5dd8125c2f87b5c034515e5b2871c"
+  },
+  {
+    "path": "assets/slides/seaformer/page-27.jpg",
+    "sha256": "fa70ca718deed2fcb73a79a1aeb22ad05a9f3c2b76139cadc22ed9e404789adb"
+  },
+  {
+    "path": "assets/slides/seaformer/page-28.jpg",
+    "sha256": "8278a41523e79c9d3c38ab5b61ad710214bed76f8862b12561be88a4c376a1c2"
+  },
+  {
+    "path": "assets/slides/seaformer/page-29.jpg",
+    "sha256": "1f690864e338eed6804499cdd8631bffc6445ee8189ea43794c97d920d292eab"
+  },
+  {
+    "path": "assets/slides/seaformer/page-30.jpg",
+    "sha256": "230d6a6c73f709814908417b57dd4ab4ca2ab74b858236d780ae3c34c2243c1b"
+  },
+  {
+    "path": "assets/slides/seaformer/page-31.jpg",
+    "sha256": "6afcb80716f8c4bc1eeefd624c38b253b41f20cb63b95a9c3f660b5012a8243d"
+  },
+  {
+    "path": "assets/slides/seaformer/page-32.jpg",
+    "sha256": "a91b425fdda29a13dbeb396f9f839bfcc1903714eaf81405c3048c9c324053f4"
+  },
+  {
+    "path": "assets/slides/tabpfn/page-01.jpg",
+    "sha256": "bf1e7a0aff7c32f6a0434425462324413720fab77ab4a983ba9b5508166beeaf"
+  },
+  {
+    "path": "assets/slides/tabpfn/page-02.jpg",
+    "sha256": "6194ac7d1a747f2f473614099f9107614990fd1c8cbfe56bc9f51cffa05bb018"
+  },
+  {
+    "path": "assets/slides/tabpfn/page-03.jpg",
+    "sha256": "2e4a6521bed9da1c88cc1c96493d876ad464a70240550dcc23eade0bb11bdf37"
+  },
+  {
+    "path": "assets/slides/tabpfn/page-04.jpg",
+    "sha256": "175ac95c35745817275f58e480eda8e059588c05c4de46c1626162458918373d"
+  },
+  {
+    "path": "assets/slides/tabpfn/page-05.jpg",
+    "sha256": "465697a2a7b4e0395165da28181da0f9f29c3179cfc18ac4f8dd623651d74695"
+  },
+  {
+    "path": "assets/slides/tabpfn/page-06.jpg",
+    "sha256": "56d3c735c0b3e52fc131159cd51d6612cf1557b109d33f9a500f508f7f422e4b"
+  },
+  {
+    "path": "assets/slides/tabpfn/page-07.jpg",
+    "sha256": "9851304d7eb3c933fba45f8c8f5ecd5fd7dba41d29eef6a7b0315758801544f2"
+  },
+  {
+    "path": "assets/slides/tabpfn/page-08.jpg",
+    "sha256": "4e5b27e6d9db7bc21ee8c10372c31f8d2a8b993c179b93993be55b8223d8b08f"
+  },
+  {
+    "path": "assets/slides/tabpfn/page-09.jpg",
+    "sha256": "279ed76b0e2973d971d1d19291c76747b4aeeb54f6de0366adfc934510776668"
+  },
+  {
+    "path": "assets/slides/tabpfn/page-10.jpg",
+    "sha256": "3ce7914635fdcb77a40d05bf47a41018804bd21fc257c97c1d2802b09f2a4d8b"
+  },
+  {
+    "path": "assets/slides/tabpfn/page-11.jpg",
+    "sha256": "22bf897525d936def27723519c53465da9b7cc025f6bb0247a8fc195880ef2a2"
+  },
+  {
+    "path": "assets/slides/tabpfn/page-12.jpg",
+    "sha256": "4673fe25e06b2aca597606a557867a2829ff87d8541eb940fb2d8d0d27e07d60"
+  },
+  {
+    "path": "assets/slides/tabpfn/page-13.jpg",
+    "sha256": "9d43edb0cec37dc84f940a9014a19dcb9b8680d3d1988cdad71bc134cf39a42c"
+  },
+  {
+    "path": "assets/slides/tabpfn/page-14.jpg",
+    "sha256": "c966b1287b5a2089ab37c9cfcb786638b5e5767aa1beb4b4e5656d0f84220328"
+  },
+  {
+    "path": "assets/slides/tabpfn/page-15.jpg",
+    "sha256": "fc350e93b95e8e7b20e5de34c76ff501e228540f77fbcabf078b6d32bc12b54a"
+  },
+  {
+    "path": "assets/slides/tabpfn/page-16.jpg",
+    "sha256": "40aaacf5e9aac4a260c011825ec46c096144313355633ce12ff979d49b6c45c8"
+  },
+  {
+    "path": "assets/slides/tabpfn/page-17.jpg",
+    "sha256": "1bf8c7be5158257feeb9564360ae10e05b0ab5b328480e54cb7692cfe790a2e5"
+  },
+  {
+    "path": "assets/slides/tabpfn/page-18.jpg",
+    "sha256": "74e7865ee9f54584502c61bb6965fd25f000e83ba10fe3d47686472f8ac0a1dc"
+  },
+  {
+    "path": "assets/slides/tabpfn/page-19.jpg",
+    "sha256": "cafb634b88ff6f4d0bf05e148d196c873113750e9ff0710d09480eeb85458f9b"
+  },
+  {
+    "path": "assets/slides/tabpfn/page-20.jpg",
+    "sha256": "dfab0ce01dd276d49a6b7b18e2bec67e299f40c9e83afe004c2aad220e8ece05"
+  },
+  {
+    "path": "assets/slides/tabpfn/page-21.jpg",
+    "sha256": "427634e342a8a191fa19fd057e43cc960321bb71366119496a10a78025c9620e"
+  },
+  {
+    "path": "assets/slides/tabpfn/page-22.jpg",
+    "sha256": "04ceac4908cacf9175312cffbfbd3d4c353d6786f28133edb5de343c9f8de98b"
+  },
+  {
+    "path": "assets/slides/visual-token-matching/page-01.jpg",
+    "sha256": "8e85cc2fc2bce77c9df600f6a5137ab77a8f6e2d205fd4ae55a7010512aa7933"
+  },
+  {
+    "path": "assets/slides/visual-token-matching/page-02.jpg",
+    "sha256": "b4d2e03aa0de3341bfef6a4fd3ff556bb18240b6d2a6a3555784b8073511bc9b"
+  },
+  {
+    "path": "assets/slides/visual-token-matching/page-03.jpg",
+    "sha256": "e2b064d8546f7ca6000db68d9167667da5a02fc3cea5af224d6e62fd9e0d990c"
+  },
+  {
+    "path": "assets/slides/visual-token-matching/page-04.jpg",
+    "sha256": "1d84186109c0143ecc980dcbb1d1eca30829983f2fdbcb2f0c9ad8d51585fab0"
+  },
+  {
+    "path": "assets/slides/visual-token-matching/page-05.jpg",
+    "sha256": "0b8d92634f8d967de348800122d9545d2d9aac79ac3998671288b3bb5e8d505d"
+  },
+  {
+    "path": "assets/slides/visual-token-matching/page-06.jpg",
+    "sha256": "67fc7549feb8f2b6b95cde35a66ab4a44992cb22eaf2f5d4c9e72bf2fb2b0c66"
+  },
+  {
+    "path": "assets/slides/visual-token-matching/page-07.jpg",
+    "sha256": "401f79579c46e0e0c774d50853788444f8e664f9da49c63f7b943620ad1945e6"
+  },
+  {
+    "path": "assets/slides/visual-token-matching/page-08.jpg",
+    "sha256": "76cb7ce9cfbf754b1d79bab4c5fc134d6ea6f11ad736b0db4c3a6d9cc7fcb462"
+  },
+  {
+    "path": "assets/slides/visual-token-matching/page-09.jpg",
+    "sha256": "d150ce33add74e99136a1f6fd27814cad345b6582ac6dd7ed5e1eba3d25975af"
+  },
+  {
+    "path": "assets/slides/visual-token-matching/page-10.jpg",
+    "sha256": "785fb26f0b967423659fb497e0427525fcf20ddb9def750d53b4821319e44309"
+  },
+  {
+    "path": "assets/slides/visual-token-matching/page-11.jpg",
+    "sha256": "3805b3a9e2cb515c92924ca387fe0bc737075c34058a2e1a8f433e7fe06e9407"
+  },
+  {
+    "path": "assets/slides/visual-token-matching/page-12.jpg",
+    "sha256": "1797aed12f330f3e0df29038f4ecae4697329394ca6c2013b3d26da6d161a070"
+  },
+  {
+    "path": "assets/slides/visual-token-matching/page-13.jpg",
+    "sha256": "b7bee05346bf3f4df5af076daa3a11b4a263764dd2ffcdffbb9d33042599ca38"
+  },
+  {
+    "path": "assets/slides/visual-token-matching/page-14.jpg",
+    "sha256": "1a1a38c2716bebb10e0f24bd8748ef5aaffcc21855ecf7d6d7d0d4c609976a3f"
+  },
+  {
+    "path": "assets/slides/visual-token-matching/page-15.jpg",
+    "sha256": "0e8c201d85f116b18c977281a1b68bc5cd7b3f49421046d004f33460fdd189c5"
+  },
+  {
+    "path": "assets/slides/visual-token-matching/page-16.jpg",
+    "sha256": "100e4f647f2acccd83945fd774d8223c8de69b2f4390c31f39f4a65dbf2a7701"
+  },
+  {
+    "path": "assets/slides/visual-token-matching/page-17.jpg",
+    "sha256": "bfeacfab31d83e0ab78be8ae287adea0f7beb39111a3a240dd418c8d92b418bb"
+  },
+  {
+    "path": "assets/slides/visual-token-matching/page-18.jpg",
+    "sha256": "fac30751351a1dd6160a44d7f6ef87fa0dcf8cd34f6f36862f59281b65e0401a"
+  },
+  {
+    "path": "assets/slides/visual-token-matching/page-19.jpg",
+    "sha256": "5452d4a167e4d243d41394d0181ff4e73fd81aabbcccaaa85610f2705af00570"
+  },
+  {
+    "path": "assets/slides/visual-token-matching/page-20.jpg",
+    "sha256": "430cdf8599321434173de153004670b283e31f65a733b71b837546fa38c37e58"
+  },
+  {
+    "path": "assets/slides/visual-token-matching/page-21.jpg",
+    "sha256": "697ccca98790c13131245b044888e8abafddc32ee2cac74a92847032cdbca14f"
+  },
+  {
+    "path": "assets/slides/visual-token-matching/page-22.jpg",
+    "sha256": "4e4380120d0f2d01706eabacb00bab43f2bd70c4f38c855c47ffc6962a87dd9a"
+  },
+  {
+    "path": "assets/slides/visual-token-matching/page-23.jpg",
+    "sha256": "38ee894fe2971b06d6ae530f4e933731b21dba5668485ad74108aa36b6b797a0"
+  }
+]
