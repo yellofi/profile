@@ -71,6 +71,7 @@
 
     /* Experiences table */
     .exp-table { width: 100%; border-collapse: collapse; }
+    .exp-table th {text-align:left;color:var(--subtle);font-size:.74rem;font-weight:500;padding-bottom:.7rem;}
     .exp-table tr { border-bottom: 1px solid var(--border); }
     .exp-table tr:last-child { border-bottom: none; }
     .exp-table td { padding: 0.65rem 0; vertical-align: top; }
@@ -125,7 +126,78 @@
       .exp-table .td-period { width: auto; display: block; }
       .proj-header { flex-direction: column; gap: 0; }
     }
-  </style>
+  
+    .page { max-width: 920px; }
+    .intro {color:var(--muted);font-size:.94rem;margin-top:1.4rem;max-width:760px;line-height:1.8}
+    .site-nav {display:flex;flex-wrap:wrap;gap:1.2rem;margin-top:1.3rem;font-size:.83rem}
+    .site-nav a,.seminar-table a {color:var(--accent);text-decoration:none}
+    .site-nav a:hover,.seminar-table a:hover {text-decoration:underline}
+    section {scroll-margin-top:24px}
+    .section-title {font-size:1.2rem;letter-spacing:0;text-transform:none;color:var(--text);margin-bottom:.4rem}
+    .section-note {font-size:.87rem;color:var(--muted);margin-bottom:1.3rem}
+    .table-wrap {overflow-x:auto}
+    .seminar-table {width:100%;border-collapse:collapse;font-size:.87rem;text-align:left}
+    .seminar-table th {color:var(--subtle);font-size:.74rem;font-weight:500;padding:.7rem .7rem;border-bottom:1px solid var(--border)}
+    .seminar-table td {padding:1rem .7rem;border-bottom:1px solid var(--border);vertical-align:top}
+    .seminar-table td:first-child {white-space:nowrap;color:var(--muted);width:82px}
+    .seminar-title {font-weight:500;line-height:1.5}
+    .seminar-topic {font-size:.73rem;color:var(--muted);margin-top:.3rem}
+    .seminar-status {font-size:.73rem;color:var(--subtle);white-space:nowrap}
+    .insight-tools {display:flex;gap:1rem;align-items:center;margin:1.1rem 0}
+    #seminar-search {font:inherit;font-size:.84rem;border:1px solid var(--border);border-radius:4px;padding:.65rem .8rem;background:var(--bg);color:var(--text);width:100%;max-width:360px}
+    #seminar-count {font-size:.78rem;color:var(--muted)}
+    .achievement-list {color:var(--muted);font-size:.88rem;padding-left:1.2rem}
+    .achievement-list li {margin:.55rem 0}
+    :focus-visible {outline:2px solid var(--accent);outline-offset:4px}
+    @media(max-width:600px){.seminar-table th,.seminar-table td{padding:.8rem .35rem}.seminar-table{font-size:.81rem}.section-title{font-size:1.1rem}}
+  .career-contributions {margin-top:.7rem}.exp-table td {padding-top:1rem;padding-bottom:1.2rem}
+.subsection-title{font-size:.93rem;font-weight:600;margin:1.7rem 0 .8rem}.publication-list{padding-left:1.7rem;font-size:.86rem;line-height:1.65}.publication-list li{padding-left:.3rem;margin:0 0 1.3rem}.pub-authors{color:var(--muted);font-size:.81rem}.pub-title,.scholar-link{color:var(--accent);text-decoration:none}.pub-title:hover,.scholar-link:hover{text-decoration:underline}.pub-venue{color:var(--muted)}.pub-note{font-size:.74rem;color:var(--green);margin-top:.25rem}
+.career-location{font-size:.78rem;color:var(--subtle);margin:.15rem 0 .25rem}.education-details{font-size:.83rem;color:var(--muted);line-height:1.65;margin-top:.6rem}.education-details p{margin:.35rem 0}
+.highlights-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.2rem;margin:1.2rem 0 1.4rem;padding:1.1rem 0 1.2rem;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}.metric-number{font-size:2rem;font-weight:600;line-height:1.2;letter-spacing:-.04em}.metric-unit{font-size:.78rem;letter-spacing:0;font-weight:500;color:var(--muted)}.metric-label{font-size:.84rem;font-weight:500;margin-top:.5rem}.metric-detail{font-size:.74rem;color:var(--muted);margin-top:.2rem}.recognition-list{padding-left:1.2rem;font-size:.84rem;color:var(--muted);line-height:1.65}.recognition-list li{margin:.5rem 0}.recognition-list strong{color:var(--text);font-weight:500}@media(max-width:520px){.highlights-metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem .7rem}.metric-number{font-size:1.7rem}.metric-label{font-size:.76rem}.metric-detail{font-size:.68rem}}
+.product-overview{display:flex;gap:1.1rem;align-items:center;margin:1.2rem 0 .3rem}.product-thumbnail{display:block;position:relative;width:210px;flex-shrink:0;background:var(--tag-bg);overflow:hidden;border-radius:4px;aspect-ratio:16/9}.product-thumbnail img{display:block;width:100%;height:100%;object-fit:cover}.video-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.5rem;text-shadow:0 1px 8px #000}.product-name{font-size:.87rem;font-weight:600}.product-caption p{font-size:.78rem;color:var(--muted);margin:.25rem 0 .5rem}.product-link,.research-citations a{color:var(--accent);text-decoration:none}.product-link:hover,.research-citations a:hover{text-decoration:underline}.product-link{font-size:.79rem}.research-citations{font-size:.75rem;color:var(--muted);margin-top:.5rem}.publication-list li{scroll-margin-top:30px}.publication-list li:target{background:var(--tag-bg);border-radius:4px;padding:.65rem .5rem}@media(max-width:600px){.product-overview{flex-direction:column;align-items:flex-start}.product-thumbnail{width:100%;max-width:300px}}
+.recognition-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem;max-width:650px;margin:1.4rem 0 2rem}.recognition-gallery figure{margin:0}.recognition-gallery a{display:flex;align-items:center;justify-content:center;height:240px;background:#f8f9fa;border:1px solid var(--border);padding:10px;border-radius:4px}.recognition-gallery img{max-width:100%;max-height:100%;object-fit:contain}.recognition-gallery figcaption{font-size:.74rem;line-height:1.5;color:var(--muted);margin-top:.6rem}@media(max-width:520px){.recognition-gallery{gap:.7rem}.recognition-gallery a{height:175px;padding:5px}}
+.career-recognition{max-width:400px;gap:1rem;margin:1rem 0 .4rem}.career-recognition a{height:170px;padding:6px}.career-recognition figcaption{font-size:.7rem}@media(max-width:520px){.career-recognition a{height:145px}}
+.skill-table .td-cat{width:150px}.skill-table{margin-top:.8rem}@media(max-width:520px){.skill-table .td-cat{width:100px}}
+
+.approach{margin:2.5rem 0 3rem;padding:1.6rem;border:1px solid var(--border);border-radius:14px;background:#fafcfd}
+.approach-eyebrow{font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:#50717a;margin-bottom:.5rem}
+.approach h2{font-size:1.55rem;line-height:1.3;font-weight:600;letter-spacing:-.045em}
+.approach-sub{color:var(--muted);font-size:.85rem;margin:.65rem 0 1.2rem}
+.approach-loop{display:flex;align-items:center;gap:.45rem;flex-wrap:wrap;font-size:.73rem;color:#36535b;padding-bottom:1.3rem;border-bottom:1px solid var(--border)}
+.approach-loop span{background:#eaf1f3;padding:.3rem .5rem;border-radius:5px}
+.case-tabs{display:flex;gap:.5rem;margin:1.2rem 0}
+.case-tab{font:inherit;font-size:.8rem;background:white;border:1px solid var(--border);border-radius:7px;padding:.55rem .8rem;cursor:pointer;color:var(--muted)}
+.case-tab[aria-selected=true]{background:#1d444e;color:white;border-color:#1d444e}
+.case-tab:focus-visible, .approach summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.case-panel[hidden]{display:none}
+.case-panel{animation:case-in .2s ease}
+@keyframes case-in{from{opacity:.3;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
+.case-lead{display:grid;grid-template-columns:1fr 155px;gap:1rem;align-items:center}
+.case-lead h3{font-size:1.05rem;line-height:1.45;margin-bottom:.45rem}
+.case-lead p{font-size:.83rem;color:var(--muted)}
+.case-lead img{width:155px;height:115px;object-fit:contain;background:white;border-radius:8px}
+.case-principle{font-size:.8rem;color:#285e69;margin:.8rem 0}
+.approach summary{font-size:.8rem;color:var(--accent);cursor:pointer;padding:.5rem 0}
+.case-steps{margin:.65rem 0 0;display:grid;gap:.8rem}
+.case-step{border-left:2px solid #abc9d0;padding-left:.8rem}
+.case-step h4{font-size:.7rem;letter-spacing:.06em;color:#50717a;margin-bottom:.2rem}
+.case-step p{font-size:.81rem;color:#555}
+.case-flow{font-size:.75rem;margin-top:.8rem;padding:.7rem;background:white;border-radius:6px;color:#36535b}
+.approach-foundation{margin-top:1.3rem;padding-top:1rem;border-top:1px solid var(--border);font-size:.73rem;color:var(--muted)}
+.approach-closing{font-size:.8rem;font-weight:500;margin-top:.5rem;color:#36535b}
+@media(max-width:520px){.approach{padding:1.1rem}.approach h2{font-size:1.35rem}.case-lead{grid-template-columns:1fr}.case-lead img{width:135px;height:85px}.case-tabs{gap:.35rem}.case-tab{padding:.5rem .6rem;font-size:.75rem}}
+@media(prefers-reduced-motion:reduce){.case-panel{animation:none}}
+
+
+.approach-principles{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;padding:1rem 0 1.2rem;border-bottom:1px solid var(--border)}
+.approach-principle>span{font-size:.7rem;color:#62919c}
+.approach-principle h3{font-size:.83rem;line-height:1.5;margin:.25rem 0}
+.approach-principle p{font-size:.75rem;color:var(--muted);line-height:1.65}
+.case-step h4{letter-spacing:0;font-size:.79rem}
+.case-step p{line-height:1.8}
+.case-steps{gap:1.15rem}
+@media(max-width:520px){.approach-principles{grid-template-columns:1fr;gap:.8rem}.approach-principle{border-left:2px solid #c6d9de;padding-left:.75rem}}
+</style>
 </head>
 <body>
 <div class="page">
@@ -138,48 +210,47 @@
 
   <div class="header">
     <h1>Yunseob Hwang <span class="name-ko">황윤섭</span></h1>
-    <div class="role" data-ko="AI Research Engineer | Visual AI & Multimodal | Tech-to-Value Essentialist" data-en="AI Research Engineer | Visual AI & Multimodal | Tech-to-Value Essentialist"></div>
+    <div class="role" data-ko="AI Research Engineer · Computer Vision &amp; Quantitative Image Analysis" data-en="AI Research Engineer · Computer Vision &amp; Quantitative Image Analysis"></div>
     <div class="links">
       <a href="mailto:yunseob1102@gmail.com">yunseob1102@gmail.com</a>
       <a href="https://www.linkedin.com/in/yunseob-hwang/" target="_blank">LinkedIn</a>
-      <a href="https://scholar.google.co.kr/citations?user=YsupRlQAAAAJ&hl=en" target="_blank">Google Scholar</a>
-    </div>
+    <a href="https://docs.google.com/presentation/d/1uLcZP17xO09w5q9VnDmuBnNpG7v68oTE7xtY_4eFKEU/edit?usp=drivesdk" target="_blank" rel="noopener noreferrer">Portfolio (KR)</a>
+</div>
   </div>
 
+<p class="intro" data-ko="석사 과정에서 제조·의료 산업 데이터 기반 AI 연구를 시작해, 이후 의료 AI 스타트업에서 조직병리와 근골격계 X-ray의 인식·정량화 문제를 해결해 왔습니다. 딥바이오에서는 조직·종양·세포 인식부터 바이오마커 정량화까지 이어지는 범용 AI 분석 파이프라인의 연구개발을 제안하고 전 과정을 주도했으며, 모델 구조와 라벨링 도구, Human-in-the-Loop 프로세스를 구축·고도화했습니다." data-en="I began applied AI research with manufacturing and medical data during my master’s studies, then worked on recognition and quantification problems in computational pathology and musculoskeletal X-rays at healthcare AI startups. At DeepBio, I proposed and led the end-to-end R&amp;D of a general-purpose AI analysis pipeline spanning tissue, tumor, and cell recognition through biomarker quantification. I also developed and improved model architectures, labeling tools, and human-in-the-loop processes."></p>
+<p class="intro" data-ko="코넥티브에서는 X-ray 계측 AI의 모델 구조·손실함수·학습 데이터 개선을 통해 제품 목표 성능을 달성하고, 비전 파운데이션 모델 연구를 제안·리드하며 벤치마크 체계를 구축했습니다." data-en="At Connective, I achieved target product performance for X-ray measurement AI by improving model architectures, loss functions, and training data. I proposed and led vision foundation model research and established a benchmark framework."></p>
+<p class="intro" data-ko="복잡한 산업 문제를 연구 가설과 실험으로 해결하고, 데이터·모델·평가 체계를 재사용 가능한 구조로 발전시키는 것이 강점입니다. 연구 결과를 실제 제품 성능과 지속 가능한 R&amp;D 역량으로 연결하는 AI Research Engineer를 지향합니다." data-en="My strength is turning complex industrial problems into research hypotheses and experiments, while developing reusable data, model, and evaluation frameworks. I aim to connect research outcomes with real product performance and sustainable R&amp;D capabilities as an AI Research Engineer."></p>
+<nav class="site-nav" aria-label="Page sections"><a href="#experience">Experiences</a><a href="#education">Education</a><a href="#achievements">Achievements</a><a href="#skills">Skills</a><a href="#seminars">Seminars</a><a href="https://yellofi.github.io/tech-archive/">Tech Archive ↗</a></nav>
   <hr>
 
-  <!-- Experiences -->
-  <section>
-    <h2 data-ko="경험" data-en="Experiences"></h2>
-    <table class="exp-table">
-      <!-- RebuilderAI (주석 처리 - 수습 퇴사)
-      <tr>
-        <td class="td-period">2026.03 –</td>
-        <td>
-          <div class="org" data-ko="리빌더에이아이" data-en="RebuilderAI"></div>
-          <div class="role-title" data-ko="AI 엔지니어, 프로덕트팀 (AI R&D팀 합류 후 보직 이동)" data-en="AI Engineer, Product Team (from AI R&D Team)"></div>
-        </td>
-      </tr>
-      -->
+  
+  <section class="approach" id="approach" aria-labelledby="approach-heading"><p class="approach-eyebrow" data-en="How I approach AI R&amp;D" data-ko="AI R&amp;D에 접근하는 방식">How I approach AI R&amp;D</p><h2 id="approach-heading" class="" data-en="Build better AI. Write better problems." data-ko="잘 푸는 AI, 잘 만든 문제집.">Build better AI. Write better problems.</h2><p class="approach-sub" data-en="I treat a dataset as a problem book: real-world cases, well-defined answers, and a way to test what the AI can actually solve. By examining baseline failures, I improve both the problem book and the solver—clarifying whether the next bottleneck lies in the data, the learning task, or the technology." data-ko="데이터셋은 AI가 풀어야 할 문제집입니다. 실제로 마주칠 다양한 사례와 합의된 정답 기준을 담고, 베이스라인의 성능과 실패를 살피며 문제집과 AI를 함께 고도화합니다. 그 과정에서 어떤 문제를 잘 풀어야 하는지, 데이터와 학습 문제를 보완할지, 기술 자체의 한계를 넘어야 할지를 구분합니다.">I treat a dataset as a problem book: real-world cases, well-defined answers, and a way to test what the AI can actually solve. By examining baseline failures, I improve both the problem book and the solver—clarifying whether the next bottleneck lies in the data, the learning task, or the technology.</p><div class="approach-principles"><div class="approach-principle"><span>01</span><h3 class="" data-en="Write the right problems" data-ko="풀어야 할 문제를 담다">Write the right problems</h3><p class="" data-en="Cover real-world cases, agree on the answers, and define how success will be judged." data-ko="실제 사례를 담고 애매한 정답 기준을 합의해, AI가 잘해야 할 문제와 평가 기준을 구체화합니다.">Cover real-world cases, agree on the answers, and define how success will be judged.</p></div><div class="approach-principle"><span>02</span><h3 class="" data-en="Learn from the wrong answers" data-ko="오답에서 다음 개선을 찾다">Learn from the wrong answers</h3><p class="" data-en="Read baseline failures to distinguish gaps in the problem book from limits of the solver." data-ko="베이스라인의 성능 추이와 실패 사례를 분석해, 문제집의 빈틈과 모델·알고리즘의 한계를 구분합니다.">Read baseline failures to distinguish gaps in the problem book from limits of the solver.</p></div><div class="approach-principle"><span>03</span><h3 class="" data-en="Improve the book and the solver" data-ko="문제집과 AI를 함께 고도화하다">Improve the book and the solver</h3><p class="" data-en="Build better labeling tools and learning targets; refine or redesign the AI, then test the full outcome." data-ko="라벨링 도구와 학습 목표를 설계하고, 모델·파이프라인을 개선하거나 재설계한 뒤 전체 결과로 검증합니다.">Build better labeling tools and learning targets; refine or redesign the AI, then test the full outcome.</p></div></div><div class="case-tabs" role="tablist" aria-label="R&D case studies"><button class="case-tab" id="tab-ihc" role="tab" aria-selected="true" aria-controls="case-ihc" tabindex="0">DeepBio · IHC</button><button class="case-tab" id="tab-xray" role="tab" aria-selected="false" aria-controls="case-xray" tabindex="-1">Connective · X-ray</button></div><div class="case-panel" id="case-ihc" role="tabpanel" aria-labelledby="tab-ihc"><div class="case-lead"><div><h3 class="" data-en="From data-centric development to a biomarker-agnostic architecture." data-ko="Data-centric 개발에서 바이오마커 범용 분석 아키텍처로.">From data-centric development to a biomarker-agnostic architecture.</h3><p class="" data-en="When model-centric experiments did not yield meaningful gains in early tumor segmentation, I investigated failure cases and labeling criteria to improve performance through data-centric development. I then designed an integrated cellular-compartment architecture for biomarker-agnostic analysis and led system-level improvements." data-ko="초기 종양 분할에서 Model-centric 접근만으로 유의미한 개선을 얻지 못한 뒤, 실패 사례와 라벨 기준을 깊이 탐구하는 Data-centric 개발로 성능을 확보했습니다. 이후 바이오마커 범용 분석을 위한 통합 세포 구성요소 모델 아키텍처를 직접 설계하고 전체 시스템의 고도화를 주도했습니다.">When model-centric experiments did not yield meaningful gains in early tumor segmentation, I investigated failure cases and labeling criteria to improve performance through data-centric development. I then designed an integrated cellular-compartment architecture for biomarker-agnostic analysis and led system-level improvements.</p></div><img src="https://yunseob-profile-preview.brinyseal32.chatgpt.site/assets/approach/ihc.webp" alt="Conceptual illustration; not an experimental result" width="155" height="115" decoding="async"></div><p class="case-flow" data-en="Data-centric development → Integrated architecture → System-level optimization" data-ko="Data-centric 개발 → 범용 통합 아키텍처 → 전체 시스템 고도화">Data-centric development → Integrated architecture → System-level optimization</p><details><summary class="" data-en="Explore the iterations and decisions" data-ko="시행착오와 판단 과정 보기">Explore the iterations and decisions</summary><div class="case-steps"><div class="case-step"><h4 class="" data-en="01 · Establish performance through data-centric development" data-ko="01 · Data-centric 접근으로 초기 성능 확보">01 · Establish performance through data-centric development</h4><p class="" data-en="In early tumor-segmentation development, I explored segmentation-model lightweighting, multi-input model architectures, and staining-augmentation-based semi-supervised learning. These model-centric approaches did not produce meaningful performance gains at that stage. I shifted toward data-centric methods: analyzing failure cases, enriching training data for underperforming cases, and reaching agreement on ambiguous annotation criteria. This deeper investigation clarified what the AI needed to recognize and drove practical performance improvements." data-ko="초기 종양 분할 모델 개발에서 분할 모델 경량화, 다중 입력 모델 아키텍처, 염색 증강 기반 Semi-supervised Learning 등 Model-centric 접근을 시도했지만, 당시에는 유의미한 성능 개선으로 이어지지 않았습니다. 이후 성능이 떨어지는 사례를 분석하고 해당 사례의 훈련 데이터를 보강하며, 애매한 어노테이션 기준을 합의하는 Data-centric 방법들을 적용했습니다. 이를 통해 AI가 잘해야 할 문제를 깊이 탐구하고 실질적인 성능 개선을 이끌어냈습니다.">In early tumor-segmentation development, I explored segmentation-model lightweighting, multi-input model architectures, and staining-augmentation-based semi-supervised learning. These model-centric approaches did not produce meaningful performance gains at that stage. I shifted toward data-centric methods: analyzing failure cases, enriching training data for underperforming cases, and reaching agreement on ambiguous annotation criteria. This deeper investigation clarified what the AI needed to recognize and drove practical performance improvements.</p></div><div class="case-step"><h4 class="" data-en="02 · Develop tools and a quality-controlled dataset" data-ko="02 · 도구와 품질 관리된 데이터셋 구축">02 · Develop tools and a quality-controlled dataset</h4><p class="" data-en="I contributed substantial cell annotation, applied active-learning-inspired data sampling, and independently developed SAM-assisted tissue and cell labeling tools for colleagues to use in dataset construction. Annotation consensus and ongoing quality review formed the basis of a more reliable cell dataset. During cell-dataset development, I distinguished noisy and hard samples and used curriculum learning to stabilize performance. Once the dataset matured, SOTA-based architecture updates and new instance-separation algorithms produced substantial gains—showing that the effective intervention changed with the development stage." data-ko="직접 상당량의 세포 어노테이션을 수행하고 Active Learning 관점의 데이터 샘플링을 적용했습니다. SAM 기반 조직·세포 라벨링 도구를 자발적으로 개발·배포해 팀의 데이터셋 구축에 활용했습니다. 정답 기준을 합의하고 지속적으로 품질을 검수한 세포 데이터셋이 갖춰진 뒤에는 SOTA 기반 모델 구조와 새로운 인스턴스 분리 알고리즘의 도입으로 큰 성능 향상을 얻었습니다. 세포 데이터셋 구축 과정에서는 noisy/hard sample을 구분하고 Curriculum Learning으로 성능을 안정화했습니다. 개발 단계에 따라 효과적인 개선 수단이 달라진다는 경험이었습니다.">I contributed substantial cell annotation, applied active-learning-inspired data sampling, and independently developed SAM-assisted tissue and cell labeling tools for colleagues to use in dataset construction. Annotation consensus and ongoing quality review formed the basis of a more reliable cell dataset. During cell-dataset development, I distinguished noisy and hard samples and used curriculum learning to stabilize performance. Once the dataset matured, SOTA-based architecture updates and new instance-separation algorithms produced substantial gains—showing that the effective intervention changed with the development stage.</p></div><div class="case-step"><h4 class="" data-en="03 · Design an integrated architecture for biomarker-agnostic analysis" data-ko="03 · 바이오마커 범용 분석을 위한 통합 아키텍처 설계">03 · Design an integrated architecture for biomarker-agnostic analysis</h4><p class="" data-en="To support fully quantitative membrane analysis, I needed to measure staining intensity and completeness rather than assign fixed cell-level classes. After a feasibility test exposed the impracticality of directly annotating stained membranes, I transformed cell and nucleus instance annotations into subcellular pseudo labels and personally designed Universal Cellular Compartment Segmentation: an integrated architecture that jointly identifies nucleus, cytoplasm, and membrane for biomarker-agnostic cell analysis. This separates structural recognition and continuous staining measurement from biomarker-specific interpretation. In a related task, I also used edge-filter pseudo labels to prototype and transition tissue-foreground identification to deep learning." data-ko="Fully Quantitative 세포막 분석에는 고정된 세포 분류 대신 염색 강도와 발현 완전성을 계측하는 구조가 필요했습니다. 염색된 세포막의 직접 어노테이션이 비현실적이라는 feasibility test 결과를 바탕으로, 세포·세포핵 인스턴스 라벨을 구성요소 Pseudo Label로 가공했습니다. 이를 이용해 핵·세포질·세포막을 함께 식별하는 Universal Cellular Compartment Segmentation을 직접 설계하고, 바이오마커 범용 세포 분석을 위한 통합 모델 아키텍처로 발전시켰습니다. 구조적 식별과 연속적 염색 계측을 바이오마커별 판독 기준에서 분리한 설계입니다. 별도로 Edge Filter 기반 Pseudo Label을 활용해 조직 전경 식별을 딥러닝으로 전환하는 PoC도 진행했습니다.">To support fully quantitative membrane analysis, I needed to measure staining intensity and completeness rather than assign fixed cell-level classes. After a feasibility test exposed the impracticality of directly annotating stained membranes, I transformed cell and nucleus instance annotations into subcellular pseudo labels and personally designed Universal Cellular Compartment Segmentation: an integrated architecture that jointly identifies nucleus, cytoplasm, and membrane for biomarker-agnostic cell analysis. This separates structural recognition and continuous staining measurement from biomarker-specific interpretation. In a related task, I also used edge-filter pseudo labels to prototype and transition tissue-foreground identification to deep learning.</p></div><div class="case-step"><h4 class="" data-en="04 · Own the system-level tradeoffs" data-ko="04 · 전체 시스템의 개선 우선순위를 결정">04 · Own the system-level tradeoffs</h4><p class="" data-en="I evaluated the end-to-end pipeline separately from its component models. For PD-L1, normalized membrane staining measurements were thresholded into positive and negative tumor cells to calculate TPS. Using external hospital data, I analyzed discrepancies with pathologists and independently set improvement priorities across data, models, and processing algorithms for over a year, ultimately achieving the target level of agreement. Exploratory prototyping had helped clarify the measurement approach; self-initiated seminars on computational pathology and IHC further developed my understanding of the system and its broader technical direction." data-ko="개별 모델의 성능과 전체 계측 파이프라인의 성능을 구분해 평가했습니다. PD-L1에서는 정규화된 세포막 염색 계측값에 임계치를 적용해 암세포의 양성·음성을 구분하고 TPS를 계산했습니다. 외부 병원 데이터에서 의사 판독과의 불일치 사례를 분석하며, 1년 넘게 데이터·모델·처리 알고리즘 전반의 개선 우선순위를 스스로 결정해 목표 수준의 일치도를 확보했습니다. 초기 탐색적 프로토타이핑으로 계측 접근을 구체화했고, Computational Pathology와 IHC 세미나를 자발적으로 진행하며 전체 시스템과 기술 방향에 대한 이해도 넓혔습니다.">I evaluated the end-to-end pipeline separately from its component models. For PD-L1, normalized membrane staining measurements were thresholded into positive and negative tumor cells to calculate TPS. Using external hospital data, I analyzed discrepancies with pathologists and independently set improvement priorities across data, models, and processing algorithms for over a year, ultimately achieving the target level of agreement. Exploratory prototyping had helped clarify the measurement approach; self-initiated seminars on computational pathology and IHC further developed my understanding of the system and its broader technical direction.</p></div></div></details></div><div class="case-panel" id="case-xray" role="tabpanel" aria-labelledby="tab-xray" hidden><div class="case-lead"><div><h3 class="" data-en="From a measurement bottleneck to shared R&amp;D capability." data-ko="계측 성능의 병목에서 공통 R&amp;D 기반으로.">From a measurement bottleneck to shared R&amp;D capability.</h3><p class="" data-en="I redesigned the measurement architecture and learning objective around angle agreement. I carried forward a curriculum-learning strategy from DeepBio, connecting confidence-guided sample selection, a centrally hosted labeling tool, and second-stage training to optimize final performance. Alongside this work, I proposed and led shared VFM architecture research with standardized benchmarks and evaluation protocols." data-ko="각도 일치도를 기준으로 계측 아키텍처와 학습 목표를 재설계했습니다. 딥바이오의 Curriculum Learning 경험을 계승해 confidence 기반 샘플 선별, 중앙 서버 라벨링 도구, 2차 학습으로 최종 성능을 최적화했습니다. 이와 함께 공통 VFM 아키텍처 연구를 제안·주도하고 벤치마크와 평가 체계를 구축했습니다.">I redesigned the measurement architecture and learning objective around angle agreement. I carried forward a curriculum-learning strategy from DeepBio, connecting confidence-guided sample selection, a centrally hosted labeling tool, and second-stage training to optimize final performance. Alongside this work, I proposed and led shared VFM architecture research with standardized benchmarks and evaluation protocols.</p></div><img src="https://yunseob-profile-preview.brinyseal32.chatgpt.site/assets/approach/xray.webp" alt="Conceptual illustration; not an experimental result" width="155" height="115" decoding="async"></div><p class="case-flow" data-en="Task redesign → Confidence-guided annotation → Curriculum learning → Shared capability" data-ko="Task 재설계 → Confidence 기반 라벨링 → Curriculum Learning → 공통 역량">Task redesign → Confidence-guided annotation → Curriculum learning → Shared capability</p><details><summary class="" data-en="Explore the iterations and decisions" data-ko="시행착오와 판단 과정 보기">Explore the iterations and decisions</summary><div class="case-steps"><div class="case-step"><h4 class="" data-en="01 · Start from the final measurement" data-ko="01 · 최종 계측 목표에서 출발">01 · Start from the final measurement</h4><p class="" data-en="The final objective was agreement in spinopelvic angle measurement. The existing multi-stage pipeline combined spine–pelvis segmentation, vertebra-wise landmark detection, and angle calculation. When improvements within that structure proved insufficient, I reconsidered both the prediction architecture and its alignment with the final measurement error." data-ko="최종 목표는 척추·골반 각도 측정의 일치도였습니다. 기존 파이프라인은 척추·골반 분할, 척추별 랜드마크 탐지, 각도 계산으로 구성됐습니다. 이 구조 안에서의 개선만으로 목표 성능 확보가 어려워지자, 예측 아키텍처와 학습 목표가 최종 계측 오차에 얼마나 직접적으로 연결되는지 다시 검토했습니다.">The final objective was agreement in spinopelvic angle measurement. The existing multi-stage pipeline combined spine–pelvis segmentation, vertebra-wise landmark detection, and angle calculation. When improvements within that structure proved insufficient, I reconsidered both the prediction architecture and its alignment with the final measurement error.</p></div><div class="case-step"><h4 class="" data-en="02 · Align the learning problem" data-ko="02 · 학습 문제를 최종 오차에 정렬">02 · Align the learning problem</h4><p class="" data-en="I designed a DINOv3-based single-model architecture that predicts directions aligned with angle error, followed by angle calculation. The shift connected learning more directly to the desired measurement rather than relying on a chain of intermediate tasks." data-ko="각도 오차에 정렬된 방향을 예측하고 그 결과에서 각도를 계산하는 DINOv3 기반 단일 모델을 설계했습니다. 중간 Task의 연쇄에 의존하던 구조에서, 원하는 계측 결과와 학습을 더 직접적으로 연결했습니다.">I designed a DINOv3-based single-model architecture that predicts directions aligned with angle error, followed by angle calculation. The shift connected learning more directly to the desired measurement rather than relying on a chain of intermediate tasks.</p></div><div class="case-step"><h4 data-en="03 · Transfer the data-and-learning strategy" data-ko="03 · 데이터·학습 전략을 계승해 최종 성능 최적화">03 · Transfer the data-and-learning strategy</h4><p data-en="Building on curriculum-learning experience at DeepBio, I used landmark (anchor) confidence to select noisy and hard samples. I developed a keypoint labeling tool and hosted it on a central server, enabling rapid annotation of approximately 1,000 cases. I then used a curriculum-learning approach for a second training phase to optimize final measurement performance. This connected failure analysis, targeted annotation, and staged training in one improvement cycle." data-ko="딥바이오에서 noisy/hard sample을 구분하고 Curriculum Learning으로 성능을 안정화한 경험을 계승했습니다. Landmark (anchor) confidence를 기반으로 noisy/hard sample을 선별하고, keypoint labeling tool을 직접 개발해 중앙 서버에 배포했습니다. 이를 통해 약 1,000건의 레이블을 빠르게 확보하고 Curriculum Learning 관점의 2차 학습으로 최종 계측 성능을 최적화했습니다. 실패 사례 분석·집중 라벨링·단계적 학습을 하나의 개선 사이클로 연결한 과정입니다.">Building on curriculum-learning experience at DeepBio, I used landmark (anchor) confidence to select noisy and hard samples. I developed a keypoint labeling tool and hosted it on a central server, enabling rapid annotation of approximately 1,000 cases. I then used a curriculum-learning approach for a second training phase to optimize final measurement performance. This connected failure analysis, targeted annotation, and staged training in one improvement cycle.</p></div><div class="case-step"><h4 class="" data-en="04 · Make the experiments comparable" data-ko="04 · 실험을 비교 가능한 체계로">04 · Make the experiments comparable</h4><p class="" data-en="I proposed and led R&amp;D of a shared VFM-based architecture for musculoskeletal X-ray tasks. I designed the research plan, benchmark datasets, VFM comparison groups, and evaluation protocols, and conducted SSL experiments to develop candidate models. I planned the validation pipeline and delegated its implementation to a teammate while retaining responsibility for the overall research direction." data-ko="근골격계 X-ray Task를 위한 VFM 기반 공통 아키텍처 연구개발을 제안·주도했습니다. 전체 연구 기획, 벤치마크 데이터셋, VFM 비교군과 평가 방식을 설계하고 SSL 실험으로 후보 모델들을 개발했습니다. 검증 파이프라인을 기획하고 구현은 팀원에게 맡기면서 전체 연구 방향과 진행을 리드했습니다.">I proposed and led R&amp;D of a shared VFM-based architecture for musculoskeletal X-ray tasks. I designed the research plan, benchmark datasets, VFM comparison groups, and evaluation protocols, and conducted SSL experiments to develop candidate models. I planned the validation pipeline and delegated its implementation to a teammate while retaining responsibility for the overall research direction.</p></div><div class="case-step"><h4 class="" data-en="05 · Carry insight into the next task" data-ko="05 · 통찰을 다음 개발의 기반으로">05 · Carry insight into the next task</h4><p class="" data-en="Foundation-model, VLM, and MLLM surveys and PoCs at DeepBio had given me a basis for evaluating methods, benchmarks, and training costs. At Connective, I connected that experience to dataset standardization, more efficient development across tasks, and potential multimodal expansion. With AI-assisted experimentation, I tested more alternatives and organized the technical contributions into MICCAI 2026 papers, including a first-author Early Accept." data-ko="딥바이오에서 파운데이션 모델·VLM·MLLM 조사와 PoC를 수행하며 방법론, 벤치마크, 학습 비용을 검토한 경험을 연결했습니다. 코넥티브에서는 이를 데이터셋 표준화, Task 간 개발 효율화와 멀티모달 확장의 근거로 활용했습니다. AI 도구를 활용해 더 많은 대안을 실험하고 기술 기여를 논리적으로 정리해 MICCAI 2026 논문 성과로 연결했으며, 주저자 논문은 Early Accept를 받았습니다.">Foundation-model, VLM, and MLLM surveys and PoCs at DeepBio had given me a basis for evaluating methods, benchmarks, and training costs. At Connective, I connected that experience to dataset standardization, more efficient development across tasks, and potential multimodal expansion. With AI-assisted experimentation, I tested more alternatives and organized the technical contributions into MICCAI 2026 papers, including a first-author Early Accept.</p></div></div></details></div><p class="approach-foundation" data-en="What carries forward: domain understanding · annotation tools · data standards · evaluation frameworks · shared architectures" data-ko="축적되는 기반: 도메인 이해 · 라벨링 도구 · 데이터 기준 · 평가 체계 · 공통 아키텍처">What carries forward: domain understanding · annotation tools · data standards · evaluation frameworks · shared architectures</p><p class="approach-closing" data-en="Practical AI Performance ↔ Evolving R&amp;D Capability" data-ko="실질적인 AI 성능 ↔ 축적·발전하는 R&amp;D 역량">Practical AI Performance ↔ Evolving R&amp;D Capability</p></section>
+<section id="experience">
+    <h2 class="section-title" data-ko="경력" data-en="Experiences"></h2>
+    <table class="exp-table"><thead><tr><th scope="col" data-ko="기간" data-en="Period"></th><th scope="col" data-ko="소속 / 포지션" data-en="Organization / Position"></th></tr></thead>
+      
       <tr>
         <td class="td-period">2025.07 – 2026.03</td>
         <td>
-          <div class="org" data-ko="코넥티브" data-en="Connective"></div>
-          <div class="role-title" data-ko="SW 사업부 AI R&D팀 팀장 / AI 엔지니어" data-en="AI R&D Team Lead / AI Engineer, SW Division"></div>
+          <div class="org" data-ko="코넥티브" data-en="Connective"></div><div class="career-location" data-ko="서울, 대한민국" data-en="Seoul, South Korea"></div>
+          <div class="role-title" data-ko="AI 엔지니어 @ AI 연구소" data-en="AI Engineer @ AI Research Lab"></div><div class="proj-desc career-contributions"><ul><li data-ko="&lt;strong&gt;CONNEVO SPIN&lt;/strong&gt; — X-ray 척추·골반 각도 측정 AI 기술 고도화 및 배포 최적화 (2026년 4월 출시)" data-en="Improved spinopelvic angle measurement AI and optimized deployment for CONNEVO SPIN (released April 2026)."><strong>CONNEVO SPIN</strong> — X-ray 척추·골반 각도 측정 AI 기술 고도화 및 배포 최적화 (2026년 4월 출시)</li><li data-ko="근골격계 X-ray VFM 기반 공통 아키텍처 연구개발 주도 — SSL 실험 및 벤치마크·비교군·평가 체계 설계" data-en="Led R&amp;D of a shared VFM-based architecture for musculoskeletal X-ray tasks, conducting SSL experiments and defining benchmarks, comparison models, and evaluation protocols.">근골격계 X-ray VFM 기반 공통 아키텍처 연구개발 주도 — SSL 실험 및 벤치마크·비교군·평가 체계 설계</li><li data-en="Optimized final performance through anchor-confidence-guided sample selection, a centrally hosted keypoint labeling tool for approximately 1,000 cases, and curriculum-based second-stage training." data-ko="Anchor confidence 기반 샘플 선별·중앙 서버 keypoint 라벨링 도구 개발로 약 1,000건 레이블 확보 및 Curriculum Learning 기반 2차 학습을 통한 최종 성능 최적화">Optimized final performance through anchor-confidence-guided sample selection, a centrally hosted keypoint labeling tool for approximately 1,000 cases, and curriculum-based second-stage training.</li><li data-ko="임시 리드로서 부서 간 일정·우선순위와 업무 분장 조율, R&amp;D 기술 세미나 운영 및 데이터셋 표준화 주도" data-en="As interim lead, coordinated schedules, priorities, and task allocation across departments; organized R&amp;D seminars and led dataset standardization."></li><li data-ko="척추·골반 각도 측정 및 통합 landmark detection 연구로 MICCAI 2026 논문 2편 제출 리드 (주저자 1편 Early Accept)" data-en="Led two MICCAI 2026 submissions on angle measurement and unified landmark detection; first-author paper received Early Accept.">척추·골반 각도 측정 및 통합 landmark detection 연구로 MICCAI 2026 논문 2편 제출 리드 (주저자 1편 Early Accept)</li></ul></div><div class="product-overview"><a class="product-thumbnail" href="https://www.youtube.com/watch?v=UGKYyhuFumw" target="_blank" rel="noopener noreferrer" aria-label="Watch CONNEVO SPIN product overview on YouTube"><img src="https://i.ytimg.com/vi/UGKYyhuFumw/hqdefault.jpg" width="480" height="360" alt="CONNEVO SPIN product introduction" loading="lazy" decoding="async"><span class="video-overlay">▶</span></a><div class="product-caption"><div class="product-name">CONNEVO SPIN</div><p data-ko="X-ray 척추·골반 계측 AI · CPU 온프레미스" data-en="Spinopelvic X-ray measurement AI · CPU on-premises"></p><a class="product-link" href="https://www.youtube.com/watch?v=UGKYyhuFumw" target="_blank" rel="noopener noreferrer" data-ko="제품 소개 영상 ↗" data-en="Watch Product Overview ↗"></a><div class="research-citations"><span data-ko="관련 연구 " data-en="Related research "></span>[<a href="#publication-1" aria-label="Jump to publication 1">1</a>]</div></div></div>
         </td>
       </tr>
       <tr>
         <td class="td-period">2022.02 – 2025.05</td>
         <td>
-          <div class="org" data-ko="딥바이오" data-en="DeepBio"></div>
-          <div class="role-title" data-ko="연구팀 ML 엔지니어" data-en="ML Engineer, Research Team"></div>
+          <div class="org" data-ko="딥바이오" data-en="DeepBio"></div><div class="career-location" data-ko="서울, 대한민국" data-en="Seoul, South Korea"></div>
+          <div class="role-title" data-ko="ML 엔지니어 @ 연구팀" data-en="ML Engineer @ Research Team"></div><div class="proj-desc career-contributions"><ul><li data-ko="병리 조직·종양·세포 인식 AI 모델 및 분석 prototype 개발" data-en="Developed pathology tissue, tumor, and cell recognition models and analysis prototypes.">병리 조직·종양·세포 인식 AI 모델 및 분석 prototype 개발</li><li data-ko="조직·종양·세포 인식부터 바이오마커 정량화까지 이어지는 범용 AI 분석 파이프라인의 연구개발을 제안하고 전 과정 주도" data-en="Proposed and led the end-to-end R&amp;D of a general-purpose AI analysis pipeline, from tissue, tumor, and cell recognition to biomarker quantification."></li><li data-ko="모델 개선을 위한 효율적인 조직·세포 라벨링 도구와 Human-in-the-Loop 프로세스 구축·고도화" data-en="Developed and improved annotation tools and human-in-the-loop processes."></li><li data-en="Stabilized cell-analysis performance by distinguishing noisy and hard samples and applying curriculum learning." data-ko="세포 데이터셋의 noisy/hard sample 구분과 Curriculum Learning을 통한 성능 안정화">Stabilized cell-analysis performance by distinguishing noisy and hard samples and applying curriculum learning.</li><li data-ko="특허 5건 출원 및 국제 병리·암 학회 연구 초록 7건 기여" data-en="Contributed to five patent filings and seven abstracts at international pathology and cancer conferences.">특허 5건 출원 및 국제 병리·암 학회 연구 초록 7건 기여</li></ul></div><div class="product-overview">
+<a class="product-thumbnail" href="https://www.youtube.com/watch?v=eSWxTAvATYo" target="_blank" rel="noopener noreferrer" aria-label="Watch DeepCDx Membrane IHC product overview on YouTube"><img src="https://i.ytimg.com/vi/eSWxTAvATYo/hqdefault.jpg" width="480" height="360" alt="DeepCDx Membrane IHC product introduction" loading="lazy" decoding="async"><span class="video-overlay">▶</span></a>
+<div class="product-caption"><div class="product-name">DeepCDx Membrane IHC</div><p data-ko="세포 구성요소 분석 및 바이오마커 정량화 · RUO" data-en="Cellular compartment analysis and biomarker quantification · RUO"></p><a class="product-link" href="https://www.youtube.com/watch?v=eSWxTAvATYo" target="_blank" rel="noopener noreferrer" data-ko="제품 소개 영상 ↗" data-en="Watch Product Overview ↗"></a><div class="research-citations"><span data-ko="관련 연구 " data-en="Related research "></span>[<a href="#publication-2" aria-label="Jump to publication 2">2</a>,<a href="#publication-3" aria-label="Jump to publication 3">3</a>,<a href="#publication-4" aria-label="Jump to publication 4">4</a>,<a href="#publication-5" aria-label="Jump to publication 5">5</a>,<a href="#publication-6" aria-label="Jump to publication 6">6</a>,<a href="#publication-7" aria-label="Jump to publication 7">7</a>]</div></div></div>
         </td>
       </tr>
       <tr>
         <td class="td-period">2019.02 – 2021.02</td>
         <td>
-          <div class="org" data-ko="포항공과대학교 iAI Lab." data-en="POSTECH iAI Lab."></div>
-          <div class="role-title" data-ko="석사 연구원" data-en="M.S. Researcher"></div>
+          <div class="org" data-ko="포항공과대학교 (POSTECH)" data-en="POSTECH"></div><div class="career-location" data-ko="포항, 대한민국" data-en="Pohang, South Korea"></div>
+          <div class="role-title" data-ko="석사 연구원 @ iAI Lab" data-en="M.S. Researcher @ iAI Lab"></div><div class="proj-desc career-contributions"><ul><li data-ko="AI 기반 캡슐내시경 스마트 판독 시스템 응용 연구 및 상용화 PoC" data-en="Conducted applied research and a commercialization PoC for AI-assisted capsule endoscopy interpretation.">AI 기반 캡슐내시경 스마트 판독 시스템 응용 연구 및 상용화 PoC</li><li data-ko="AI·IIoT 기반 스마트 제조 연구와 산업 현장 결함 탐지 모델 개발" data-en="Researched AI/IIoT for smart manufacturing and developed defect detection models using industrial data.">AI·IIoT 기반 스마트 제조 연구와 산업 현장 결함 탐지 모델 개발</li><li data-ko="특허 1건 등록 및 논문 4편 기여, SCIE 주저자 논문 Wiley Top Cited Article 선정" data-en="Contributed to one granted patent and four papers; first-author SCIE paper recognized as a Wiley Top Cited Article.">특허 1건 등록 및 논문 4편 기여, SCIE 주저자 논문 Wiley Top Cited Article 선정</li></ul></div><div class="recognition-gallery career-recognition"><figure><a href="https://yunseob-profile-preview.brinyseal32.chatgpt.site/assets/recognition/top-cited.png" target="_blank" rel="noopener noreferrer" aria-label="Enlarge Wiley Top Cited Article certificate"><img src="https://yunseob-profile-preview.brinyseal32.chatgpt.site/assets/recognition/top-cited.png" alt="Wiley Top Cited Article 2021–2022 certificate for Yunseob Hwang" loading="lazy"></a><figcaption>Wiley Top Cited Article 2021–2022</figcaption></figure><figure><a href="https://yunseob-profile-preview.brinyseal32.chatgpt.site/assets/recognition/journal-cover.png" target="_blank" rel="noopener noreferrer" aria-label="Enlarge Digestive Endoscopy journal cover"><img src="https://yunseob-profile-preview.brinyseal32.chatgpt.site/assets/recognition/journal-cover.png" alt="Digestive Endoscopy journal cover, Volume 33 Issue 4, May 2021, featuring Hwang et al." loading="lazy"></a><figcaption>Digestive Endoscopy · Journal Cover<br>Vol. 33, Issue 4 · May 2021</figcaption></figure></div><div class="research-citations"><span data-ko="관련 연구 " data-en="Related research "></span>[<a href="#publication-9" aria-label="Jump to publication 9">9</a>]</div>
         </td>
       </tr>
     </table>
@@ -187,193 +258,57 @@
 
   <hr>
 
-  <!-- Projects -->
-  <section>
-    <h2 data-ko="프로젝트" data-en="Projects"></h2>
+  
 
-    <!-- RebuilderAI project (주석 처리 - 수습 퇴사)
-    <div class="project">
-      <div class="proj-header">
-        <div class="proj-title" data-ko="패션 생성 AI (VRING:ON)" data-en="Fashion Generative AI (VRING:ON)"></div>
-        <div class="proj-period">2026.03 –</div>
-      </div>
-      <div class="proj-org" data-ko="리빌더에이아이" data-en="RebuilderAI"></div>
-      <div class="proj-desc"
-        data-ko="<ul><li>SewingLDM 기반 스케치/텍스트 → 제조 가능한 옷 패턴 생성 PoC</li><li>MCM 비세토스 패턴 fidelity 개선 (멀티 에이전트 파이프라인 도입)</li><li>Flux-2-pro, QwenEdit 기반 악세사리/프린트 디테일 자연스러운 합성 개선</li></ul>"
-        data-en="<ul><li>PoC for sketch/text-to-garment pattern generation via SewingLDM</li><li>Improved MCM Visetos pattern fidelity with multi-agent pipeline</li><li>Enhanced accessory &amp; print detail synthesis via Flux-2-pro and QwenEdit</li></ul>">
-      </div>
-      <div class="tags">
-        <span class="tag">Generative AI</span><span class="tag">Diffusion</span><span class="tag">Multi-Agent</span><span class="tag">Flux</span>
-      </div>
-    </div>
-    -->
-
-    <div class="project">
-      <div class="proj-header">
-        <div class="proj-title" data-ko="MSK X-ray 비전 파운데이션 모델" data-en="MSK X-ray Vision Foundation Model"></div>
-        <div class="proj-period">2025.10 – 2026.03</div>
-      </div>
-      <div class="proj-org" data-ko="코넥티브" data-en="Connective"></div>
-      <div class="proj-desc"
-        data-ko="<ul><li>MSK 특화 VFM 연구 기획·리드, 벤치마크 정의 및 표준화</li><li>기존 XR VFM (Rad-DINO, EVA-X) 대비 Cls / Seg / Landmark 성능 우위 검증</li><li>VFM 이후 Agentic Roadmap 제안 (멀티모달 확장)</li></ul>"
-        data-en="<ul><li>Initiated and led MSK-specialized VFM research; defined benchmark and standardization</li><li>Outperformed XR VFMs (Rad-DINO, EVA-X) across Cls / Seg / Landmark tasks</li><li>Proposed Agentic Roadmap post-VFM, including multimodal expansion</li></ul>">
-      </div>
-      <div class="tags">
-        <span class="tag">VFM</span><span class="tag">DINOv3</span><span class="tag">LoRA Fine-tuning</span><span class="tag">Agentic AI</span>
-      </div>
-    </div>
-
-    <div class="project">
-      <div class="proj-header">
-        <div class="proj-title" data-ko="Spinopelvic 각도 측정 AI (X-ray)" data-en="Spinopelvic Angle Measurement AI (X-ray)"></div>
-        <div class="proj-period">2025.08 – 2026.03</div>
-      </div>
-      <div class="proj-org" data-ko="코넥티브" data-en="Connective"></div>
-      <div class="proj-desc"
-        data-ko="<ul><li>단일 DINOv3 파이프라인 재설계 — GPU <span class='highlight'>30%↑</span>, CPU <span class='highlight'>71%↑</span></li><li>Anchor 기반 각도 직접 예측 — ICC <span class='highlight'>0.899 → 0.946</span></li><li>FastAPI / ONNX / Docker, CPU on-premise 배포</li><li><span class='miccai'>MICCAI 2026 Early Accept (상위 9%)</span></li></ul>"
-        data-en="<ul><li>Redesigned as single DINOv3 pipeline — GPU <span class='highlight'>30%↑</span>, CPU <span class='highlight'>71%↑</span></li><li>Anchor-based direct angle prediction — ICC <span class='highlight'>0.899 → 0.946</span></li><li>FastAPI / ONNX / Docker, CPU on-premise deployment</li><li><span class='miccai'>MICCAI 2026 Early Accept (top 9%)</span></li></ul>">
-      </div>
-      <div class="tags">
-        <span class="tag">DINOv3</span><span class="tag">LoRA</span><span class="tag">Landmark Detection</span><span class="tag">FastAPI</span><span class="tag">ONNX</span>
-      </div>
-    </div>
-
-    <div class="project">
-      <div class="proj-header">
-        <div class="proj-title" data-ko="Biomarker-agnostic IHC 분석 파이프라인" data-en="Biomarker-agnostic IHC Analysis Pipeline"></div>
-        <div class="proj-period">2023.08 – 2025.05</div>
-      </div>
-      <div class="proj-org" data-ko="딥바이오" data-en="DeepBio"></div>
-      <div class="proj-desc"
-        data-ko="<ul><li>Cellular compartment segmentation 문제 재정의 — 2-class annotation → 3-class label 합성 로직 개발, SAM 기반 annotation tool 구축</li><li>E2E biomarker-agnostic IHC 파이프라인 독자 개발 (종양 → 구성요소 분할 → 바이오마커 계측), F1@50 <span class='highlight'>0.97</span></li><li>Local / cluster-wise heterogeneity 등 novel 정량화 feature 개발, 특허 4건 출원</li><li>PD-L1 TPS 공동연구 — 의사 3인 일치도 <span class='highlight'>80%+</span> (기존 연구 대비 우위)</li></ul>"
-        data-en="<ul><li>Redefined as cellular compartment segmentation — 2-class annotation → 3-class label synthesis logic, SAM-based annotation tool</li><li>Built E2E biomarker-agnostic IHC pipeline (tumor → compartment seg → biomarker quantification); F1@50 <span class='highlight'>0.97</span></li><li>Developed novel downstream features — local / cluster-wise heterogeneity, etc.; 4 patents filed</li><li>PD-L1 TPS co-study — <span class='highlight'>80%+</span> concordance with 3 pathologists (outperforming prior work)</li></ul>">
-      </div>
-      <div class="tags">
-        <span class="tag">Segmentation</span><span class="tag">IHC</span><span class="tag">Cellpose</span><span class="tag">HITL</span><span class="tag">Collaborative Study</span>
-      </div>
-    </div>
-
-    <div class="project">
-      <div class="proj-header">
-        <div class="proj-title" data-ko="IHC 슬라이드 분석 파이프라인 프로토타이핑" data-en="IHC Slide Analysis Pipeline Prototyping"></div>
-        <div class="proj-period">2022.03 – 2023.08</div>
-      </div>
-      <div class="proj-org" data-ko="딥바이오" data-en="DeepBio"></div>
-      <div class="proj-desc"
-        data-ko="<ul><li>IHC 슬라이드 입력 처리 구축 — 조직 전경 분할(DL), TMA core 검출, control tissue 검출(모양 유사도)</li><li>종양 분할 모델 현대화 — TopFormer·SeaFormer·SegNeXt 탐색 후 경량 decoder 자체 설계, params 38%↓, GFLOPs 77%↓</li><li>Membrane segmentation PoC 시도 → 한계 확인, cellular compartment segmentation 재정의로 이어짐</li></ul>"
-        data-en="<ul><li>Built IHC slide processing pipeline — tissue foreground (DL), TMA core detection, control tissue detection (shape similarity)</li><li>Modernized tumor segmentation — explored TopFormer / SeaFormer / SegNeXt, designed custom lightweight decoder; params 38%↓, GFLOPs 77%↓</li><li>Attempted membrane segmentation PoC → identified limits, led to cellular compartment segmentation redefinition</li></ul>">
-      </div>
-      <div class="tags">
-        <span class="tag">WSI Pipeline</span><span class="tag">Segmentation</span><span class="tag">Model Compression</span>
-      </div>
-    </div>
-
-    <div class="project">
-      <div class="proj-header">
-        <div class="proj-title" data-ko="캡슐내시경 병변 분류 및 시각적 설명 AI" data-en="Capsule Endoscopy Lesion Classification with Visual Explainability"></div>
-        <div class="proj-period">2019.02 – 2021.02</div>
-      </div>
-      <div class="proj-org" data-ko="포항공과대학교 iAI Lab." data-en="POSTECH iAI Lab."></div>
-      <div class="proj-desc"
-        data-ko="<ul><li>1인당 ~8h 캡슐내시경 영상 AI 병변 분류 연구</li><li>병변 유형별(침습·출혈) sub-network + likelihood-weighted Grad-CAM으로 의사결정 및 시각적 설명 동시 제공</li><li>1저자 출판 — 저널 표지, <span class='highlight'>Wiley Top Cited Article</span></li></ul>"
-        data-en="<ul><li>AI lesion classification for capsule endoscopy (~8h video per patient)</li><li>Sub-network per lesion type (ulcerative / hemorrhagic) + likelihood-weighted Grad-CAM for decision & explainability</li><li>1st-author — journal cover, <span class='highlight'>Wiley Top Cited Article</span></li></ul>">
-      </div>
-      <div class="tags">
-        <span class="tag">Image Classification</span><span class="tag">Grad-CAM</span><span class="tag">Weak Localization</span><span class="tag">Medical AI</span>
-      </div>
-    </div>
-
-    <div class="project">
-      <div class="proj-header">
-        <div class="proj-title" data-ko="냉간 단조 공정 이상 탐지 AI (UW Madison 협력)" data-en="Cold Forging Process Defect Detection AI (UW Madison Collaboration)"></div>
-        <div class="proj-period">2019.02 – 2021.02</div>
-      </div>
-      <div class="proj-org" data-ko="포항공과대학교 iAI Lab." data-en="POSTECH iAI Lab."></div>
-      <div class="proj-desc"
-        data-ko="<ul><li>HHT 전처리 + frequency-based grouping CNN 설계 — noise-robust 결함 분류</li><li>논문 1편, Inter-Noise proceeding (2저자)</li></ul>"
-        data-en="<ul><li>HHT preprocessing + frequency-based grouping CNN — noise-robust defect classification</li><li>1 journal paper, Inter-Noise proceeding (2nd author)</li></ul>">
-      </div>
-      <div class="tags">
-        <span class="tag">CNN</span><span class="tag">Hilbert-Huang Transform</span><span class="tag">Anomaly Detection</span><span class="tag">Vibration Signal</span><span class="tag">Manufacturing AI</span>
-      </div>
-    </div>
-  </section>
+  <section id="education"><h2 class="section-title" data-ko="학력" data-en="Education"></h2>
+<table class="exp-table"><tbody>
+<tr><td class="td-period">2019 – 2021</td><td><div class="org" data-ko="포항공과대학교 (POSTECH)" data-en="Pohang University of Science and Technology (POSTECH)"></div><div class="career-location" data-ko="포항, 대한민국" data-en="Pohang, South Korea"></div><div class="role-title" data-ko="기계공학 석사 · 산업인공지능 연구실 (iAI Lab.)" data-en="M.S. in Mechanical Engineering · Industrial AI Lab. (iAI Lab.)"></div><div class="education-details"><p data-ko="석사 논문: 컨볼루션 신경망 기반 캡슐내시경 병변 탐지 · 지도교수: 이승철" data-en="Thesis: Capsule Endoscopy Lesion Detection Using Convolutional Neural Networks · Advisor: Prof. Seungchul Lee"></p><p data-ko="방문연구: University of Wisconsin–Madison · Visiting Student (4개월) · 미국 위스콘신주 매디슨" data-en="Visiting Research: University of Wisconsin–Madison · Visiting Student (4 months) · Madison, Wisconsin, USA"></p></div></td></tr>
+<tr><td class="td-period">2011 – 2019</td><td><div class="org" data-ko="충남대학교" data-en="Chungnam National University"></div><div class="career-location" data-ko="대전, 대한민국" data-en="Daejeon, South Korea"></div><div class="role-title" data-ko="전자공학 학사 · 공학교육인증 과정 수료" data-en="B.S. in Electronics Engineering · Completed an accredited engineering program"></div><div class="education-details"><p data-ko="학점: 4.17 / 4.5 · 전공: 4.41 / 4.5" data-en="GPA: 4.17 / 4.5 · Major GPA: 4.41 / 4.5"></p><p data-ko="교내 졸업학술대회 포스터 특별상" data-en="Special Poster Award · University graduation research conference"></p></div></td></tr>
+</tbody></table></section><hr><section id="achievements"><h2 class="section-title">Achievements</h2><p class="section-note" data-ko="논문·학회, 특허 및 연구 인정." data-en="Publications, conference contributions, patents, and research recognition."></p><h3 class="subsection-title">Highlights</h3>
+<div class="highlights-metrics"><div class="highlight-metric"><div class="metric-number">2</div><div class="metric-label" data-ko="제품 개발 기여" data-en="Product Contributions"></div><div class="metric-detail" data-ko="RUO 1 · CPU 온프레미스 1" data-en="1 RUO · 1 CPU on-premises"></div></div>
+<div class="highlight-metric"><div class="metric-number">2</div><div class="metric-label" data-ko="SCIE 저널 논문" data-en="Journal Articles"></div><div class="metric-detail" data-ko="SCIE · 공동 1저자 1편" data-en="SCIE · 1 co-first-author article"></div></div>
+<div class="highlight-metric"><div class="metric-number">9</div><div class="metric-label" data-ko="국제 학회 기여" data-en="Conference Contributions"></div><div class="metric-detail" data-ko="국제 학회 논문·포스터" data-en="International papers &amp; posters"></div></div>
+<div class="highlight-metric"><div class="metric-number">2 <span class="metric-unit" data-ko="등록" data-en="Granted"></span></div><div class="metric-label" data-ko="특허" data-en="Patents"></div><div class="metric-detail" data-ko="공개 특허출원 5건" data-en="5 published applications"></div></div>
+</div>
+<ul class="recognition-list">
+<li><strong>MICCAI 2026</strong><span data-ko=" — Early Accept (Top 9%) · 제1저자" data-en=" — Early Accept (Top 9%) · First author"></span></li>
+<li><strong>Digestive Endoscopy</strong><span data-ko=" — 저널 표지 · Wiley Top Cited Article 2021–2022 · 공동 1저자" data-en=" — Journal Cover · Wiley Top Cited Article 2021–2022 · Co-first author"></span></li>
+</ul><h3 class="subsection-title">Journals &amp; Conferences</h3><ol class="publication-list"><li id="publication-1"><div class="pub-authors"><strong>Hwang Y</strong>, Lee Y, Song DS, Kang DH, Ro DH.</div><a class="pub-title" href="https://papers.miccai.org/miccai-2026/0099-Paper2378.html" target="_blank" rel="noopener noreferrer">Beyond Landmarks: Anchor-Guided Orientation Regression for Robust Spinopelvic Measurement</a>. <span class="pub-venue"><em>Medical Image Computing and Computer Assisted Intervention — MICCAI 2026. LNCS 16893.</em> 2026.</span><div class="pub-note">Conference paper · First author</div></li><li id="publication-2"><div class="pub-authors"><strong>Hwang Y</strong>, Kwon GY, Kim J, Jung J, Kim DK, Kwak TY, et al.</div><a class="pub-title" href="https://aacrjournals.org/cancerres/article/85/8_Supplement_1/2441/758007/Abstract-2441-Artificial-intelligence-based" target="_blank" rel="noopener noreferrer">Artificial intelligence-based quantification of PD-L1 staining intensity in non-small cell lung cancer: Beyond binary assessment</a>. <span class="pub-venue"><em>Cancer Research. 85(8 Suppl 1):2441.</em> 2025.</span><div class="pub-note">AACR 2025 · Poster abstract · First author</div></li><li id="publication-3"><div class="pub-authors">Yang HS, <strong>Hwang Y</strong>, Kim DK, Choi YL, Jung K, Sung M, et al.</div><a class="pub-title" href="https://aacrjournals.org/cancerres/article/85/8_Supplement_1/2440/758008" target="_blank" rel="noopener noreferrer">Correlation analysis between AI-based H-score and clinical data in MET IHC stained WSIs</a>. <span class="pub-venue"><em>Cancer Research. 85(8 Suppl 1):2440.</em> 2025.</span><div class="pub-note">AACR 2025 · Poster abstract</div></li><li id="publication-4"><div class="pub-authors"><strong>Hwang Y</strong>, Kwon GY, Kim J, Jung J, Cho J, Kwak TY, et al.</div><a class="pub-title" href="https://doi.org/10.1016/j.labinv.2024.103935" target="_blank" rel="noopener noreferrer">A Deep Learning-Based IHC Tumor Cellular Membranous Staining Analysis for PD-L1 Assessment in Non-Small Lung Cancer</a>. <span class="pub-venue"><em>Laboratory Investigation. USCAP Annual Meeting abstract.</em> 2025.</span><div class="pub-note">USCAP 2025 · Poster abstract · First author</div></li><li id="publication-5"><div class="pub-authors">Yang HS, <strong>Hwang Y</strong>, Lee Y, Jung K, Sung M, Kwak TY, et al.</div><a class="pub-title" href="https://doi.org/10.1158/1538-7445.AM2024-2308" target="_blank" rel="noopener noreferrer">Semi-automated Ki-67 index assessment using top-k hotspot recommendation in Ki-67 IHC stained WSIs</a>. <span class="pub-venue"><em>Cancer Research. 84(6 Suppl):2308.</em> 2024.</span><div class="pub-note">AACR 2024 · Poster abstract</div></li><li id="publication-6"><div class="pub-authors"><strong>Hwang Y</strong>, Yang HS, Choi YL, Jung K, Shin YK, Nam JH, et al.</div><a class="pub-title" href="https://scholar.google.com/scholar?q=%22A%20Deep%20Learning-Based%20Tumor%20Area%20Identification%20Using%20a%20Semi-Supervised%20Approach%20for%20IHC%20Stained%20Images%20in%20Non-Small%20Lung%20Carcinoma%22" aria-label="Find publication on Google Scholar" target="_blank" rel="noopener noreferrer">A Deep Learning-Based Tumor Area Identification Using a Semi-Supervised Approach for IHC Stained Images in Non-Small Lung Carcinoma</a>. <span class="pub-venue"><em>Laboratory Investigation. USCAP Annual Meeting abstract.</em> 2024.</span><div class="pub-note">USCAP 2024 · Poster abstract · First author</div></li><li id="publication-7"><div class="pub-authors"><strong>Hwang Y</strong>, Kwon GY, Kim J, Jung J, Kim DK, Kwak TY, et al.</div><a class="pub-title" href="https://scholar.google.com/scholar?q=%22Evaluation%20of%20Attention-based%20Tumor%20Area%20Segmentation%20Deep%20Learning%20Models%20for%20c-MET%20Immunohistochemical%20Stained%20Non-small%20Cell%20Lung%20Cancer%20Slide%20Images%22" aria-label="Find publication on Google Scholar" target="_blank" rel="noopener noreferrer">Evaluation of Attention-based Tumor Area Segmentation Deep Learning Models for c-MET Immunohistochemical Stained Non-small Cell Lung Cancer Slide Images</a>. <span class="pub-venue"><em>Laboratory Investigation. USCAP Annual Meeting abstract.</em> 2023.</span><div class="pub-note">USCAP 2023 · Poster abstract · First author</div></li><li id="publication-8"><div class="pub-authors">Glaeser A, Selvaraj V, Lee S, <strong>Hwang Y</strong>, Lee K, Lee N, et al.</div><a class="pub-title" href="https://doi.org/10.1080/00207543.2021.1891318" target="_blank" rel="noopener noreferrer">Applications of deep learning for fault detection in industrial cold forging</a>. <span class="pub-venue"><em>International Journal of Production Research. 59(16):4826–4835.</em> 2021.</span><div class="pub-note">Journal article · SCIE</div></li><li id="publication-9"><div class="pub-authors"><strong>Hwang Y</strong>*, Lee HH*, Park C, Tama BA, Kim JS, Cheung DY, et al.</div><a class="pub-title" href="https://doi.org/10.1111/den.13787" target="_blank" rel="noopener noreferrer">Improved classification and localization approach to small bowel capsule endoscopy using convolutional neural network</a>. <span class="pub-venue"><em>Digestive Endoscopy. 33(4):598–607.</em> 2021.</span><div class="pub-note">Journal article · SCIE · Co-first author · Journal cover · Wiley Top Cited Article 2021–2022</div></li><li id="publication-10"><div class="pub-authors">Lee SY, <strong>Hwang Y</strong>, Lee S.</div><a class="pub-title" href="https://ince.publisher.ingentaconnect.com/contentone/ince/incecp/2020/00000261/00000001/art00071" target="_blank" rel="noopener noreferrer">Frequency-driven convolutional neural network for enhancing noise-robustness of bearing fault detection</a>. <span class="pub-venue"><em>Proceedings of the 49th International Congress and Exposition on Noise Control Engineering (INTER-NOISE 2020).</em> 2020.</span><div class="pub-note">Conference paper</div></li><li id="publication-11"><div class="pub-authors">Glaeser A, Selvaraj V, Lee K, Lee N, <strong>Hwang Y</strong>, Lee S, et al.</div><a class="pub-title" href="https://doi.org/10.1016/j.promfg.2020.05.129" target="_blank" rel="noopener noreferrer">Remote machine mode detection in cold forging using vibration signal</a>. <span class="pub-venue"><em>Procedia Manufacturing. 48:908–914.</em> 2020.</span><div class="pub-note">NAMRC 48 · Conference paper</div></li></ol><p class="section-note">* Equal contribution / co-first authorship.</p><a class="scholar-link" href="https://scholar.google.co.kr/citations?user=YsupRlQAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a></section>
 
   <hr>
 
-  <!-- Research -->
-
-  <section>
-    <h2 data-ko="연구 성과" data-en="Research & Patents"></h2>
-    <div class="stats-row">
-      <div class="stat">
-        <div class="stat-val">2</div>
-        <div class="stat-label" data-ko="SCIE 논문 (1저자 1건, 저널 표지)" data-en="SCIE Papers (1st author, journal cover)"></div>
-      </div>
-      <div class="stat">
-        <div class="stat-val">9</div>
-        <div class="stat-label" data-ko="국제 학회 발표" data-en="Intl. Conference Presentations"></div>
-      </div>
-      <div class="stat">
-        <div class="stat-val">6</div>
-        <div class="stat-label" data-ko="국내 특허 (등록 2 · 출원 4)" data-en="Patents (2 registered · 4 filed)"></div>
-      </div>
-      <div class="stat">
-        <div class="stat-val">2</div>
-        <div class="stat-label" data-ko="제품 출시" data-en="Products Shipped"></div>
-      </div>
-    </div>
-  </section>
+  
+  <section id="skills"><h2 class="section-title" data-ko="기술 역량" data-en="Skills"></h2><table class="skill-table"><tr><td class="td-cat" data-ko="핵심 전문성" data-en="Core Expertise"></td><td><div class="skill-tags"><span class="tag">Computer Vision</span><span class="tag">Quantitative Image Analysis</span><span class="tag">Segmentation</span><span class="tag">Landmark Detection</span></div></td></tr><tr><td class="td-cat" data-ko="연구 · 데이터" data-en="Research &amp; Data"></td><td><div class="skill-tags"><span class="tag">Vision SSL</span><span class="tag">DINOv3</span><span class="tag">LoRA / PEFT</span><span class="tag">Benchmark Design</span><span class="tag">HITL</span><span class="tag">Annotation Tools</span></div></td></tr><tr><td class="td-cat" data-ko="엔지니어링" data-en="Engineering"></td><td><div class="skill-tags"><span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">ONNX</span><span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">CPU / GPU Inference Optimization</span></div></td></tr></table></section>
 
   <hr>
-
-  <!-- Skills -->
-  <section>
-    <h2 data-ko="기술 스택" data-en="Skills"></h2>
-    <table class="skill-table">
-      <tr>
-        <td class="td-cat" data-ko="AI / ML" data-en="AI / ML"></td>
-        <td>
-          <div class="skill-tags">
-            <span class="tag">Medical Image AI</span><span class="tag">Segmentation</span><span class="tag">Landmark Detection</span>
-            <span class="tag">VFM · DINOv3</span><span class="tag">LoRA Fine-tuning</span><span class="tag">Knowledge Distillation</span>
-            <span class="tag">Generative AI</span>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td class="td-cat" data-ko="데이터" data-en="Data"></td>
-        <td>
-          <div class="skill-tags">
-            <span class="tag">HITL Pipeline</span><span class="tag">Embedding Sampling</span>
-            <span class="tag">Annotation Tool Dev</span><span class="tag">VLM/LLM Refinement</span>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td class="td-cat" data-ko="엔지니어링" data-en="Engineering"></td>
-        <td>
-          <div class="skill-tags">
-            <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">FastAPI</span>
-            <span class="tag">ONNX</span><span class="tag">Docker</span><span class="tag">AWS</span><span class="tag">k8s</span><span class="tag">CI/CD</span>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td class="td-cat" data-ko="에이전트" data-en="Agent"></td>
-        <td>
-          <div class="skill-tags">
-            <span class="tag">Claude Code</span><span class="tag">Codex</span><span class="tag">Multi-Agent Pipeline</span>
-          </div>
-        </td>
-      </tr>
-    </table>
-  </section>
-
-  <div class="footer">Yunseob Hwang · 2026.05</div>
+<section id="seminars"><h2 class="section-title">Seminars</h2>
+<p class="section-note" data-ko="경력 요약을 넘어, 산업 문제 해결을 위한 기술 이해와 적용·고찰을 담은 공개 가능한 주요 R&amp;D 세미나 발표자료를 공유합니다." data-en="Selected R&amp;D seminars, shared publicly to offer a closer look at my technical reasoning, exploration, and application of AI to real-world problems."></p>
+<div class="insight-tools"><label for="seminar-search" class="seminar-status">Search</label><input id="seminar-search" type="search" placeholder="Search seminars…" aria-label="Search seminars"><span id="seminar-count" aria-live="polite">11 / 11</span></div>
+<div class="table-wrap"><table class="seminar-table"><thead><tr><th scope="col">Date</th><th scope="col">Seminar</th><th scope="col">Slides</th></tr></thead><tbody><tr data-seminar><td><time datetime="2026-10">2026.10</time></td><td><div class="seminar-title"><a href="seminars/tabpfn.html">A Foundation Model for Tabular Data — TabPFN</a></div></td><td><a href="seminars/tabpfn.html" aria-label="View A Foundation Model for Tabular Data — TabPFN seminar slides">View ↗</a></td></tr><tr data-seminar><td><time datetime="2025-12">2025.12</time></td><td><div class="seminar-title"><a href="seminars/msk-vfm.html">Vision Foundation Model for MSK</a></div></td><td><a href="seminars/msk-vfm.html" aria-label="View Vision Foundation Model for MSK seminar slides">View ↗</a></td></tr><tr data-seminar><td><time datetime="2025-11">2025.11</time></td><td><div class="seminar-title"><a href="seminars/dinov3-msk.html">Leveraging MSK AI Using DINOv3</a></div></td><td><a href="seminars/dinov3-msk.html" aria-label="View Leveraging MSK AI Using DINOv3 seminar slides">View ↗</a></td></tr><tr data-seminar><td><time datetime="2025-03">2025.03</time></td><td><div class="seminar-title"><a href="seminars/latent-grid.html">Data Sampling Strategy for Deep Learning in Histopathology — Latent Grid Sampling</a></div></td><td><a href="seminars/latent-grid.html" aria-label="View Data Sampling Strategy for Deep Learning in Histopathology — Latent Grid Sampling seminar slides">View ↗</a></td></tr><tr data-seminar><td><time datetime="2024-05">2024.05</time></td><td><div class="seminar-title"><a href="seminars/histopathology-fm.html">Foundation Model for Histopathology</a></div></td><td><a href="seminars/histopathology-fm.html" aria-label="View Foundation Model for Histopathology seminar slides">View ↗</a></td></tr><tr data-seminar><td><time datetime="2023-08">2023.08</time></td><td><div class="seminar-title"><a href="seminars/visual-token-matching.html">Universal Few-shot Learning of Dense Prediction Tasks with Visual Token Matching</a></div></td><td><a href="seminars/visual-token-matching.html" aria-label="View Universal Few-shot Learning of Dense Prediction Tasks with Visual Token Matching seminar slides">View ↗</a></td></tr><tr data-seminar><td><time datetime="2023-06">2023.06</time></td><td><div class="seminar-title"><a href="seminars/seaformer.html">Efficient Segmentation Models — SeaFormer</a></div></td><td><a href="seminars/seaformer.html" aria-label="View Efficient Segmentation Models — SeaFormer seminar slides">View ↗</a></td></tr><tr data-seminar><td><time datetime="2023-06">2023.06</time></td><td><div class="seminar-title"><a href="seminars/intro-computational-pathology.html">Introduction of Computational Pathology</a></div></td><td><a href="seminars/intro-computational-pathology.html" aria-label="View Introduction of Computational Pathology seminar slides">View ↗</a></td></tr><tr data-seminar><td><time datetime="2023-02">2023.02</time></td><td><div class="seminar-title"><a href="seminars/cerberus.html">Cerberus: Multi-task Learning for Histopathology</a></div></td><td><a href="seminars/cerberus.html" aria-label="View Cerberus: Multi-task Learning for Histopathology seminar slides">View ↗</a></td></tr><tr data-seminar><td><time datetime="2022-11">2022.11</time></td><td><div class="seminar-title"><a href="seminars/ai-computational-pathology.html">AI to Computational Pathology</a></div></td><td><a href="seminars/ai-computational-pathology.html" aria-label="View AI to Computational Pathology seminar slides">View ↗</a></td></tr><tr data-seminar><td><time datetime="2020-11">2020.11</time></td><td><div class="seminar-title"><a href="seminars/continual-learning.html">Continual Lifelong Learning</a></div></td><td><a href="seminars/continual-learning.html" aria-label="View Continual Lifelong Learning seminar slides">View ↗</a></td></tr></tbody></table></div>
+<p id="seminar-empty" class="section-note" hidden data-ko="검색 결과가 없습니다." data-en="No matching seminars."></p>
+</section>
+  <div class="footer">Yunseob Hwang · 2026.10</div>
 
 </div>
 <script>
+
+const caseTabs=Array.from(document.querySelectorAll('.case-tab'));
+function selectCase(tab,focus=false){
+ caseTabs.forEach(t=>{const active=t===tab;t.setAttribute('aria-selected',String(active));t.tabIndex=active?0:-1;document.getElementById(t.getAttribute('aria-controls')).hidden=!active;});
+ if(focus)tab.focus();
+}
+caseTabs.forEach((tab,i)=>{
+ tab.addEventListener('click',()=>selectCase(tab));
+ tab.addEventListener('keydown',e=>{
+ let next;
+ if(e.key==='ArrowRight')next=(i+1)%caseTabs.length;
+ if(e.key==='ArrowLeft')next=(i+caseTabs.length-1)%caseTabs.length;
+ if(e.key==='Home')next=0;
+ if(e.key==='End')next=caseTabs.length-1;
+ if(next!==undefined){e.preventDefault();selectCase(caseTabs[next],true);}
+ });
+});
+
   function setLang(lang) {
     document.querySelectorAll('[data-ko]').forEach(el => {
       el.innerHTML = el.dataset[lang] || el.innerHTML;
@@ -382,7 +317,19 @@
     document.querySelector(`.lang-btn[onclick="setLang('${lang}')"]`).classList.add('active');
     document.documentElement.lang = lang;
   }
+  document.querySelectorAll('.product-thumbnail img').forEach(img=>img.addEventListener('error',()=>{img.hidden=true}));
   setLang('en');
+  document.getElementById('seminar-search').addEventListener('input', function() {
+    const query=this.value.trim().toLocaleLowerCase();
+    let count=0;
+    document.querySelectorAll('[data-seminar]').forEach(row=>{
+      row.hidden=!row.textContent.toLocaleLowerCase().includes(query);
+      if(!row.hidden) count++;
+    });
+    document.getElementById('seminar-count').textContent=count+' / '+document.querySelectorAll('[data-seminar]').length;
+    document.getElementById('seminar-empty').hidden=count!==0;
+  });
 </script>
 </body>
 </html>
+

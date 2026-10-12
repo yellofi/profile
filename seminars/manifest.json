@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "msk-vfm",
+    "title": "Vision Foundation Model for MSK",
+    "date": "2025-12",
+    "pages": 25
+  },
+  {
+    "slug": "dinov3-msk",
+    "title": "Leveraging MSK AI Using DINOv3",
+    "date": "2025-11",
+    "pages": 24
+  },
+  {
+    "slug": "latent-grid",
+    "title": "Data Sampling Strategy for Deep Learning in Histopathology — Latent Grid Sampling",
+    "date": "2025-03",
+    "pages": 57
+  },
+  {
+    "slug": "histopathology-fm",
+    "title": "Foundation Model for Histopathology",
+    "date": "2024-05",
+    "pages": 22
+  },
+  {
+    "slug": "visual-token-matching",
+    "title": "Universal Few-shot Learning of Dense Prediction Tasks with Visual Token Matching",
+    "date": "2023-08",
+    "pages": 23
+  },
+  {
+    "slug": "seaformer",
+    "title": "Efficient Segmentation Models — SeaFormer",
+    "date": "2023-06",
+    "pages": 32
+  },
+  {
+    "slug": "intro-computational-pathology",
+    "title": "Introduction of Computational Pathology",
+    "date": "2023-06",
+    "pages": 22
+  },
+  {
+    "slug": "cerberus",
+    "title": "Cerberus: Multi-task Learning for Histopathology",
+    "date": "2023-02",
+    "pages": 27
+  },
+  {
+    "slug": "ai-computational-pathology",
+    "title": "AI to Computational Pathology",
+    "date": "2022-11",
+    "pages": 34
+  },
+  {
+    "slug": "continual-learning",
+    "title": "Continual Lifelong Learning",
+    "date": "2020-11",
+    "pages": 43
+  }
+]
