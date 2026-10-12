@@ -1346,5 +1346,9 @@
   {
     "path": "assets/featured/profile-featured.jpg",
     "sha256": "b0eabe009650ca088207b5ba5f724d74bf5f26e12ad63d6585588b8d2728ba87"
+  },
+  {
+    "path": "assets/featured/profile-featured-v2.jpg",
+    "sha256": "9cd4d27319cdb961b4dc281e8182bf9abc39e937ddb7b925553794b260db516f"
   }
 ]
