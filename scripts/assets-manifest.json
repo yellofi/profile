@@ -1354,5 +1354,9 @@
   {
     "path": "assets/featured/profile-featured-grid.jpg",
     "sha256": "0b19eb4632fe5a96c3dcf0759d06a14414010a80341d94de951605a20066c5b1"
+  },
+  {
+    "path": "assets/featured/profile-featured-grid-tight.jpg",
+    "sha256": "f44a7866633c42cc9aadb98193d2998f55281d72ce6b53bf66873e4fc4ca6e73"
   }
 ]
