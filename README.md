@@ -1,28 +1,29 @@
 # Yunseob Hwang — Profile
 
-Personal profile and selected technical seminars, separate from the Tech Archive.
+English-first bilingual AI Research Engineer profile, separate from Tech Archive.
 
-## Content
+## Live site
 
-- About / Experience / Selected Work: based on `yellofi/tech-archive/docs/profile.md` as read on 2026-10-12.
-- Insights: selected seminar titles and year-month dates transcribed from the supplied file-list screenshot.
-- Achievements: publication, patent and recognition summaries from the same profile source. Counts retain the source wording; registered/filed totals should not be added without confirming overlap.
-- TabPFN is marked scheduled for 2026-10-15.
+https://yunseob-profile-preview.brinyseal32.chatgpt.site
 
-## Connect slides
+## Structure
 
-The current page is a showcase shell. No PDFs are included. Rows intentionally show “Slides pending” rather than dead View links.
+- Profile, R&D philosophy and case studies, experiences, education, achievements, skills.
+- 11 seminar viewers: 331 page images, scroll navigation, previous/next controls, keyboard navigation.
+- Searchable seminar list.
+- Original PDFs are not linked or included.
 
-For each seminar, upload its public version and replace the title's div with an anchor to its viewer page; replace the status span with a View link to the same page. Keep `data-seminar` on the row so search continues to work.
+## Source and assets
 
-Prefer page images in a custom viewer if the original PDF should not be hosted. A browser PDF viewer cannot enforce download prevention. Do not imply download protection from hidden toolbar buttons.
+This repository contains the latest profile and seminar-viewer HTML.
+Images are served from the live site's /assets/ directory; the HTML uses absolute asset URLs.
+The full deployment including those images is versioned in the site's separate source repository.
+The earlier draft PR has been refreshed with the current source.
 
-## Run
-
-This is a buildless static HTML page, using relative links for future local assets. Open index.html or serve the repository with `python -m http.server 8000`.
-
-Default language is Korean; existing English toggle is retained. Selected Work and achievement details currently retain the Korean source text in both language modes. Seminar titles and topics are English.
+GitHub Pages has not been enabled by this update. If enabled, select the published source branch/root or configure a static Pages workflow.
+The private repository visibility has not been changed.
 
 ## Validation
 
-10 seminar rows; unique element IDs; internal navigation targets; JavaScript syntax checked. Browser visual QA was unavailable in this environment.
+All 11 viewer references and 331 image files checked locally. JavaScript syntax checked.
+Browser interaction QA was unavailable in the execution environment.
