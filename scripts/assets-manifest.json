@@ -1350,5 +1350,9 @@
   {
     "path": "assets/featured/profile-featured-v2.jpg",
     "sha256": "9cd4d27319cdb961b4dc281e8182bf9abc39e937ddb7b925553794b260db516f"
+  },
+  {
+    "path": "assets/featured/profile-featured-grid.jpg",
+    "sha256": "0b19eb4632fe5a96c3dcf0759d06a14414010a80341d94de951605a20066c5b1"
   }
 ]
