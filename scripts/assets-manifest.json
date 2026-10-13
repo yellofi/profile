@@ -1374,5 +1374,13 @@
   {
     "path": "assets/highlights/angle-measurement.webp",
     "sha256": "0e3cd15d17f1be936bb02fcc76e74f811c41094982aea0f9dd19264c87f76418"
+  },
+  {
+    "path": "assets/highlights/deepbio.webp",
+    "sha256": "f681e339700fa6035daaa22b62809dfd75ea76514a1530aac2ad4eec63b4972f"
+  },
+  {
+    "path": "assets/highlights/connective.webp",
+    "sha256": "99cc5e18e4318e632504ab2e7c0c0cba32fa16a804e3f4f19d53c217270839a9"
   }
 ]
