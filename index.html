@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>황윤섭 | AI Research Engineer</title>
-<meta name="description" content="잘 푸는 AI, 잘 만든 문제집. AI 연구 엔지니어 황윤섭의 문제 해결 방식, 경력, 연구 성과와 R&amp;D 세미나를 소개합니다.">
-<meta property="og:title" content="황윤섭 | AI Research Engineer">
-<meta property="og:description" content="잘 푸는 AI, 잘 만든 문제집 — 문제 해결 사례와 R&amp;D 세미나">
+  <title>Yunseob Hwang | AI Research Engineer</title>
+<meta name="description" content="Explore Yunseob Hwang’s AI R&amp;D approach, professional experience, research contributions, and selected seminars.">
+<meta property="og:title" content="Yunseob Hwang | AI Research Engineer">
+<meta property="og:description" content="AI R&amp;D approach, problem-solving cases, and selected seminars.">
 <meta property="og:image" content="https://yellofi.github.io/profile/assets/featured/profile-featured-grid-tight.jpg">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="1170">
@@ -223,9 +223,9 @@
 <div class="page">
 
   <div class="lang-toggle">
-    <button class="lang-btn active" onclick="setLang('ko')">KO</button>
+    <button class="lang-btn" onclick="setLang('ko')">KO</button>
     <span style="color:var(--border)">|</span>
-    <button class="lang-btn" onclick="setLang('en')">EN</button>
+    <button class="lang-btn active" onclick="setLang('en')">EN</button>
   </div>
 
   <div class="profile-overview"><img class="profile-portrait" src="assets/profile/yunseob-hwang.png" alt="황윤섭 프로필 사진" width="156" height="156" decoding="async"><div class="profile-introduction"><div class="header">
@@ -342,7 +342,7 @@ caseTabs.forEach((tab,i)=>{
     document.documentElement.lang = lang;
   }
   document.querySelectorAll('.product-thumbnail img').forEach(img=>img.addEventListener('error',()=>{img.hidden=true}));
-  setLang('ko');
+  setLang('en');
   document.getElementById('seminar-search').addEventListener('input', function() {
     const query=this.value.trim().toLocaleLowerCase();
     let count=0;
