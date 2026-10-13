@@ -239,6 +239,19 @@ html{scroll-behavior:smooth}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.section-nav a{transition:none}}
 
 
+
+.career-highlight-pair a{position:relative;transition:border-color .18s ease,box-shadow .18s ease}
+.preview-hint{position:absolute;right:.6rem;bottom:.6rem;padding:.25rem .5rem;border-radius:4px;background:rgba(255,255,255,.94);color:var(--accent);font-size:.7rem;opacity:0;transition:opacity .18s ease;pointer-events:none}
+@media(hover:hover){.career-highlight-pair a:hover{border-color:#8ca9b8;box-shadow:0 3px 14px #143b5014}.career-highlight-pair a:hover .preview-hint{opacity:1}}
+.career-highlight-pair a:focus-visible .preview-hint{opacity:1}
+.zoom-controls{display:flex;gap:.35rem;align-items:center}.zoom-controls button{font:inherit;font-size:.8rem;min-width:34px;min-height:34px;padding:.3rem .5rem;border:1px solid var(--border);border-radius:4px;background:white;cursor:pointer}.zoom-controls button:disabled{opacity:.35;cursor:default}
+#zoom-level{font-size:.75rem;min-width:45px;text-align:center}
+.zoom-viewport{height:min(65vh,650px);width:100%;overflow:hidden;position:relative;background:#f7f9fa;touch-action:none;cursor:zoom-in}
+.zoom-viewport.is-zoomed{cursor:grab}.zoom-viewport.is-dragging{cursor:grabbing}
+.zoom-viewport .lightbox-image{position:absolute;left:50%;top:50%;max-height:none;width:auto;height:auto;max-width:none;transform-origin:center;user-select:none}
+body.preview-open{overflow:hidden}
+@media(max-width:600px){.lightbox-bar{flex-wrap:wrap;padding:.5rem}.zoom-viewport{height:60vh}.lightbox-caption{font-size:.68rem}}
+@media(prefers-reduced-motion:reduce){.career-highlight-pair a,.preview-hint{transition:none}}
 </style>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
@@ -341,7 +354,7 @@ html{scroll-behavior:smooth}
   <div class="footer">Yunseob Hwang · 2026.10</div>
 
 </div>
-<dialog class="image-lightbox" aria-label="Technical contribution preview"><div class="lightbox-bar"><span id="lightbox-title"></span><button type="button" class="lightbox-close" aria-label="Close preview">×</button></div><img class="lightbox-image" alt=""><p class="lightbox-caption" data-ko="기술 접근방식을 설명하는 개념 도식" data-en="Conceptual illustration of the technical approach">Conceptual illustration of the technical approach</p></dialog>
+<dialog class="image-lightbox" aria-label="Technical contribution preview"><div class="lightbox-bar"><span id="lightbox-title"></span><div class="zoom-controls"><button type="button" data-zoom="out" aria-label="Zoom out">−</button><output id="zoom-level" aria-live="polite">100%</output><button type="button" data-zoom="in" aria-label="Zoom in">+</button><button type="button" data-zoom="reset" data-ko="맞춤" data-en="Fit">Fit</button><button type="button" class="lightbox-close" aria-label="Close preview">×</button></div></div><div class="zoom-viewport"><img class="lightbox-image" alt="" draggable="false"></div><p class="lightbox-caption" data-ko="휠·핀치로 확대 · 드래그로 이동 · Esc로 닫기" data-en="Scroll or pinch to zoom · Drag to pan · Esc to close">Scroll or pinch to zoom · Drag to pan · Esc to close</p></dialog>
 <script>
 
 // Progressive enhancement: content stays visible without JavaScript or animation support.
@@ -361,16 +374,36 @@ if(growthGrid && 'IntersectionObserver' in window && !window.matchMedia('(prefer
 
 const lightbox=document.querySelector('.image-lightbox');
 if(lightbox && typeof lightbox.showModal==='function'){
- let previewTrigger;
- document.querySelectorAll('.career-highlight-pair a').forEach(link=>link.addEventListener('click',e=>{
-  e.preventDefault();previewTrigger=link;const source=link.querySelector('img');
-  lightbox.querySelector('img').src=link.href;lightbox.querySelector('img').alt=source.alt;
-  document.getElementById('lightbox-title').textContent=document.documentElement.lang==='ko'?'주요 기술적 기여':'Selected Technical Contributions';
-  lightbox.showModal();
- }));
- lightbox.querySelector('button').addEventListener('click',()=>lightbox.close());
+ let previewTrigger,scale=1,panX=0,panY=0,baseW=0,baseH=0;
+ const viewport=lightbox.querySelector('.zoom-viewport'),picture=lightbox.querySelector('img');
+ const pointers=new Map();
+ function clampPan(){panX=Math.max(-Math.max(0,(baseW*scale-viewport.clientWidth)/2),Math.min(Math.max(0,(baseW*scale-viewport.clientWidth)/2),panX));panY=Math.max(-Math.max(0,(baseH*scale-viewport.clientHeight)/2),Math.min(Math.max(0,(baseH*scale-viewport.clientHeight)/2),panY));}
+ function renderZoom(){clampPan();picture.style.width=baseW+'px';picture.style.height=baseH+'px';picture.style.transform='translate(-50%,-50%) translate('+panX+'px,'+panY+'px) scale('+scale+')';document.getElementById('zoom-level').textContent=Math.round(scale*100)+'%';viewport.classList.toggle('is-zoomed',scale>1);lightbox.querySelector('[data-zoom="out"]').disabled=scale<=1;lightbox.querySelector('[data-zoom="in"]').disabled=scale>=4;}
+ function fit(){scale=1;panX=panY=0;const ratio=Math.min(viewport.clientWidth/Math.max(1,picture.naturalWidth),viewport.clientHeight/Math.max(1,picture.naturalHeight));baseW=picture.naturalWidth*ratio;baseH=picture.naturalHeight*ratio;renderZoom();}
+ function zoom(next,x=viewport.clientWidth/2,y=viewport.clientHeight/2){next=Math.max(1,Math.min(4,next));const factor=next/scale;panX=(x-viewport.clientWidth/2)*(1-factor)+panX*factor;panY=(y-viewport.clientHeight/2)*(1-factor)+panY*factor;scale=next;renderZoom();}
+ document.querySelectorAll('.career-highlight-pair a').forEach(link=>{
+  const hint=document.createElement('span');hint.className='preview-hint';hint.dataset.ko='확대 보기';hint.dataset.en='Enlarge';hint.textContent=document.documentElement.lang==='ko'?'확대 보기':'Enlarge';link.append(hint);
+  link.addEventListener('click',e=>{e.preventDefault();previewTrigger=link;pointers.clear();scale=1;panX=panY=0;picture.alt=link.querySelector('img').alt;document.getElementById('lightbox-title').textContent=document.documentElement.lang==='ko'?'주요 기술적 기여':'Selected Technical Contributions';lightbox.showModal();document.body.classList.add('preview-open');picture.src=link.href;if(picture.complete&&picture.naturalWidth)fit();});
+ });
+ picture.addEventListener('load',fit);
+ lightbox.querySelector('.lightbox-close').addEventListener('click',()=>lightbox.close());
+ lightbox.querySelector('[data-zoom="in"]').addEventListener('click',()=>zoom(scale*1.25));
+ lightbox.querySelector('[data-zoom="out"]').addEventListener('click',()=>zoom(scale/1.25));
+ lightbox.querySelector('[data-zoom="reset"]').addEventListener('click',fit);
+ viewport.addEventListener('wheel',e=>{e.preventDefault();const r=viewport.getBoundingClientRect();zoom(scale*Math.exp(-e.deltaY*.002),e.clientX-r.left,e.clientY-r.top);},{passive:false});
+ viewport.addEventListener('pointerdown',e=>{if(e.pointerType==='mouse'&&e.button!==0)return;viewport.setPointerCapture(e.pointerId);pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});viewport.classList.add('is-dragging');});
+ viewport.addEventListener('pointermove',e=>{
+  if(!pointers.has(e.pointerId))return;
+  const before=[...pointers.values()];const old=pointers.get(e.pointerId);pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});const after=[...pointers.values()];
+  if(after.length===2){const oldD=Math.hypot(before[0].x-before[1].x,before[0].y-before[1].y);const newD=Math.hypot(after[0].x-after[1].x,after[0].y-after[1].y);const r=viewport.getBoundingClientRect();if(oldD>0)zoom(scale*newD/oldD,(after[0].x+after[1].x)/2-r.left,(after[0].y+after[1].y)/2-r.top);panX+=(after[0].x+after[1].x-before[0].x-before[1].x)/2;panY+=(after[0].y+after[1].y-before[0].y-before[1].y)/2;renderZoom();}
+  else if(after.length===1&&scale>1){panX+=e.clientX-old.x;panY+=e.clientY-old.y;renderZoom();}
+ });
+ function release(e){pointers.delete(e.pointerId);if(!pointers.size)viewport.classList.remove('is-dragging');}
+ ['pointerup','pointercancel','lostpointercapture'].forEach(event=>viewport.addEventListener(event,release));
+ lightbox.addEventListener('keydown',e=>{if(e.target.tagName==='BUTTON')return;if(['+','=','-','0','ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key)){e.preventDefault();if(e.key==='+'||e.key==='=')zoom(scale*1.25);if(e.key==='-')zoom(scale/1.25);if(e.key==='0')fit();if(e.key==='ArrowLeft')panX+=40;if(e.key==='ArrowRight')panX-=40;if(e.key==='ArrowUp')panY+=40;if(e.key==='ArrowDown')panY-=40;renderZoom();}});
+ window.addEventListener('resize',()=>{if(lightbox.open)fit();});
  lightbox.addEventListener('click',e=>{if(e.target===lightbox){const r=lightbox.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)lightbox.close();}});
- lightbox.addEventListener('close',()=>{lightbox.querySelector('img').removeAttribute('src');previewTrigger?.focus();});
+ lightbox.addEventListener('close',()=>{document.body.classList.remove('preview-open');pointers.clear();viewport.classList.remove('is-dragging');picture.removeAttribute('src');previewTrigger?.focus();});
 }
 
 const sectionNav=document.querySelector('.section-nav');
