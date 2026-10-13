@@ -1358,5 +1358,21 @@
   {
     "path": "assets/featured/profile-featured-grid-tight.jpg",
     "sha256": "f44a7866633c42cc9aadb98193d2998f55281d72ce6b53bf66873e4fc4ca6e73"
+  },
+  {
+    "path": "assets/highlights/data-centric.webp",
+    "sha256": "a9c0fca214c28e330701fb02359d340cc790b99be3f4877f474dcc5150a01ef4"
+  },
+  {
+    "path": "assets/highlights/universal-ihc.webp",
+    "sha256": "a4f38648b6f666368a659919e8dc131eafec53a3d7e1e920c0a2579d7d9eefa2"
+  },
+  {
+    "path": "assets/highlights/vfm-rd.webp",
+    "sha256": "809f219a01ab27303dfd104e3b603bc2950ad7305d9e282cd982273f51239ed1"
+  },
+  {
+    "path": "assets/highlights/angle-measurement.webp",
+    "sha256": "0e3cd15d17f1be936bb02fcc76e74f811c41094982aea0f9dd19264c87f76418"
   }
 ]
