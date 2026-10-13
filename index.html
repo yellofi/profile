@@ -238,18 +238,13 @@ html{scroll-behavior:smooth}
 @media(max-width:1260px){.section-nav{position:sticky;top:0;left:auto;transform:none;flex-direction:row;flex-wrap:nowrap;overflow-x:auto;width:100%;padding:.55rem 0;border-left:0;border-bottom:1px solid var(--border);background:rgba(255,255,255,.97);gap:.9rem;margin-bottom:1.4rem}.section-nav a{white-space:nowrap;font-size:.72rem;padding:.3rem 0}.section-nav a[aria-current="location"]:before{left:0;right:0;top:auto;bottom:-.3rem;width:auto;height:2px;border-radius:0;transform:none}section,.exp-table tr[id],.publication-list li{scroll-margin-top:70px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.section-nav a{transition:none}}
 
-.page>section{transition:opacity .25s ease,box-shadow .25s ease}
-.page.section-focus>section{opacity:.45}
-.page.section-focus>section.is-focused{opacity:1;box-shadow:0 0 0 1px #dce8ed,0 8px 28px rgba(24,54,66,.08);border-radius:8px}
-.focus-reset{position:fixed;right:1.5rem;bottom:1.5rem;z-index:20;border:1px solid var(--border);border-radius:6px;padding:.55rem .8rem;background:white;color:var(--muted);font:inherit;font-size:.76rem;box-shadow:0 3px 12px #0001;cursor:pointer}
-.focus-reset[hidden]{display:none}
-@media(prefers-reduced-motion:reduce){.page>section{transition:none}}
+
 </style>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
 <div class="page">
-<nav class="site-nav section-nav" aria-label="Page sections"><a href="#growth" data-ko="성장 과정" data-en="Growth">Growth</a><a href="#experience" data-ko="경력" data-en="Experiences">Experiences</a><a href="#education" data-ko="학력" data-en="Education">Education</a><a href="#achievements" data-ko="성과" data-en="Achievements">Achievements</a><a href="#skills" data-ko="기술 역량" data-en="Skills">Skills</a><a href="#further-insights">Further Insights</a></nav>
+<nav class="site-nav section-nav" aria-label="Page sections"><a href="#top">Top</a><a href="#growth" data-ko="성장 과정" data-en="Growth">Growth</a><a href="#experience" data-ko="경력" data-en="Experiences">Experiences</a><a href="#education" data-ko="학력" data-en="Education">Education</a><a href="#achievements" data-ko="성과" data-en="Achievements">Achievements</a><a href="#skills" data-ko="기술 역량" data-en="Skills">Skills</a><a href="#further-insights">Further Insights</a></nav>
 
   <div class="lang-toggle">
     <button class="lang-btn" onclick="setLang('ko')">KO</button>
@@ -257,7 +252,7 @@ html{scroll-behavior:smooth}
     <button class="lang-btn active" onclick="setLang('en')">EN</button>
   </div>
 
-  <div class="profile-overview"><img class="profile-portrait" src="assets/profile/yunseob-hwang.png" alt="황윤섭 프로필 사진" width="156" height="156" decoding="async"><div class="profile-introduction"><div class="header">
+  <div class="profile-overview" id="top"><img class="profile-portrait" src="assets/profile/yunseob-hwang.png" alt="황윤섭 프로필 사진" width="156" height="156" decoding="async"><div class="profile-introduction"><div class="header">
 <div class="header-copy">
     <h1>Yunseob Hwang <span class="name-ko">황윤섭</span></h1>
     <div class="role" data-ko="AI Research Engineer · Computer Vision &amp; Quantitative Image Analysis" data-en="AI Research Engineer · Computer Vision &amp; Quantitative Image Analysis">AI Research Engineer · Computer Vision & Quantitative Image Analysis</div>
@@ -346,7 +341,6 @@ html{scroll-behavior:smooth}
   <div class="footer">Yunseob Hwang · 2026.10</div>
 
 </div>
-<button class="focus-reset" type="button" hidden data-ko="전체 보기 · Esc" data-en="Show all · Esc">Show all · Esc</button>
 <dialog class="image-lightbox" aria-label="Technical contribution preview"><div class="lightbox-bar"><span id="lightbox-title"></span><button type="button" class="lightbox-close" aria-label="Close preview">×</button></div><img class="lightbox-image" alt=""><p class="lightbox-caption" data-ko="기술 접근방식을 설명하는 개념 도식" data-en="Conceptual illustration of the technical approach">Conceptual illustration of the technical approach</p></dialog>
 <script>
 
@@ -383,21 +377,6 @@ const sectionNav=document.querySelector('.section-nav');
 const navLinks=Array.from(sectionNav.querySelectorAll('a'));
 const trackedSections=navLinks.map(link=>document.querySelector(link.getAttribute('href'))).filter(Boolean);
 
-const focusPage=document.querySelector('.page');
-const focusReset=document.querySelector('.focus-reset');
-function clearSectionFocus(){focusPage.classList.remove('section-focus');focusPage.querySelectorAll(':scope > section.is-focused').forEach(s=>s.classList.remove('is-focused'));focusReset.hidden=true;}
-navLinks.forEach(link=>link.addEventListener('click',()=>{
- clearSectionFocus();
- const section=document.querySelector(link.getAttribute('href'));
- if(section){section.classList.add('is-focused');focusPage.classList.add('section-focus');focusReset.hidden=false;}
-}));
-focusReset.addEventListener('click',clearSectionFocus);
-document.addEventListener('keydown',e=>{if(e.key==='Escape')clearSectionFocus();});
-document.addEventListener('click',e=>{
- if(!focusPage.classList.contains('section-focus'))return;
- if(e.target.closest('.section-nav,.is-focused,.image-lightbox,.focus-reset'))return;
- clearSectionFocus();
-});
 let scrollQueued=false;
 function updateSectionNav(){
  const marker=window.innerHeight*.3;
