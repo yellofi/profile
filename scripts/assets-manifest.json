@@ -1382,5 +1382,9 @@
   {
     "path": "assets/highlights/connective.webp",
     "sha256": "99cc5e18e4318e632504ab2e7c0c0cba32fa16a804e3f4f19d53c217270839a9"
+  },
+  {
+    "path": "assets/highlights/deepbio-v2.webp",
+    "sha256": "a4e882ffaef7cfaf50c26c56083a12fdac66397d69978d21fa38cd7f70aea771"
   }
 ]
